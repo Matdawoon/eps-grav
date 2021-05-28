@@ -1,0 +1,11 @@
+state: enabled
+email: dmille@mextor.com
+fullname: 'Delphine Millet'
+title: Administrator
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$.E9r/2eFdiTx6qK3ZqhjluwOiTJtndzlm4h9rRo3D4Z6L2S6ImV0i
