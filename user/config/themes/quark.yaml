@@ -1,0 +1,19 @@
+enabled: true
+production-mode: true
+grid-size: grid-lg
+header-fixed: true
+header-animated: true
+header-dark: false
+header-transparent: false
+sticky-footer: true
+blog-page: /blog
+spectre:
+  exp: false
+  icons: true
+custom_logo:
+  user/themes/quark/images/logo/eps-logo.svg:
+    name: eps-logo.svg
+    type: image/svg+xml
+    size: 5034
+    path: user/themes/quark/images/logo/eps-logo.svg
+custom_logo_mobile: {  }
