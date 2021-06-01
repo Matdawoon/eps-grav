@@ -4,17 +4,22 @@ title: modular_showcase_blog
 form:
   fields:
     tabs:
+      type: tabs
+      active: 1
       fields:
-        header.personnalisation:
+        personnalisation:
           type: tab
           title: Personnalisation
           fields:
-            image:
+            header.image:
               type: iconpicker
               label: Icon
-            title:
+            header.title_module:
               type: text
               label: titre
-            description:
+            header.description:
               type: text
               label: description
+            header.css_titre:
+              type: text
+              label: css titre
