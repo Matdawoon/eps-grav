@@ -8,6 +8,8 @@ streams:
          - 'user://themes/quark'
 
 enabled: true
+dropdown:
+  enabled: true
 production-mode: true
 grid-size: grid-lg
 header-fixed: true

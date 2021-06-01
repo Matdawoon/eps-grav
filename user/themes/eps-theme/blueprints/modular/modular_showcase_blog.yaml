@@ -1,0 +1,20 @@
+title: modular_showcase_blog
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      fields:
+        header.personnalisation:
+          type: tab
+          title: Personnalisation
+          fields:
+            image:
+              type: iconpicker
+              label: Icon
+            title:
+              type: text
+              label: titre
+            description:
+              type: text
+              label: description
