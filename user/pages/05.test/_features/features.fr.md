@@ -13,5 +13,11 @@ features:
         header: zrzerzera
         text: aerarzazr
         url: null
+rows:
+    -
+        title: teste
+        description: lorem
+        description_position: left
+        image: null
 ---
 

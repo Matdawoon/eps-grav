@@ -9,30 +9,43 @@ form:
           type: tab
           title: Features
           fields:
-            header.class:
-              type: select
-              label: Layout
-              default: small
-              size: medium
-              options:
-                small: Small   = 4 / 3 / 2 columns
-                standard: Standard  = 3 / 2 / 1 columns
+            header.main_title:
+              type: text
+              label: Titre principal
 
-            header.features:
-              name: features
+            header.main_description:
+              type: text
+              label: Chapo
+              
+            header.rows:
               type: list
-              label: Features
+              label: Row           
 
               fields:
-                .icon:
-                  type: iconpicker
-                  label: Icon
-                .header:
+                .title:
                   type: text
-                  label: Header
-                .text:
-                  type: text
-                  label: Text
-                .url:
-                  type: text
-                  label: Link
+                  label: titre
+
+                .description:
+                  type: textarea
+                  label: Description
+
+                .description_position:
+                  type: select
+                  label: position
+                  default: left
+                  options:
+                    left: Descriptif à gauche
+                    right: Descriptif à droite
+
+                .image:
+                  type: filepicker
+                  label: Select a file
+                  preview_image: true
+                  accept:
+                    - .png
+                    - .jpg
+                    - .svg
+
+                
+

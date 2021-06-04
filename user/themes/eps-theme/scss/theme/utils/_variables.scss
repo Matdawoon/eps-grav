@@ -1,5 +1,3 @@
-
-
 //Spectre 
 // Core variables
 $version: "0.5.8";
@@ -53,6 +51,7 @@ $cjk-zh-hant-font-family: $base-font-family, "PingFang TC", "Hiragino Sans CNS",
 $cjk-jp-font-family: $base-font-family, "Hiragino Sans", "Hiragino Kaku Gothic Pro", "Yu Gothic", YuGothic, Meiryo, $fallback-font-family !default;
 $cjk-ko-font-family: $base-font-family, "Malgun Gothic", $fallback-font-family !default;
 $body-font-family: $base-font-family, $fallback-font-family !default;
+$title-font-family: $base-font-family;
 
 // Unit sizes
 $unit-o: .05rem !default;

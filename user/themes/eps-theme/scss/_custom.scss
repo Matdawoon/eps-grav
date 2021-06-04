@@ -1,4 +1,6 @@
 @import "theme/utils/index";
+@import "theme/base/index";
+@import "theme/components/index";
 @import "theme/layout/index";
 
 .rouge{
@@ -6,5 +8,5 @@
 }
 
 .bleu{
-    background-color: blue;
+    background-color: rgb(91, 218, 52);
 }
