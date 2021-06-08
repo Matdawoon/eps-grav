@@ -1,0 +1,20 @@
+
+form:
+  fields:
+    
+    .card_image:
+      type: filepicker
+      label: Card Image
+      preview_images: true
+      description: 'If not specified, this defaults to the first image found in the page''s folder'
+    .card_title:
+      type: text
+      label: card title
+    .card_description:
+      type: text
+      label: card description
+      toggleable: true
+    .card_btn:
+      type: text
+      label: button text
+      toggleable: true

@@ -1,0 +1,31 @@
+form: flex-pages
+unique_id: 2886f369ea18e6f4929c7d5e3a4d4cff
+url: '/pages/contact/:add'
+user:
+  username: perhentia
+  email: dmille@mextor.com
+timestamps:
+  created: 1622548927
+  updated: 1622548927
+data: null
+files: {  }
+object:
+  type: pages
+  key: contact
+  storage_key: ''
+  timestamp: 0
+  serialized:
+    __META:
+      clone: true
+    storage_key: ''
+    parent_key: ''
+    order: '07.'
+    folder: contact
+    template: default
+    lang: fr
+    root: false
+    route: /
+    name: default
+    header:
+      title: Contact
+    frontmatter: "title: Contact\n"

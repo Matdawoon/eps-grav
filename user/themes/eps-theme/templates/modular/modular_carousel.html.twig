@@ -1,0 +1,76 @@
+
+<h1>{{page.header.carousel_title}}</h1>
+<p>{{ page.header.carousel_description }}</p>
+
+<section class="carousel">
+
+    <ol>
+        <li>
+
+    </ol>
+
+
+</section>
+
+
+<section class="wrapper-cs carousel-section">
+    <div class="carousel-container">
+      <div class="owl-carousel solution-theme">
+        <div class="carousel-item card-height">
+          <div class="card-hp-1 carousel-item__card">
+            <div class="img-solution-1">
+              <img src="https://epayspace.com/user/images/g5_helium_child/g5_helium_child/Solution/solution-sur-mesure-e-pay-space.png?6020a0eb" width="448" height="303" alt="solution-sur-mesure"/>
+            </div>
+            <div class="text-solution text-f">
+              <h3>Solution <span>sur-mesure</span></h3>
+              <p><span>EPS Factory : </span>votre solution personnalisée et à votre image</p>
+              <a href="https://epayspace.com/fr/solutions-de-paiement/eps-factory-solutions-de-paiement-sur-mesure"><button class="button-eps-f"><span>En savoir plus</span></button></a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item card-height">
+          <div class="card-hp-2 carousel-item__card">
+            <div class="img-solution-2">
+              <img src="https://epayspace.com/user/images/g5_helium_child/g5_helium_child/Solution/solution-business-e-pay-space.png?6020a0ec" width="280" height="305" alt="depenses-professionnelles"/>
+            </div>
+            <div class="text-solution text-b">
+              <h3>Dépenses <span>professionnelles</span></h3>
+              <p><span>EPS Business : </span>solution clé-en-main de cartes pour les entreprises</p>
+              <a href="https://epayspace.com/fr/solutions-de-paiement/eps-business"><button class="button-eps-b"><span>En savoir plus</span></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+      jQuery(document).ready(function($){
+      let slider = $('.owl-carousel');
+      slider.each(function () {
+          $(this).owlCarousel({
+          nav: true,
+          loop:false,
+          dots: false,
+          pagination: false,
+          margin: 25,
+          autoHeight: false,
+          stagePadding: 50,
+          responsive:{
+              0:{
+              items: 1,
+              stagePadding: 0,
+              margin: 30,
+              },
+              1200:{
+              items: 1,
+              stagePadding: 25,
+              },
+              1201:{
+              items: 3,
+              }
+          }
+          });
+      });
+      });
+      </script>

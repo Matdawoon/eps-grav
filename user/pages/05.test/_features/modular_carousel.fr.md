@@ -13,11 +13,15 @@ features:
         header: zrzerzera
         text: aerarzazr
         url: null
+<<<<<<< HEAD:user/pages/05.test/_features/features.fr.md
 rows:
     -
         title: teste
         description: lorem
         description_position: left
         image: null
+=======
+image_align: left
+>>>>>>> modification Helder + carrousel:user/pages/05.test/_features/modular_carousel.fr.md
 ---
 
