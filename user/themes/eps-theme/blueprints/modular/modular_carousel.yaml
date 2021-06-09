@@ -1,0 +1,102 @@
+title: Carousel settings
+'@extends':
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      fields:
+        tabName:
+          type: tab
+          title: Carousel settings
+
+          fields: 
+            header.carousel_title:
+              type: text
+              label: Carousel Title
+              default: titre carousel
+              size: medium
+            header.carousel_description:
+              type: text
+              underline: true
+              label: Carousel Descritpion
+              default: Description du carousel
+              size: medium  
+              toggleable: true 
+
+            tabs:
+              type: tabs
+              active: 1
+
+              fields:
+                cards_settings:
+                  type: tab
+                  title: Cards settings
+
+                  fields:
+                    header.card_list:
+                      name: Cards
+                      type: list
+                      style: vertical
+                      label: Cards list
+
+                      import@:
+                        type: partials/cards
+                
+                cards_class:
+                  type: tab
+                  title: Cards css
+
+                  fields:
+                    header.css_card_conteneur:
+                      type: text
+                      label: css class card conteneur
+                      toggleable: true
+
+                    header.css_conteneur_image:
+                      type: text
+                      label: css class conteneur img
+                      toggleable: true
+
+                    header.css_conteneur_text:
+                      type: text
+                      label: css class conteneur text
+                      toggleable: true
+
+                    header.css_image:
+                      type: text
+                      label: css class card img 
+                      toggleable: true
+
+                    header.css_title:
+                      type: text
+                      label: css class card title
+                      toggleable: true
+
+                    header.css_description:
+                      type: text
+                      label: css class card description
+                      toggleable: true
+
+                    header.css_btn:
+                      type: text
+                      label: css class card button 
+                      toggleable: true   
+
+                carousel_settings:
+                  type: tab
+                  title: carousel settings
+
+                  fields:
+                    header.carousel_nb_items:
+                      type: text
+                      label: css class card conteneur
+                      toggleable: true
+                      default: 2
+
+                    header.carousel_item_margin:
+                      type: text
+                      label: css class conteneur img
+                      default: 30
+                      toggleable: true

@@ -1,0 +1,84 @@
+title: Showcase settings
+'@extends':
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      fields:
+        tabName:
+          type: tab
+          title: Showcase settings
+          fields: 
+            tabs:
+              type: tabs
+              active: 1
+              fields:
+                general_settings:
+                  type: tab
+                  title: general settings
+                  fields:
+                    header.showcase_title:
+                      type: text
+                      label: showcase title
+                    header.showcase_description:
+                      type: text
+                      label: shwocase description
+                      outerclasses: conditional
+
+                    
+
+                    header.showcase_btn_list:
+                      name: button list
+                      type: list
+                      label: button list
+
+                      fields:
+                        .title:
+                          type: text
+                          label: title
+                        .css:
+                          type: text
+                          label: css
+                        .href:
+                          type: text
+                          label: href
+                    
+                
+                img_settings:
+                  type: tab
+                  title: images settings
+                  fields:
+                    header.main_img:
+                      type: filepicker
+                      label: Main Image
+                      preview_images: true
+                      description: 'If not specified, this defaults to the first image found in the page''s folder'
+ 
+                    header.secondary_img:
+                      type: filepicker
+                      label: secondary Image
+                      preview_images: true
+                      description: 'If not specified, this defaults to the first image found in the page''s folder'
+                
+                    header.showcase_bg_img:
+                      type: filepicker
+                      label: bg img
+                      preview_images: true
+                      description: 'If not specified, this defaults to the first image found in the page''s folder'
+                          
+                
+                positions_settings:
+                  type: tab
+                  title: position settings
+                  fields:
+                    header.disposition:
+                      type: select
+                      label: disposition
+                      default: main_img_right
+                      size: medium
+                      options:
+                        main_img_right: image principal à droite 
+                        main_img_left: image principal à gauche
+                    

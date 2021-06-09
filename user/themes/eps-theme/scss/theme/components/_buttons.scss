@@ -1,3 +1,10 @@
+// button eps
+.btn-eps{
+  @include button-variant(#32b643);
+}
+
+
+
 // Buttons
 .btn {
     appearance: none;

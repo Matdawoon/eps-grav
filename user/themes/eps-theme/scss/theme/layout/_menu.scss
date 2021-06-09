@@ -16,13 +16,13 @@
       a {
         padding: $dropmenu-vert-padding ($dropmenu-horiz-padding + $dropmenu-child-padding) $dropmenu-vert-padding $dropmenu-horiz-padding;
         display: block;
-
+        text-decoration-color: transparent;
         &:hover, &:focus, &.active {
           
           text-decoration: underline $light-color;
-          text-underline-offset: 0.3rem;
-          
-          text-decoration-style: solid;
+          text-underline-offset: 0.21rem;
+          text-decoration-thickness : 0.16rem;
+          transition: all 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
         }
 
         &:before {
@@ -37,9 +37,11 @@
         &:only-child {
           //background: none;
           padding-right: $dropmenu-horiz-padding;
-
+          
+          
           &:before {
             content: '';
+            
           }
         }
       }
@@ -48,6 +50,10 @@
         & > ul {
           display: block;
           visibility: visible;
+          .scrolled &{background: transparentize($primary-color, 0.2);}
+          border-radius: 0.5rem;
+          padding: 0.3rem;
+
         }
       }
     }
