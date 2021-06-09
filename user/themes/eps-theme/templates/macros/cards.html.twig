@@ -1,13 +1,14 @@
 
 
-{% macro card(page,img, titre, description, card_btn ,index) %}
+{% macro card(page,img, titre, description, card_btn ) %}
 
-<li id="carousel__slide{{index}}" tabindex="{{index}}" class="card {{page.header.css_card_conteneur}}">
+
+<div class="card-container__item ">
         <img src="{{page.media[img].url}}" >
         <h3>{{titre}}</h3>
         <p>{{description}}</p>
-        <button class="button">{{card_btn}}</button>
-</li>
+        <button class="btn-eps">{{card_btn}}</button>
+</div>
 {% endmacro %}
 
 

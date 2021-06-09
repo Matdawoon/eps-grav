@@ -14,6 +14,11 @@ card_list:
         card_title: 'un autre titre'
         card_description: azeazeazeazeazeazeazeazeaze
         card_btn: azeazeaze
+    -
+        card_image: programme-grand-public.png
+        card_title: azeae
+        card_description: aze
+        card_btn: aze
 css_conteneur: zef
 css_conteneur_image: era
 css_conteneur_text: eaze
@@ -22,5 +27,7 @@ css_title: azea
 css_description: zeaz
 css_btn: eazeaze
 media_order: programme-grand-public.png
+carousel_nb_items: '2'
+carousel_item_margin: '30'
 ---
 

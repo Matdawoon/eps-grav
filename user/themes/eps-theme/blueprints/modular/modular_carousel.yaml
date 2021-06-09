@@ -83,3 +83,20 @@ form:
                       type: text
                       label: css class card button 
                       toggleable: true   
+
+                carousel_settings:
+                  type: tab
+                  title: carousel settings
+
+                  fields:
+                    header.carousel_nb_items:
+                      type: text
+                      label: css class card conteneur
+                      toggleable: true
+                      default: 2
+
+                    header.carousel_item_margin:
+                      type: text
+                      label: css class conteneur img
+                      default: 30
+                      toggleable: true
