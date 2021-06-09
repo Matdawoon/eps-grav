@@ -11,17 +11,23 @@ form:
           fields:
             header.main_title:
               type: text
-              label: Titre principal
+              label: Titre
 
-            header.main_description:
-              type: text
-              label: Chapo
-              
             header.rows:
               type: list
               label: Row           
 
               fields:
+
+                .image:
+                  type: filepicker
+                  label: Select a file
+                  preview_image: true
+                  accept:
+                    - .png
+                    - .jpg
+                    - .svg
+
                 .title:
                   type: text
                   label: titre
@@ -38,14 +44,6 @@ form:
                     left: Descriptif à gauche
                     right: Descriptif à droite
 
-                .image:
-                  type: filepicker
-                  label: Select a file
-                  preview_image: true
-                  accept:
-                    - .png
-                    - .jpg
-                    - .svg
 
                 
 

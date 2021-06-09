@@ -1,30 +1,26 @@
-{% set grid_size = theme_var('grid-size') %}
-{% set columns = page.header.class == 'small' ? 'col-3 col-md-4 col-sm-6' : 'col-4 col-md-6 col-sm-12'  %}
-<section class="section modular-features {{ page.header.class}}">
-        <section class="container {{ grid_size }}">
-            <div class="frame-box">
+<section id='features' class="container-features">
+  {% for row in page.header.rows %}
+    <div class="container-features__row container-features__row__row--ligne-inverse {{row.name}}">
 
-                {{ content|raw }}
+      <div class="{% if row.image or row.video %}container-features__row__image{% endif %} {{ row.description_position }}">
+        <h3>{{ row.title }}</h3>
+        <p>{{ row.description }}</p>
+        <button class="btn-eps">titre du bouton</button>
+      </div>
 
-                <div class="columns">
-                {% for feature in page.header.features %}
-                   <div class="column {{ columns }}">
-                      {% if feature.url %}<a href="{{feature.url}}">{% endif %}
-                      <div class="feature-icon">
-                         <i class="fa fa-fw {{ feature.icon }}"></i>
-                         {% if feature.header %}
-                            <h6>{{ feature.header }}</h6>
-                         {% endif %}
-                      </div>
-                      {% if feature.url %}</a>{% endif %}
-                      <div class="feature-content">
-                         {% if feature.text %}
-                         <p>{{ feature.text }}</p>
-                         {% endif %}
-                      </div>
-                   </div>
-                {% endfor %}
-                </div>
-            </div>
-        </section>
+      <div class="{% if row.image or row.video %}container-features__row__image{% endif %} feature-media {% if row.description_position == 'right' %}left{% else %}right{% endif %}">
+        {% if row.image %}
+          {{ page.media[row.image].html()|raw }}
+        {% endif %}
+        {% if row.video %}
+          <div class="fluid-video-wrapper">
+            <iframe src="{{ row.video }}?title=0&amp;byline=0&amp;portrait=0&amp;color=F64B39" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+  <div class="row feature">
+    {{ content|raw }}
+  </div>
 </section>

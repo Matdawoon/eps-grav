@@ -1,4 +1,56 @@
+
+
+// Buttons EPS
+.btn-eps {
+  @include button-outline-variant(#363d53);
+  appearance: none;
+  background: $bg-color-light;
+  border: $border-width solid $primary-color;
+  border-radius: $border-radius;
+  color: $primary-color;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: $font-weight-medium;
+  font-size: $font-size;
+  height: $control-size;
+  line-height: $line-height;
+  outline: none;
+  padding: $control-padding-y $control-padding-x;
+  text-align: center;
+  text-decoration: none;
+  transition: background .2s, border .2s, box-shadow .2s, color .2s;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  &:focus {
+    @include control-shadow();
+  }
+  &:focus,
+  &:hover {
+    border-color: $primary-color-dark;
+    text-decoration: none;
+    content: '\2192';
+    position: relative;
+    opacity: 1;
+    top: 0;
+    transition: 0.5s;
+  }
+  &:active,
+  &.active {
+    background: $primary-color-dark;
+    border-color: darken($primary-color-dark, 5%);
+    color: $light-color;
+    text-decoration: none;
+    &.loading {
+      &::after {
+        border-bottom-color: $light-color;
+        border-left-color: $light-color;
+      }
+    }
+  }
+}
 // Buttons
+
 .btn {
     appearance: none;
     background: $bg-color-light;

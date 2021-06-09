@@ -55,16 +55,16 @@ $title-font-family: $base-font-family;
 
 // Unit sizes
 $unit-o: .05rem !default;
-$unit-h: .1rem !default;
+$unit-h: 5rem !default;
 $unit-1: .2rem !default;
-$unit-2: .4rem !default;
+$unit-2: 2rem !default;
 $unit-3: .6rem !default;
 $unit-4: .8rem !default;
 $unit-5: 1rem !default;
 $unit-6: 1.2rem !default;
 $unit-7: 1.4rem !default;
 $unit-8: 1.6rem !default;
-$unit-9: 1.8rem !default;
+$unit-9: 2.5rem !default;
 $unit-10: 2rem !default;
 $unit-12: 2.4rem !default;
 $unit-16: 3.2rem !default;
@@ -76,6 +76,11 @@ $font-size: .8rem !default;
 $font-size-sm: .7rem !default;
 $font-size-lg: .9rem !default;
 $line-height: 1.2rem !default;
+
+// Font weight
+$font-weight-regular: 500;
+$font-weight-medium: 500;
+$font-weight-black: 700;
 
 // Sizes
 $layout-spacing: $unit-2 !default;

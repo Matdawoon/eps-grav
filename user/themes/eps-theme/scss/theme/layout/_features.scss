@@ -1,0 +1,28 @@
+.container-features {
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    border: 2px solid rgb(17, 17, 56);
+    box-sizing: border-box;
+    &__row {
+        justify-content: center;
+        align-content: center;
+        flex-direction: row;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        &__image {
+            flex: 0 0 25%;
+        }
+        &__desc {
+            flex: 0 0 25%;
+        }
+            &__row--ligne-inverse {
+                flex-direction: row-reverse; /*Axe principal = axe horizontal*/
+            }
+
+    }
+    
+}
