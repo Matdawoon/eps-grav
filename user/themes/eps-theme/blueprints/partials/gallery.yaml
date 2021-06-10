@@ -1,0 +1,9 @@
+form:
+  fields:
+    gallery.images:
+      type: list
+      label: Images
+      fields:
+        .src:
+          type: text
+          label: Image

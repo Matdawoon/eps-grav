@@ -1,0 +1,50 @@
+{% import 'macros/cards.html.twig' as macro_card %}
+{% set grid_size = theme_var('grid-size') %}
+
+
+
+<section class="container {{grid_size}}">
+
+  <h1>{{page.header.carousel_title}}</h1>
+  <p>{{ page.header.carousel_description }}</p>
+
+   <div id="owl-carousel" class="owl-carousel card-container owl-theme">
+      {% for card in page.header.card_list %}
+          {{macro_card.card(page,card.card_image, card.card_title, card.card_description, card.card_btn,loop.index0)}}
+      {% endfor %}
+    </div>
+
+
+</section>
+
+
+
+  <script>
+      jQuery(document).ready(function($){
+      let slider = $('.owl-carousel');
+      slider.each(function () {
+          $('.owl-carousel').owlCarousel({
+    loop: true,    
+    dots: true,
+    nav: true,
+    pagination: false,
+    stagePadding: 25,
+    margin: {{page.header.carousel_item_margin}},
+    items: {{page.header.carousel_nb_items}},
+
+});
+      });
+      });
+      </script>
+
+
+
+
+
+
+
+
+
+
+
+

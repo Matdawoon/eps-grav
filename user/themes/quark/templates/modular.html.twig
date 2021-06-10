@@ -6,6 +6,12 @@
     {% if show_onpage_menu %}
         {% do assets.add('theme://js/singlepagenav.min.js') %}
     {% endif %}
+
+    {% do assets.addJs('/user/plugin/shortcode-owl-carousel/js'~compress) %}
+
+{% do assets.addJs('jquery', 101) %}
+
+
     {{ parent() }}
 {% endblock %}
 
