@@ -9,7 +9,7 @@ form:
       fields:
         tabName:
           type: tab
-          title: Carousel settings
+          title: Carousel
 
           fields: 
             header.carousel_title:
@@ -20,7 +20,7 @@ form:
             header.carousel_description:
               type: text
               underline: true
-              label: Carousel Descritpion
+              label: Carousel Description
               default: Description du carousel
               size: medium  
               toggleable: true 
@@ -100,3 +100,15 @@ form:
                       label: css class conteneur img
                       default: 30
                       toggleable: true
+                      
+                    header.carousel_loop:
+                      type: toggle
+                      label: Loop
+                      default: 1
+                      options:
+                        1: 'Yes'
+                        0: 'No'
+                      validate:
+                        type: bool
+
+                    

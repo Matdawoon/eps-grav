@@ -8,9 +8,8 @@
         {% do assets.add('theme://js/singlepagenav.min.js') %}
     {% endif %}
 
-    {% do assets.addJs('/user/plugins/shortcode-owl-carousel/js/owl.carousel.min.js') %}
+    {% do assets.addJs('/user/themes/eps-theme/js/owl.carousel.js') %}
 
-    
     
 {% endblock %}
 
@@ -31,15 +30,6 @@
     {% endif %}
 {% endblock %}
 
-<<<<<<< HEAD
-=======
-{% block header_navigation %}
-    
-        {{  parent() }}
-{% endblock %}
-
-
->>>>>>> 9ce95490422b6e3e541743766fb2983a078214a8
 {% block hero %}
     {% for module in page.collection() if module.template == 'modular/hero' %}
         <div id="{{ module.menu|hyphenize }}"></div>

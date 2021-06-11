@@ -24,13 +24,14 @@
       let slider = $('.owl-carousel');
       slider.each(function () {
           $('.owl-carousel').owlCarousel({
-    loop: true,    
+
     dots: true,
     nav: true,
     pagination: false,
     stagePadding: 25,
     margin: {{page.header.carousel_item_margin}},
     items: {{page.header.carousel_nb_items}},
+    loop: {{page.header.carousel_loop}},
 
 });
       });
