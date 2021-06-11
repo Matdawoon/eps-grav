@@ -31,15 +31,12 @@
     {% endif %}
 {% endblock %}
 
-<<<<<<< HEAD
-=======
 {% block header_navigation %}
     
         {{  parent() }}
 {% endblock %}
 
 
->>>>>>> 9ce95490422b6e3e541743766fb2983a078214a8
 {% block hero %}
     {% for module in page.collection() if module.template == 'modular/hero' %}
         <div id="{{ module.menu|hyphenize }}"></div>
@@ -48,8 +45,10 @@
 {% endblock %}
 
 {% block body %}
-    {% for module in page.collection() if module.template != 'modular/hero' %}
-        <div id="{{ module.menu|hyphenize }}"></div>
+    {{ page.content|raw }}
+    {% for module in page.collection() %}
         {{ module.content|raw }}
     {% endfor %}
 {% endblock %}
+
+
