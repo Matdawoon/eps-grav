@@ -8,6 +8,10 @@ images/*
 user/data/*
 
 user/themes/eps-theme/node_modules/
+user/themes/eps-theme/css-compiled/
+user/themes/eps-theme/package-lock.json
+
+
 
 # OS Generated
 .DS_Store*

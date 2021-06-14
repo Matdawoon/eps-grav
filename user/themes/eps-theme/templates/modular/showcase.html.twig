@@ -1,19 +1,19 @@
 {% set grid_size = theme_var('grid-size') %}
 {% set image = page.media.images|first %}
 
-<section class="section modular-text {{ page.header.class}} style="background-image: url({{page.media[page.header.showcase_bg_img].url}})">
-    <section class="container {{ grid_size }}">
-        <div class="columns {{ page.header.image_align|default('align-right') }}">
+
+    <section class="container-showcase custom-container {{page.header.showcase_bg_radius}} " style=" background-image: url('{{page.media[page.header.showcase_bg_img].url}}');">
+        <div class="container-showcase__row container {{ grid_size }} {{ page.header.image_align|default('align-right') }}">
             {% if page.header.main_img %}
-            <div class="column col-6 col-md-12">
+            <div class="container-showcase__row__desc ">
                 {% if page.header.secondary_img %}
-                    {{ page.media[page.header.secondary_img].resize(400, 200).html()|raw }}
+                    {{ page.media[page.header.secondary_img].html("","","secondary-image")|raw }}
                 {% endif %}
                 <h1> {{page.header.showcase_title}}</h1>
                 <p> {{page.header.showcase_description}}</p>
             </div>
-            <div class="column col-6 col-md-12">
-                <img src="{{ page.media[page.header.main_img].url }}" class="img-responsive img-centered">
+            <div class="primary-image">
+                <img src="{{ page.media[page.header.main_img].cropResize(897, 680).url }}" class="img-responsive img-centered">
             </div>
             {% else %}
             <div class="column col-12">
@@ -24,4 +24,3 @@
             {% endif %}
         </div>
     </section>
-</section>

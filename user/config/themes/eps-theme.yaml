@@ -8,7 +8,7 @@ enabled: true
 dropdown:
   enabled: true
 production-mode: false
-grid-size: grid-lg
+grid-size: grid-xl
 header-fixed: true
 header-animated: true
 header-dark: false
