@@ -29,5 +29,7 @@ css_btn: eazeaze
 media_order: programme-grand-public.png
 carousel_nb_items: '2'
 carousel_item_margin: '30'
+showcase_bg_img: 'showcase_pattern (1).svg'
+showcase_bg_radius: top-bottom-radius-bg
 ---
 

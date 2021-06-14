@@ -1,0 +1,16 @@
+form:
+  fields:
+    
+    header.showcase_bg_img:
+      type: filepicker
+      label: bg img
+      preview_images: true
+      description: 'If not specified, this defaults to the first image found in the page''s folder'
+    header.showcase_bg_radius:
+      type: select
+      classes: fancy
+      label: bg radius
+      options:         
+        top-radius-bg    : "courbure haut"
+        bottom-radius-bg: "courbure bas"
+        top-bottom-radius-bg: "courbure les deux"      

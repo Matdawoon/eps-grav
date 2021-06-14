@@ -24,6 +24,8 @@ form:
               default: Description du carousel
               size: medium  
               toggleable: true 
+                    
+
 
             tabs:
               type: tabs
