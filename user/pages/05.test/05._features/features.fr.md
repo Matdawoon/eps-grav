@@ -15,9 +15,9 @@ features:
         url: null
 rows:
     -
+        image: null
         title: teste
         description: lorem
         description_position: left
-        image: null
 ---
 

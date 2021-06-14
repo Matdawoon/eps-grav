@@ -9,9 +9,14 @@ showcase_btn_list:
         title: azeazeaze
         css: null
         href: null
+    -
+        title: azeazeaze
+        css: null
+        href: null
 main_img: solution-sur-mesure-e-pay-space-2.png
 secondary_img: cartes-solution-sur-mesure-e-pay-space.png
 showcase_description: qsdqsdqsdqsdqsd
 showcase_bg_img: 'showcase_pattern (1).svg'
+showcase_bg_radius: bottom-radius-bg
 ---
 
