@@ -52,7 +52,7 @@ carousel_responsive_list:
     -
         breakpoint: '1440'
         items: 3
-        margin: null
+        margin: 20
         loop: false
         nav: true
         dots: true

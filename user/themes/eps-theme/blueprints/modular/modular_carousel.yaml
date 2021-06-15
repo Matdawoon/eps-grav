@@ -19,7 +19,6 @@ form:
               size: medium
             header.carousel_description:
               type: text
-              underline: true
               label: Carousel Descritpion
               default: Description du carousel
               size: medium  

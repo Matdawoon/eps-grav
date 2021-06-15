@@ -1,0 +1,33 @@
+<section class="faq-container container max-width-md margin-top-lg margin-bottom-lg">
+    <h2> {{page.header.faq_title}}</h2>
+    <p> {{page.header.faq_description}}</p>
+
+    <ul class="faq-container__nav">
+        {% for section in page.header.list_faq_sections %}
+            <li><a class="faq-container__categorie" href="#{{section.section_title|lower}}">{{section.section_title}}</a></li>
+        {% endfor %}
+    </ul>
+    <!-- conteneur faq -->
+    <div>
+    {% for section in page.header.list_faq_sections %}
+        <!-- faq i-ème section -->
+        <ul id="{{section.section_title|lower}}">
+            <!-- faq titre section -->
+            <li><h2>{{section.section_title}}</h2></li>
+            <!-- faq lists items -->
+            {% for item in section.section_list_items %}
+            <li> 
+                <a href="#0"> {{item.question}} </a>
+                <div>
+                    <p>
+                        {{item.answer}}
+                    </p>
+                </div>
+            
+            </li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+    </div>
+
+<section>
