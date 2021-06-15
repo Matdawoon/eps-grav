@@ -31,5 +31,31 @@ carousel_nb_items: '2'
 carousel_item_margin: '30'
 showcase_bg_img: 'showcase_pattern (1).svg'
 showcase_bg_radius: top-bottom-radius-bg
+carousel_item_loop: false
+carousel_responsive_list:
+    -
+        breakpoint: '0'
+        items: 1
+        margin: 5
+        loop: false
+        nav: false
+        dots: true
+        stagePadding: 0
+    -
+        breakpoint: '768'
+        items: 2
+        margin: 10
+        loop: true
+        nav: false
+        dots: false
+        stagePadding: 10
+    -
+        breakpoint: '1440'
+        items: 3
+        margin: null
+        loop: false
+        nav: true
+        dots: true
+        stagePadding: 0
 ---
 
