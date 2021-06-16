@@ -19,5 +19,7 @@ rows:
         title: teste
         description: lorem
         description_position: left
+showcase_bg_img: 'showcase_pattern (1).svg'
+showcase_bg_radius: top-bottom-radius-bg
 ---
 

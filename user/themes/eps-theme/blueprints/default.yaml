@@ -10,6 +10,13 @@ form:
               fields:
                 column1:
                    fields:
-                     header.body_classes:
+                      header.body_classes:
                        markdown: true
                        description: 'Available classes in Quark Theme (space separated):<br />`header-fixed`, `header-animated`, `header-dark`, `header-transparent`, `sticky-footer`'
+                      content:
+                        type: section
+                        title: background curvature 
+                        underline: true
+
+                        import@:
+                          type: partials/background-curvature   
