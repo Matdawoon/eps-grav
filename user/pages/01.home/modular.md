@@ -6,5 +6,6 @@ content:
     order:
         by: default
         dir: desc
+showcase_bg_radius: top-radius-bg
 ---
 
