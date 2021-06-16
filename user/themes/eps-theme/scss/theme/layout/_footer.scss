@@ -4,11 +4,13 @@
 
 footer {
     padding-top: 84px;
+    padding-bottom: 84px;
     margin-bottom: 60px;
     color: #3c4753;
     font-size: 13px;
     line-height: 24px;
-    position: relative;   
+    position: relative;
+    background-color: $blue-dark-eps-color;   
  }
  
  footer a, footer a:visited { color: #0A6567; }

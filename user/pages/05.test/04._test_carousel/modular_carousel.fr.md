@@ -28,6 +28,7 @@ css_description: zeaz
 css_btn: eazeaze
 media_order: programme-grand-public.png
 carousel_nb_items: '2'
-carousel_item_margin: '30'
+carousel_item_margin: '15'
+carousel_loop: false
 ---
 
