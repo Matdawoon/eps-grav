@@ -2,12 +2,12 @@
 
 // Buttons EPS
 .btn-eps {
-  @include button-outline-variant(#363d53);
+  @include button-outline-variant($blue-flat-eps-color);
   appearance: none;
   background: $bg-color-light;
-  border: $border-width solid $primary-color;
+  border: $border-width solid $blue-flat-eps-color;
   border-radius: $border-radius;
-  color: $primary-color;
+  color: $blue-flat-eps-color;
   cursor: pointer;
   display: inline-block;
   font-weight: $font-weight-medium;
@@ -22,14 +22,11 @@
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-  &:focus {
-    @include control-shadow();
-  }
   &:focus,
   &:hover {
-    border-color: $primary-color-dark;
+    border-color: $blue-flat-eps-color;
     text-decoration: none;
-    content: '\2192';
+    content: '&#x2192';
     position: relative;
     opacity: 1;
     top: 0;
@@ -37,9 +34,8 @@
   }
   &:active,
   &.active {
-    background: $primary-color-dark;
-    border-color: darken($primary-color-dark, 5%);
-    color: $light-color;
+    border-color: darken($blue-flat-eps-color, 5%);
+    color: $blue-flat-eps-color;
     text-decoration: none;
     &.loading {
       &::after {
@@ -48,7 +44,18 @@
       }
     }
   }
+  
 }
+
+.btn-eps--red {
+  @include button-outline-variant($red-warmpink-eps-color);
+}
+
+.btn-eps--blue {
+  @include button-outline-variant($blue-flat-eps-color);
+}
+
+
 // Buttons
 
 .btn {
