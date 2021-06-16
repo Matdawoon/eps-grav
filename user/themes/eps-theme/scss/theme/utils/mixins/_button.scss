@@ -52,3 +52,11 @@
     }
   }
 }
+
+@mixin text-red-variant($color: $red-warmpink-eps-color) {
+  color: $color;
+}
+
+@mixin text-blue-variant($color: $red-warmpink-eps-color) {
+  color: $color;
+}

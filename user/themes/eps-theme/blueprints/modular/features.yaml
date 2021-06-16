@@ -27,6 +27,7 @@ form:
                     - .png
                     - .jpg
                     - .svg
+                    - .gif
 
                 .title:
                   type: text
