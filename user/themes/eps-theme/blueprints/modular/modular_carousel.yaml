@@ -19,11 +19,19 @@ form:
               size: medium
             header.carousel_description:
               type: text
+              label: Carousel Descritpion
+              default: Description du carousel
+              size: medium  
+              toggleable: true 
+            header.carousel_cta:
+              type: text
               underline: true
               label: Carousel Description
               default: Description du carousel
               size: medium  
               toggleable: true 
+                    
+
 
             tabs:
               type: tabs
@@ -100,15 +108,86 @@ form:
                       label: css class conteneur img
                       default: 30
                       toggleable: true
-                      
-                    header.carousel_loop:
+
+                    header.carousel_item_loop:
                       type: toggle
-                      label: Loop
+                      label: loop
                       default: 1
                       options:
-                        1: 'Yes'
-                        0: 'No'
+                        1: "Yes"
+                        0: "Non"
                       validate:
                         type: bool
 
-                    
+                    header.carousel_responsive_list:
+                      type: list
+                      label: responsive items list
+                      fields:
+                        .breakpoint:
+                          type: select
+                          required: true
+                          label: breakpoint value
+                          options:
+                            0: "mobile xs"
+                            768: "tablet"
+                            1200: "desktop xs"
+                            1440: "desktop ms"
+                            1920: "desktop lg"
+                        
+                        .items:
+                          type: text
+                          size: medium
+                          required: true
+                          default: 2
+                          label: items number
+                          validate:
+                            type: number
+                        
+                        .margin:
+                          type: text
+                          size: medium
+                          required: true
+                          label: margin number
+                          default: 20
+                          validate:
+                            type: number
+
+                        .loop:
+                          type: toggle
+                          label: loop
+                          required: true
+                          default: 0
+                          options:
+                            1: "Yes"
+                            0: "Non"
+                          validate:
+                            type: bool
+                        
+                        .nav:
+                          type: toggle
+                          label: nav
+                          required: true
+                          default: 0
+                          options:
+                            1: "Yes"
+                            0: "Non"
+                          validate:
+                            type: bool
+
+                        .dots:
+                          type: toggle
+                          label: dots
+                          required: true
+                          default: 0
+                          options:
+                            1: "Yes"
+                            0: "Non"
+                          validate:
+                            type: bool
+
+                        .stagePadding:
+                          type: number
+                          label: stagePadding
+                          default: 0
+                          required: true
+                                            

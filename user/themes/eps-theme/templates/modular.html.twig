@@ -9,6 +9,9 @@
     {% endif %}
 
     {% do assets.addJs('/user/themes/eps-theme/js/owl.carousel.js') %}
+    {% do assets.addJs('/user/plugins/shortcode-owl-carousel/js/owl.carousel.min.js') %}
+    {% do assets.addJs('/user/themes/eps-theme/js/main.js') %}
+    {% do assets.addJs('/user/themes/eps-theme/js/util.js') %}
 
     
 {% endblock %}
@@ -46,7 +49,9 @@
 {% block body %}
     {{ page.content|raw }}
     {% for module in page.collection() %}
+        <section class="custom-container {{module.header.showcase_bg_radius}}" style=" background-image: url('{{module.media[module.header.showcase_bg_img].url}}');">
         {{ module.content|raw }}
+        </section>
     {% endfor %}
 {% endblock %}
 

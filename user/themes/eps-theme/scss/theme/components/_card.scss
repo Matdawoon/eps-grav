@@ -3,18 +3,30 @@
     
     width: 100%;
     padding: 5%;
-    & &__item{
-        align-items: stretch;
-        display: flex;
-        justify-content: center;
-        flex-flow: column wrap;
-        border-radius: 5%;
-        margin: 5%;
-        box-shadow: 0 0 31px #dce1ed;
-        text-align: center;
-        img{
-        border-radius: 5px ;
+    background-color: $light-color;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 5%;
+    box-shadow: 0 0 31px #dce1ed;
+    text-align: center;
+
+
+    & .card-img{
+        height: 20vh;
+        width: 100%;
+        object-fit: fill;
+        
     }
+
+    & .card-desc{
+
+    }
+
+    & .card-btn{
+
     }
 
 }

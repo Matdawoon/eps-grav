@@ -1,0 +1,33 @@
+<section class="cd-faq">
+    <h2> {{page.header.faq_title}}</h2>
+    <p> {{page.header.faq_description}}</p>
+
+    <ul class="cd-faq__categories">
+        {% for section in page.header.list_faq_sections %}
+            <li><a class="cd-faq__category" href="#{{section.section_title|lower}}">{{section.section_title}}</a></li>
+        {% endfor %}
+    </ul>
+    <!-- conteneur faq -->
+    <div class="cd-faq__items">
+    {% for section in page.header.list_faq_sections %}
+        <!-- faq i-ème section -->
+        <ul class="cd-faq__group" id="{{section.section_title|lower}}">
+            <!-- faq titre section -->
+            <li class="cd-faq__title"><h2>{{section.section_title}}</h2></li>
+            <!-- faq lists items -->
+            {% for item in section.section_list_items %}
+            <li class="cd-faq__item"> 
+                <a class="cd-faq__trigger" href="#0"> {{item.question}} </a>
+                <div class="cd-faq__content">
+                    <p>
+                        {{item.answer}}
+                    </p>
+                </div>
+            
+            </li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+    </div>
+
+<section>
