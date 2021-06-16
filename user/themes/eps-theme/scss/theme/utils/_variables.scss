@@ -20,6 +20,21 @@ $gray-color: lighten($dark-color, 55%) !default;
 $gray-color-dark: darken($gray-color, 30%) !default;
 $gray-color-light: lighten($gray-color, 20%) !default;
 
+// EPS colors
+$gray-dark-eps-color: #3b3b3b !default;
+$gray-pale-eps-color: #f7f9fc !default;
+$blue-dark-eps-color: #24283e !default;
+$blue-azul-eps-color: #2e80dd !default;
+$blue-flat-eps-color: #3f83b6 !default;
+$blue-green-eps-color: #137d8a !default;
+$red-lipstick-eps-color: #d62642 !default;
+$red-coral-eps-color: #fa4949 !default;
+$red-warmpink-eps-color: #fa4949 !default;
+$yellow-ocre-eps-color: #d39100 !default;
+$yellow-safron: #ffb30d !default;
+$green-dark-eps-color: #3acf6e !default;
+
+// Border + Bg colors
 $border-color: lighten($dark-color, 65%) !default;
 $border-color-dark: darken($border-color, 10%) !default;
 $border-color-light: lighten($border-color, 8%) !default;
@@ -32,6 +47,12 @@ $success-color: #32b643 !default;
 $warning-color: #ffb700 !default;
 $error-color: #e85600 !default;
 
+// Btn EPS
+$btn-eps-blue: $blue-azul-eps-color;
+$btn-eps-red: $red-warmpink-eps-color;
+$btn-eps-gray: $gray-dark-eps-color;
+
+
 // Other colors
 $code-color: #d73e48 !default;
 $highlight-color: #ffe9b3 !default;
@@ -41,9 +62,9 @@ $link-color: $primary-color !default;
 $link-color-dark: darken($link-color, 10%) !default;
 $link-color-light: lighten($link-color, 10%) !default;
 
-// Fonts
+// Fonts EPS
 // Credit: https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
-$base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto !default;
+$base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Maven Pro", sans-serif !default;
 $mono-font-family: "SF Mono", "Segoe UI Mono", "Roboto Mono", Menlo, Courier, monospace !default;
 $fallback-font-family: "Helvetica Neue", sans-serif !default;
 $cjk-zh-hans-font-family: $base-font-family, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", $fallback-font-family !default;
@@ -158,4 +179,3 @@ $mobile-color-active: #FFF;
 $mobile-color-link: #FFF;
 $mobile-button-height: 24px;
 $mobile-button-width: 28px;
-
