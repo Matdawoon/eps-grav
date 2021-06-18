@@ -41,7 +41,7 @@
 {% block body %}
     {{ page.content|raw }}
     {% for module in page.collection() %}
-        <section class="custom-container {{module.header.showcase_bg_radius}}" style=" background-image: url('{{module.media[module.header.showcase_bg_img].url}}');">
+        <section class="custom-container container-fluid {{module.header.showcase_bg_radius}}" style=" background-image: url('{{module.media[module.header.showcase_bg_img].url}}');">
         {{ module.content|raw }}
         </section>
     {% endfor %}
