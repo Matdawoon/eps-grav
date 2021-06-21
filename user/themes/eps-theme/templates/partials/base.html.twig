@@ -30,7 +30,7 @@
     {% do assets.addJs('theme://js/jquery.treemenu.js', {group:'bottom'}) %}
     {% do assets.addJs('theme://js/site.js', {group:'bottom'}) %}
 {% endblock %}
-
+<script>document.getElementsByTagName("html")[0].className += " js";</script>
 {% block assets deferred %}
     {{ assets.css()|raw }}
     {{ assets.js()|raw }}

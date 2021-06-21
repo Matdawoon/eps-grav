@@ -1,4 +1,4 @@
-
+(function(){
 	// FAQ Template - by CodyHouse.co
   var FaqTemplate = function(element) {
 		this.element = element;
@@ -38,7 +38,7 @@
 				Util.scrollTo(document.getElementById(selectedCategory).getBoundingClientRect().top + windowScrollTop + 2, 200);
 			}
 		});
-
+		
 		// on mobile -> close faq panel
 		faqs.faqOverlay.addEventListener('click', function(event){
 			closeFaqPanel(faqs);
@@ -50,6 +50,7 @@
 
 		// on desktop -> toggle faq content visibility when clicking on the trigger element
 		faqs.faqContainer.addEventListener('click', function(event){
+			console.log(getMq(faqs) != 'desktop');
 			if(getMq(faqs) != 'desktop') return;
 			var trigger = event.target.closest('.cd-faq__trigger');
 			if(!trigger) return;
@@ -119,4 +120,4 @@
 			faqArray.push(new FaqTemplate(faqTemplate[i])); 
 		}
   };
-;
+})();
