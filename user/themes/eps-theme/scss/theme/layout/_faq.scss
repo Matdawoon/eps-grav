@@ -126,6 +126,8 @@
     top: 20px;
 		width: 20%;
     margin-top: 10px;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-black;
 	}
 
   a {
@@ -147,7 +149,7 @@
   background-color: $blue-dark-eps-color;
   @include fontSmooth;
   --border-color: hsl(var(--cd-color-1-h), var(--cd-color-1-s), calc(var(--cd-color-1-l)*1.1));
-  border-bottom: 1px solid $blue-flat-eps-color;
+  border-bottom: 1px solid $white-full-eps-color;
 
 
   &::before, &::after { // plus icon on the right
@@ -158,7 +160,6 @@
     display: inline-block;
     height: 1px;
     width: 10px;
-    background-color: $green-dark-eps-color;
   }
 
   &::after {
@@ -183,30 +184,32 @@
       background: lightness(var(--cd-color-1), 1.1);
     }
   }
+}
 
-  @include breakpoint-min(lg) {
-    &::before { // decorative rectangle on the left visible for the selected item
-      display: block;
-      top: 0;
-      right: auto;
-      left: 0;
-      height: 100%;
-      width: 3px;
-      opacity: 0;
-      transition: opacity .2s;
+
+@include breakpoint(lg) {
+  .cd-faq__category-selected {
+    background: red;
+    color: $blue-flat-eps-color;
+
+    &:hover {
+      background: lightness(var(--cd-color-1), 0.8);
+    }
+
+    &::before {
+      opacity: 1;
     }
   }
 }
 
 
 
-
 .cd-faq__items { // on mibile, faq contents slides in from the right
-	position: fixed;
-  z-index: 1;
-	height: 100%;
-	width: 90%;
-	top: 0;
+  position: fixed;
+  z-index: 3;
+  height: 100%;
+  width: 90%;
+  top: 73px;
 	right: 0;
 	background-color: $white-full-eps-color;
 	overflow: auto;
@@ -214,6 +217,11 @@
 	backface-visibility: hidden;
 	transform: translateZ(0) translateX(100%);
 	transition: transform .3s;
+  padding: $component-padding $space-md;
+
+  ul {
+    margin-left: 0;
+  }
 
 	@include breakpoint-min(md) {
 		position: static;
@@ -251,17 +259,18 @@ html:not(.js) .cd-faq__items {
 html:not(.js) .cd-faq__group,
 .cd-faq__group--selected {
   display: block;
+  
 }
 
 .cd-faq__title {
-  margin: var(--space-md) 0;
+  margin: $space-md 0;
 
-  h2 {
-    text-transform: uppercase;
-    font-size: var(--text-sm);
-    font-weight: 700;
-    color: lightness(var(--color-contrast-low), 0.9);
-  }
+    h2 {
+      text-transform: uppercase;
+      font-size: var(--text-sm);
+      font-weight: 700;
+      color: lightness(var(--color-contrast-low), 0.9);
+    }
 
   @include breakpoint-min(md) {
     margin-bottom: var(--space-sm);
@@ -298,13 +307,16 @@ html:not(.js) .cd-faq__group,
   position: relative;
   font-weight: 300;
   margin: 0;
+  font-size: $unit-5;
+  $font-weight-light: 400;
 
   @include breakpoint-min(md) {
     font-weight: 300;
     margin: 0;
+    padding: $space-sm $space-lg $space-sm $space-xxxxxxxxxs;
 
     span {
-      font-size: var(--text-md);
+      font-size: 21px;
     }
 
     &::before, &::after { // arrow icon on the right
@@ -314,7 +326,7 @@ html:not(.js) .cd-faq__group,
       top: 50%;
       height: 2px;
       width: 13px;
-      background: lightness(var(--cd-color-2), 1.3);
+      background: $blue-flat-eps-color;
       backface-visibility: hidden;
       transition: transform .2s;
     }
@@ -340,10 +352,11 @@ html:not(.js) .cd-faq__group,
 
 
 .cd-faq__content {
-  .text-component {
-    font-size: 0.95em;
-  }
 
+  p {
+    color: $gray-dark-eps-color;
+    font-size: $unit-4;
+  }
 
   @include breakpoint-min(md) {
     display: none;
@@ -368,9 +381,9 @@ html:not(.js) .cd-faq__content {
 
 .cd-faq__close-panel { // on small device -> x icon to close faqs panel
   position: fixed;
-  z-index: 2;
+  z-index: 9999;
   display: block;
-  top: 5px;
+  top: 90px;
   right: -40px;
   height: 40px;
   width: 40px;
@@ -387,7 +400,7 @@ html:not(.js) .cd-faq__content {
     display: inline-block;
     height: 3px;
     width: 18px;
-    background: var(--cd-color-3);
+    background: $blue-flat-eps-color;
   }
 
   &::before {
@@ -404,7 +417,7 @@ html:not(.js) .cd-faq__content {
 }
 
 .cd-faq__close-panel--move-left {
-  right: var(--component-padding);
+  right: $space-md;
   transition-delay: 0.3s;
 }
 

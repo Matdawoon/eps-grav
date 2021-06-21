@@ -1,6 +1,6 @@
 // Space
 $space-unit: 1em;
-
+$space-xxxxxxxxxs: calc(0 * #{$space-unit});
 $space-xxxxxxs: calc(0.1 * #{$space-unit});
 $space-xxxxs: calc(0.125 * #{$space-unit});
 $space-xxxs: calc(0.25 * #{$space-unit});
@@ -14,6 +14,7 @@ $space-xxl: calc(5.25 * #{$space-unit});
 $space-xxxl: calc(8.5 * #{$space-unit});
 $space-xxxxl: calc(13.75 * #{$space-unit});
 
+$component-padding: $space-md;
 
 
 
