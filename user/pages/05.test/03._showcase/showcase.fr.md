@@ -16,7 +16,10 @@ showcase_btn_list:
 main_img: solution-sur-mesure-e-pay-space-2.png
 secondary_img: cartes-solution-sur-mesure-e-pay-space.png
 showcase_description: qsdqsdqsdqsdqsd
-showcase_bg_img: 'showcase_pattern (1).svg'
-showcase_bg_radius: bottom-radius-bg
+showcase_curvature:
+    curvature_top: true
+    curvature_bottom: true
+showcase_curvature_height: 100px
+showcase_bg_color: '#ff0000'
 ---
 
