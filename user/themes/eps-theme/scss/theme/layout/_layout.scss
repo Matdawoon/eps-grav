@@ -7,23 +7,20 @@
 
 
 
-    &.top-radius-bg{
-        border-radius: 100% 100% 0 0  / 20% 20% 0 0 ;
-    }
-
-    &.bottom-radius-bg{
-        border-radius: 0 0 100% 100% / 0 0 20% 20%;
-    }
-
-    &.top-bottom-radius-bg{
-      border-radius: 100% 100% 100% 100% / 20% 20% 20% 20%;
+    
   }
+.top-radius-bg{
+  border-radius: 50% 50% 0 0  / 100% 100% 0 0;
+}
 
+.bottom-radius-bg{
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
 }
 
 
-/*
-
+  
+  /*
+  
 
 // Layout
 .container {
