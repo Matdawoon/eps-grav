@@ -1,4 +1,4 @@
-(function(){
+
 	// FAQ Template - by CodyHouse.co
   var FaqTemplate = function(element) {
 		this.element = element;
@@ -119,4 +119,4 @@
 			faqArray.push(new FaqTemplate(faqTemplate[i])); 
 		}
   };
-})();
+;
