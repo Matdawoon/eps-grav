@@ -1,12 +1,20 @@
-// --------------------------------
 
-// FAQ Template - by CodyHouse.co
 
-// --------------------------------
+.max-width-md {
+  max-width: var($max-width-md);
+}
+
+.margin-top-lg {
+  margin-top: var($space-lg);
+}
 
 .cd-faq {
-  box-shadow: 10px 5px 5px red;
-
+  background-color: #ffffff;
+  ul, li, a{
+    box-sizing: inherit;
+    list-style: none;
+    text-decoration: none;
+  }
   &::before { // never visible - this is used in JavaScript to check the current MQ
     content: 'mobile';
     display: none;
@@ -14,9 +22,10 @@
 
   a {
     text-decoration: none;
+    box-shadow: none;
   }
 
-	@include breakpoint(md) {
+	@include breakpoint-min(md) {
 		position: relative;
 		box-shadow: none;
     display: flex;
@@ -24,23 +33,36 @@
     &::before {
       content: 'desktop';
     }
+
 	}
 }
 
+.container-faq {
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
 .cd-faq__categories {
-	@include breakpoint(md) {
+	@include breakpoint-min(md) {
     position: sticky; // fix element on scrolling
     align-self: flex-start;
     flex-shrink: 0;
-    top: 20px;
+    top: 11%;
 		width: 20%;
-		box-shadow: 10px 5px 5px red;
     margin-top: 10px;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-black;
 	}
 
-	@include breakpoint(lg) {
+  a {
+    color: $white-full-eps-color;
+  }
+
+	@include breakpoint-min(md) {
 		width: 200px;
 	}
+
 }
 
 .cd-faq__category {
@@ -48,9 +70,12 @@
   display: block;
   height: 50px;
   line-height: 50px;
-  color: red;
-  background-color:green;
-  border-bottom: 1px solid blue;
+  padding-left: $space-md;
+  background-color: $blue-dark-eps-color;
+  @include fontSmooth;
+  --border-color: hsl(var(--cd-color-1-h), var(--cd-color-1-s), calc(var(--cd-color-1-l)*1.1));
+  border-bottom: $unit-s solid $gray-color-dark;
+
 
   &::before, &::after { // plus icon on the right
     content: '';
@@ -70,36 +95,43 @@
     border-bottom: none;
   }
 
-  @include breakpoint(md) {
+  @include breakpoint-min(md) {
+    font-size: $text-md;
     font-weight: 600;
+    padding-left: $space-md;
     transition: background .2s;
 
     &::before, &::after {
       display: none;
     }
 
-  }
-
-  @include breakpoint(lg) {
-    &::before { // decorative rectangle on the left visible for the selected item
-      display: block;
-      top: 0;
-      right: auto;
-      left: 0;
-      height: 100%;
-      width: 3px;
-      opacity: 0;
-      transition: opacity .2s;
+    &:hover {
+      background: lightness(var(--cd-color-1), 1.1);
     }
   }
+
+  &::before { // decorative rectangle on the left visible for the selected item
+    display: block;
+    top: 0;
+    right: auto;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: $blue-flat-eps-color;
+    opacity: 0;
+    transition: opacity .2s;
+  }
+
 }
 
-@include breakpoint(lg) {
+
+@include breakpoint-min(md) {
   .cd-faq__category-selected {
-    background: lighten(red, 0.8);
+    background: $blue-dark-eps-color;
+    color: $blue-flat-eps-color;
 
     &:hover {
-      background: lighten(brown, 0.8);
+      background: lightness(var(--cd-color-1), 0.8);
     }
 
     &::before {
@@ -108,21 +140,27 @@
   }
 }
 
+
 .cd-faq__items { // on mibile, faq contents slides in from the right
-	position: fixed;
-  z-index: 1;
-	height: 100%;
-	width: 90%;
-	top: 0;
+  position: fixed;
+  z-index: 3;
+  height: 100%;
+  width: 90%;
+  top: 73px;
 	right: 0;
-	background: grey;
+	background-color: $white-full-eps-color;
 	overflow: auto;
 	-webkit-overflow-scrolling: touch;
 	backface-visibility: hidden;
 	transform: translateZ(0) translateX(100%);
 	transition: transform .3s;
+  padding: $component-padding $space-md;
 
-	@include breakpoint(md) {
+  ul {
+    margin-left: 0;
+  }
+
+	@include breakpoint-min(md) {
 		position: static;
 		height: auto;
 		width: auto;
@@ -147,19 +185,79 @@ html:not(.js) .cd-faq__items {
 .cd-faq__group {
 	display: none; // hide group not selected
 
-	@include breakpoint(md) { // all groups visible
+	@include breakpoint-min(md) { // all groups visible
 		display: block;
     padding-top: 1px; // fix issue with collapsing margin
 	}
 }
 
+html:not(.js) .cd-faq__group,
+.cd-faq__group--selected {
+  display: block;
+  
+}
+
+.cd-faq__title {
+  margin: $space-md 0;
+
+    h2 {
+      text-transform: uppercase;
+      font-size: $font-size-lg;
+      font-weight: 700;
+      color: lightness(var(--color-contrast-low), 0.9);
+      padding-left: $unit-5;
+    }
+
+  @include breakpoint-min(md) {
+    margin-bottom: $font-size-sm;
+    
+    h2 {
+      font-size: var(--text-xs);
+    }
+  }
+}
+
+
+.cd-faq__item {
+  @include breakpoint-min(md) {
+    background: $white-full-eps-color;
+    margin-bottom: $space-sm;
+    padding-left: $unit-5;
+    padding-top: $space-sm;
+    padding-bottom: $space-sm;
+    padding-right: $space-sm;
+    box-shadow: 0 13px 31px #dce1ed;
+    border-radius: 5px;
+    transition: box-shadow .2s;
+  /*
+    &:hover {
+      --box-shadow: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.3);
+      box-shadow: 0 1px 10px var(--box-shadow);
+    }
+  */
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
 .cd-faq__trigger {
   display: block;
   position: relative;
+  font-weight: 300;
+  margin: 0;
+  font-size: $font-size-xlg;
+  $font-weight-light: 400;
+  padding-left: $space-sm;
 
-  @include breakpoint(md) {
+  @include breakpoint-min(md) {
     font-weight: 300;
     margin: 0;
+    padding: $space-sm $space-lg $space-sm $space-sm;
+
+    span {
+      font-size: $font-size-lg;
+    }
 
     &::before, &::after { // arrow icon on the right
       content: '';
@@ -168,6 +266,7 @@ html:not(.js) .cd-faq__items {
       top: 50%;
       height: 2px;
       width: 13px;
+      background: $blue-flat-eps-color;
       backface-visibility: hidden;
       transition: transform .2s;
     }
@@ -191,13 +290,17 @@ html:not(.js) .cd-faq__items {
   }
 }
 
+
 .cd-faq__content {
-  .text-component {
-    font-size: 0.95em;
+
+  p {
+    color: $gray-dark-eps-color;
+    font-size: $font-size-lg;
+    padding-right: $unit-5;
+    padding-left: $unit-5;
   }
 
-
-  @include breakpoint(md) {
+  @include breakpoint-min(md) {
     display: none;
     overflow: hidden;
     
@@ -205,4 +308,78 @@ html:not(.js) .cd-faq__items {
       font-size: 0.75em;
     }
   }
+}
+
+.cd-faq__content--visible {
+  display: block;
+}
+
+html:not(.js) .cd-faq__content {
+  @include breakpoint-min(md) {
+    display: block; // always display faq content
+  }
+}
+
+
+.cd-faq__close-panel { // on small device -> x icon to close faqs panel
+  position: fixed;
+  z-index: 9999;
+  display: block;
+  top: 90px;
+  right: -40px;
+  height: 40px;
+  width: 40px;
+  // Force Hardware Acceleration in WebKit
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  transition: right .3s;
+
+  &::before, &::after { // close icon in CSS
+    content: '';
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    display: inline-block;
+    height: 3px;
+    width: 18px;
+    background: $blue-flat-eps-color;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  @include breakpoint-min(md) {
+    display: none;
+  }
+}
+
+.cd-faq__close-panel--move-left {
+  right: $space-md;
+  transition-delay: 0.3s;
+}
+
+.cd-faq__overlay { // overlay visible on small devices when the right panel slides in
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: alpha(var(--cd-color-1), 0.8);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s, visibility .3s;
+
+  @include breakpoint-min(md) {
+    display: none;
+  }
+}
+
+.cd-faq__overlay--is-visible {
+  visibility: visible;
+  opacity: 1;
 }

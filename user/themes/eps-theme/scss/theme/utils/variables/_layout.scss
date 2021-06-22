@@ -1,0 +1,44 @@
+
+
+// Espacements Layout
+$horiz-padding: 1rem;
+$vert-padding: 2rem 0 2rem;
+
+// Sizes
+$layout-spacing: $unit-2 !default;
+$layout-spacing-sm: $unit-1 !default;
+$layout-spacing-lg: $unit-4 !default;
+$border-radius: $unit-h !default;
+$border-width: $unit-o !default;
+$border-width-lg: $unit-h !default;
+$control-size: $unit-9 !default;
+$control-size-sm: $unit-7 !default;
+$control-size-lg: $unit-10 !default;
+$control-padding-x: $unit-2 !default;
+$control-padding-x-sm: $unit-2 * .75 !default;
+$control-padding-x-lg: $unit-2 * 1.5 !default;
+$control-padding-y: ($control-size - $line-height) / 2 - $border-width !default;
+$control-padding-y-sm: ($control-size-sm - $line-height) / 2 - $border-width !default;
+$control-padding-y-lg: ($control-size-lg - $line-height) / 2 - $border-width !default;
+$control-icon-size: .8rem !default;
+
+$control-width-xs: 180px !default;
+$control-width-sm: 320px !default;
+$control-width-md: 640px !default;
+$control-width-lg: 960px !default;
+$control-width-xl: 1280px !default;
+
+
+//layout faq
+$max-width-xxxxs: 20rem;
+$max-width-xxxs: 26rem;
+$max-width-xxs: 32rem;
+$max-width-xs: 38rem;
+$max-width-sm: 48rem;
+$max-width-md: 64rem;
+$max-width-lg: 80rem;
+$max-width-xl: 90rem;
+$max-width-xxl: 100rem;
+$max-width-xxxl: 120rem;
+$max-width-xxxxl: 150rem;
+

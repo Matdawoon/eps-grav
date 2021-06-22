@@ -1,17 +1,18 @@
-<section class="container cd-faq">
-    <h2> {{page.header.faq_title}}</h2>
-    <p> {{page.header.faq_description}}</p>
+<section class="cd-faq js-cd-faq container max-width-md margin-top-lg margin-bottom-lg">
+
 
     <ul class="cd-faq__categories">
         {% for section in page.header.list_faq_sections %}
-            <li><a class="cd-faq__category" href="#{{section.section_title|lower}}">{{section.section_title}}</a></li>
+            
+                <li><a class="cd-faq__category {% if loop.index0 == O %} cd-faq__category-selected {% endif %} truncate" href="#{{section.section_title|lower}}">{{section.section_title}}</a></li>
+            
         {% endfor %}
     </ul>
     <!-- conteneur faq -->
     <div class="cd-faq__items">
     {% for section in page.header.list_faq_sections %}
         <!-- faq i-ème section -->
-        <ul class="cd-faq__group" id="{{section.section_title|lower}}">
+        <ul id="{{section.section_title|lower}}" class="cd-faq__group">
             <!-- faq titre section -->
             <li class="cd-faq__title"><h2>{{section.section_title}}</h2></li>
             <!-- faq lists items -->
@@ -19,15 +20,20 @@
             <li class="cd-faq__item"> 
                 <a class="cd-faq__trigger" href="#0"> {{item.question}} </a>
                 <div class="cd-faq__content">
-                    <p>
-                        {{item.answer}}
-                    </p>
-                </div>
-            
+                    <div class="text-component">
+                        <!-- content here -->
+                        <p>{{item.answer}}</p>
+                    </div>
+                </div> <!-- cd-faq__content -->                
             </li>
             {% endfor %}
         </ul>
     {% endfor %}
     </div>
+	<a href="#0" class="cd-faq__close-panel text-replace"></a>
+  
+  <div class="cd-faq__overlay" aria-hidden="true"></div>
+</section>
+<script src="/user/themes/eps-theme/js/util.js"></script>
+<script src="/user/themes/eps-theme/js/main.js"></script>
 
-<section>

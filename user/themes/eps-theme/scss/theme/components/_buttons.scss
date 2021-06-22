@@ -15,7 +15,9 @@
   height: $control-size;
   line-height: $line-height;
   outline: none;
+  /*
   padding: $control-padding-y $control-padding-x;
+  */
   text-align: center;
   text-decoration: none;
   transition: background .2s, border .2s, box-shadow .2s, color .2s;
@@ -70,7 +72,9 @@
     height: $control-size;
     line-height: $line-height;
     outline: none;
+    /*
     padding: $control-padding-y $control-padding-x;
+    */
     text-align: center;
     text-decoration: none;
     transition: background .2s, border .2s, box-shadow .2s, color .2s;
@@ -158,13 +162,17 @@
     &.btn-sm {
       font-size: $font-size-sm;
       height: $control-size-sm;
+      /*
       padding: $control-padding-y-sm $control-padding-x-sm;
+      */
     }
   
     &.btn-lg {
       font-size: $font-size-lg;
       height: $control-size-lg;
+      /*
       padding: $control-padding-y-lg $control-padding-x-lg;
+      */
     }
   
     // Button Block
@@ -172,7 +180,7 @@
       display: block;
       width: 100%;
     }
-  
+
     // Button Action
     &.btn-action {
       width: $control-size;
