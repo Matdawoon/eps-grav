@@ -7,6 +7,7 @@ $rtl: false !default;
 
 // Unit sizes
 $unit-n: 0rem !default;
+$unit-s: .02rem !default;
 $unit-o: .05rem !default;
 $unit-h: 5rem !default;
 $unit-1: .2rem !default;
@@ -21,7 +22,6 @@ $unit-9: 2.5rem !default;
 $unit-10: 2rem !default;
 $unit-12: 2.4rem !default;
 $unit-16: 3.2rem !default;
-
 
 // Responsive breakpoints
 $size-xs: 480px !default;
@@ -39,13 +39,6 @@ $zindex-1: 100 !default;
 $zindex-2: 200 !default;
 $zindex-3: 300 !default;
 $zindex-4: 400 !default;
-
-// Layout
-$horiz-padding: 1rem;
-$vert-padding: 2rem 0 2rem;
-
-// Fonts
-$min-responsive-font-size: 16px;
 
 // Header
 $header-height-large: 4.3rem;

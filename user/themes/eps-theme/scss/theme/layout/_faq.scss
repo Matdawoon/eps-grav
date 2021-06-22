@@ -123,10 +123,10 @@
     position: sticky; // fix element on scrolling
     align-self: flex-start;
     flex-shrink: 0;
-    top: 20px;
+    top: 11%;
 		width: 20%;
     margin-top: 10px;
-    font-size: $font-size-sm;
+    font-size: $font-size-lg;
     font-weight: $font-weight-black;
 	}
 
@@ -134,7 +134,7 @@
     color: $white-full-eps-color;
   }
 
-	@include breakpoint-min(lg) {
+	@include breakpoint-min(md) {
 		width: 200px;
 	}
 
@@ -149,7 +149,7 @@
   background-color: $blue-dark-eps-color;
   @include fontSmooth;
   --border-color: hsl(var(--cd-color-1-h), var(--cd-color-1-s), calc(var(--cd-color-1-l)*1.1));
-  border-bottom: 1px solid $white-full-eps-color;
+  border-bottom: $unit-s solid $gray-color-dark;
 
 
   &::before, &::after { // plus icon on the right
@@ -171,7 +171,7 @@
   }
 
   @include breakpoint-min(md) {
-    font-size: var(--text-xs);
+    font-size: $text-md;
     font-weight: 600;
     padding-left: $space-md;
     transition: background .2s;
@@ -184,12 +184,25 @@
       background: lightness(var(--cd-color-1), 1.1);
     }
   }
+
+  &::before { // decorative rectangle on the left visible for the selected item
+    display: block;
+    top: 0;
+    right: auto;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: $blue-flat-eps-color;
+    opacity: 0;
+    transition: opacity .2s;
+  }
+
 }
 
 
-@include breakpoint(lg) {
+@include breakpoint-min(md) {
   .cd-faq__category-selected {
-    background: red;
+    background: $blue-dark-eps-color;
     color: $blue-flat-eps-color;
 
     &:hover {
@@ -201,7 +214,6 @@
     }
   }
 }
-
 
 
 .cd-faq__items { // on mibile, faq contents slides in from the right
@@ -234,8 +246,6 @@
 	}
 }
 
-
-
 .cd-faq__items--slide-in {
   transform: translateX(0);
 }
@@ -267,13 +277,14 @@ html:not(.js) .cd-faq__group,
 
     h2 {
       text-transform: uppercase;
-      font-size: var(--text-sm);
+      font-size: $font-size-lg;
       font-weight: 700;
       color: lightness(var(--color-contrast-low), 0.9);
+      padding-left: $unit-5;
     }
 
   @include breakpoint-min(md) {
-    margin-bottom: var(--space-sm);
+    margin-bottom: $font-size-sm;
     
     h2 {
       font-size: var(--text-xs);
@@ -286,7 +297,10 @@ html:not(.js) .cd-faq__group,
   @include breakpoint-min(md) {
     background: $white-full-eps-color;
     margin-bottom: $space-sm;
-    padding: $space-md;
+    padding-left: $unit-5;
+    padding-top: $space-sm;
+    padding-bottom: $space-sm;
+    padding-right: $space-sm;
     box-shadow: 0 13px 31px #dce1ed;
     border-radius: 5px;
     transition: box-shadow .2s;
@@ -307,16 +321,17 @@ html:not(.js) .cd-faq__group,
   position: relative;
   font-weight: 300;
   margin: 0;
-  font-size: $unit-5;
+  font-size: $font-size-xlg;
   $font-weight-light: 400;
+  padding-left: $space-sm;
 
   @include breakpoint-min(md) {
     font-weight: 300;
     margin: 0;
-    padding: $space-sm $space-lg $space-sm $space-xxxxxxxxxs;
+    padding: $space-sm $space-lg $space-sm $space-sm;
 
     span {
-      font-size: 21px;
+      font-size: $font-size-lg;
     }
 
     &::before, &::after { // arrow icon on the right
@@ -355,7 +370,9 @@ html:not(.js) .cd-faq__group,
 
   p {
     color: $gray-dark-eps-color;
-    font-size: $unit-4;
+    font-size: $font-size-lg;
+    padding-right: $unit-5;
+    padding-left: $unit-5;
   }
 
   @include breakpoint-min(md) {
