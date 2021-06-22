@@ -10,11 +10,13 @@ $body-font-family: $base-font-family, $fallback-font-family !default;
 $title-font-family: $base-font-family;
 
 // Font sizes
-$html-font-size: 20px !default;
+$html-font-size: 1rem !default;
 $html-line-height: 1.5 !default;
 $font-size: .8rem !default;
 $font-size-sm: .7rem !default;
+$font-size-md: .8rem !default;
 $font-size-lg: .9rem !default;
+$font-size-xlg: 1.2rem !default;
 $line-height: 1.2rem !default;
 
 // Font weight
@@ -58,16 +60,18 @@ $control-width-lg: 960px !default;
 $control-width-xl: 1280px !default;
 
 // Text Size
-/*
+
 $text-sm: calc(var($text-xs)*var($text-scale-ratio));
 $text-md: calc(var($text-sm)*var($text-scale-ratio)*var($text-scale-ratio));
 $text-lg: calc(var($text-md)*var($text-scale-ratio));
-*/
 
 $text-xs: calc(1em/var #{$text-scale-ratio}/#{$text-scale-ratio});
 
-/*
+
 $text-xl: calc(var($text-lg)*var($text-scale-ratio));
 $text-xxl: calc(var($text-xl)*var($text-scale-ratio));
 $text-xxxl: calc(var($text-xxl)*var($text-scale-ratio));
-*/
+
+
+// Fonts
+$min-responsive-font-size: 16px;
