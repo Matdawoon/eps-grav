@@ -1,4 +1,4 @@
-<section id='features' class="container-features">
+<section id='features' class="container">
   {% for row in page.header.rows %}
     <div class="container-features__row container-features__row__row--ligne-inverse {{row.name}}">
 
@@ -10,7 +10,7 @@
 
       <div class="{% if row.image or row.video %}container-features__row__image{% endif %} feature-media {% if row.description_position == 'right' %}left{% else %}right{% endif %}">
         {% if row.image %}
-          {{ page.media[row.image].html()|raw }}
+          {{ page.media[row.image].html("","","img-responsive")|raw }}
         {% endif %}
         {% if row.video %}
           <div class="fluid-video-wrapper">

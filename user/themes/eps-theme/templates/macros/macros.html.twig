@@ -7,7 +7,7 @@
         {{ p.menu }}
       </a>
       {% if p.children.visible.count > 0 %}
-      <ul>
+      <ul >
         {{ macros.nav_loop(p) }}
       </ul>
       {% endif %}

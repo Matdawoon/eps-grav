@@ -11,7 +11,7 @@
     <title>{% if page.title %}{{ page.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
     <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png') }}" />
     <link rel="canonical" href="{{ page.url(true, true) }}" />
 {% endblock head %}
@@ -39,7 +39,7 @@
 <body id="top" class="{% block body_classes %}{{ body_classes }}{% endblock %}">
 
     {% block header %}
-        <section id="header" class="container-fluid">
+        <section id="header" class="section container-fluid">
             <section class="container">
                 <nav class="navbar">
                     <section class="navbar-section logo">
@@ -58,24 +58,49 @@
                 </nav>
             </section>
         </section>
-
+        <div class="mobile-menu">
+            <div class="button_container" id="toggle">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div>
+        </div>
     {% endblock %}
 
 
 
-        <section id="start">
+        <section id="start" >
         {% block body %}
-            <section id="body-wrapper" class="section">
-                <section class="container {{ grid_size }}">
-                    {% block messages %}
-                        {% include 'partials/messages.html.twig' ignore missing %}
-                    {% endblock %}
-                    {{ block('content_surround') }}
-                </section>
+            <section class="container-fluid">
+                {% block messages %}
+                    {% include 'partials/messages.html.twig' ignore missing %}
+                {% endblock %}
+                {{ block('content_surround') }}
             </section>
         {% endblock %}
         </section>
 
+
+    {% block footer %}
+        {% include 'partials/footer.html.twig' %}
+    {% endblock %}
+
+    {% block mobile %}
+    <div class="mobile-container">
+        <div class="overlay" id="overlay">
+            <div class="mobile-logo">
+                {% include 'partials/logo.html.twig' with {mobile: true} %}
+            </div>
+            <nav class="overlay-menu">
+                {% include 'partials/navigation.html.twig' with {tree: true} %}
+            </nav>
+        </div>
+    </div>
+    {% endblock %}
+
+{% block bottom %}
+    {{ assets.js('bottom')|raw }}
+{% endblock %}
 
 
 </body>
