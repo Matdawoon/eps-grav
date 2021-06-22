@@ -70,6 +70,9 @@
       box-shadow: $dropmenu-shadow;
       visibility: hidden;
 
+      display: flex;
+      flex-direction: column;
+
       ul {
         position: absolute;
         left: 100%;

@@ -2,6 +2,7 @@
 
 @mixin make-container($gutter: $container-padding-x) {
     width: 100%;
+    box-sizing: border-box;
     padding-right: $gutter;
     padding-left: $gutter;
     margin-right: auto;

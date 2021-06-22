@@ -1,16 +1,17 @@
 {% extends 'partials/base.html.twig' %}
 
-{% set show_onpage_menu = header.onpage_menu == true or header.onpage_menu is null %}
+
 
 {% block javascripts %}
-{{ parent() }}
     {% if show_onpage_menu %}
         {% do assets.add('theme://js/singlepagenav.min.js') %}
     {% endif %}
+    {% do assets.addJs('theme://js/owl.carousel.js') %}
+    {% do assets.addJs('theme://js/smooth-scroll.min.js') %}
 
-    {% do assets.addJs('/user/plugins/shortcode-owl-carousel/js/owl.carousel.min.js') %}
 
-    
+ 
+    {{ parent() }}
 {% endblock %}
 
 
@@ -39,7 +40,7 @@
 {% endblock %}
 
 {% block body %}
-    {{ page.content|raw }}
+
     {% for module in page.collection() %}
 
         <div class ="container-fluid {% if module.header.showcase_curvature["curvature_top"] %} top-radius-bg {% endif %}" style="background-color:{{module.header.showcase_bg_color}}; height:{{module.header.showcase_curvature_height}};" ></div>
