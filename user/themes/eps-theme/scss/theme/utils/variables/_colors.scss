@@ -1,0 +1,56 @@
+// EPS colors
+$white-full-eps-color: #ffffff !default;
+$gray-dark-eps-color: #3b3b3b !default;
+$gray-pale-eps-color: #f7f9fc !default;
+$blue-dark-eps-color: #24283e !default;
+$blue-azul-eps-color: #2e80dd !default;
+$blue-flat-eps-color: #3f83b6 !default;
+$blue-green-eps-color: #137d8a !default;
+$red-lipstick-eps-color: #d62642 !default;
+$red-coral-eps-color: #fa4949 !default;
+$red-warmpink-eps-color: #fa4949 !default;
+$yellow-ocre-eps-color: #d39100 !default;
+$yellow-safron: #ffb30d !default;
+$green-dark-eps-color: #3acf6e !default;
+
+// EPS Boutons
+$btn-eps-blue: $blue-azul-eps-color;
+$btn-eps-red: $red-warmpink-eps-color;
+$btn-eps-gray: $gray-dark-eps-color;
+
+// Core colors
+$primary-color: #24283e !default;
+$primary-color-dark: darken($primary-color, 3%) !default;
+$primary-color-light: lighten($primary-color, 3%) !default;
+$secondary-color: lighten($primary-color, 37.5%) !default;
+$secondary-color-dark: darken($secondary-color, 3%) !default;
+$secondary-color-light: lighten($secondary-color, 3%) !default;
+
+// Gray colors
+$dark-color: #24283e !default;
+$light-color: #fff !default;
+$gray-color: lighten($dark-color, 55%) !default;
+$gray-color-dark: darken($gray-color, 30%) !default;
+$gray-color-light: lighten($gray-color, 20%) !default;
+
+// Border + Bg colors
+$border-color: lighten($dark-color, 65%) !default;
+$border-color-dark: darken($border-color, 10%) !default;
+$border-color-light: lighten($border-color, 8%) !default;
+$bg-color: lighten($dark-color, 75%) !default;
+$bg-color-dark: darken($bg-color, 3%) !default;
+$bg-color-light: $light-color !default;
+
+// Control colors
+$success-color: #32b643 !default;
+$warning-color: #ffb700 !default;
+$error-color: #e85600 !default;
+
+// Other colors
+$code-color: #d73e48 !default;
+$highlight-color: #ffe9b3 !default;
+$body-bg: $bg-color-light !default;
+$body-font-color: lighten($dark-color, 5%) !default;
+$link-color: $primary-color !default;
+$link-color-dark: darken($link-color, 10%) !default;
+$link-color-light: lighten($link-color, 10%) !default;

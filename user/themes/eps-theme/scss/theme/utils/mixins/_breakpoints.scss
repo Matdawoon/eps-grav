@@ -9,17 +9,7 @@ $breakpoints: (
   xl: 90rem  // ~1440px
 ) !default;
 
-/*
-$breakpoints: (
-  xs: 480px, 
-  sm: 600px, 
-  md: 840px, 
-  lg: 960px, 
-  xl: 1280px,
-  2x: 1440px
-) !default;
-*/
-@mixin breakpoint($breakpoint, $logic: false) {
+@mixin breakpoint-min($breakpoint, $logic: false) {
   @if( $logic ) {
     @media #{$logic} and (max-width: map-get($map: $breakpoints, $key: $breakpoint)) { @content; }
   } @else {

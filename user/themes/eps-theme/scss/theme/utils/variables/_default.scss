@@ -1,0 +1,74 @@
+//Spectre 
+// Core variables
+$version: "0.5.8";
+
+// Core features
+$rtl: false !default;
+
+// Unit sizes
+$unit-n: 0rem !default;
+$unit-o: .05rem !default;
+$unit-h: 5rem !default;
+$unit-1: .2rem !default;
+$unit-2: 2rem !default;
+$unit-3: .6rem !default;
+$unit-4: .8rem !default;
+$unit-5: 1rem !default;
+$unit-6: 1.2rem !default;
+$unit-7: 1.4rem !default;
+$unit-8: 1.6rem !default;
+$unit-9: 2.5rem !default;
+$unit-10: 2rem !default;
+$unit-12: 2.4rem !default;
+$unit-16: 3.2rem !default;
+
+
+// Responsive breakpoints
+$size-xs: 480px !default;
+$size-sm: 600px !default;
+$size-md: 840px !default;
+$size-lg: 960px !default;
+$size-xl: 1280px !default;
+$size-2x: 1440px !default;
+
+$responsive-breakpoint: $size-xs !default;
+
+// Z-index
+$zindex-0: 1 !default;
+$zindex-1: 100 !default;
+$zindex-2: 200 !default;
+$zindex-3: 300 !default;
+$zindex-4: 400 !default;
+
+// Layout
+$horiz-padding: 1rem;
+$vert-padding: 2rem 0 2rem;
+
+// Fonts
+$min-responsive-font-size: 16px;
+
+// Header
+$header-height-large: 4.3rem;
+$header-height-small: 2.3rem;
+$header-color-dark: $primary-color;
+$header-font-size: 0.7rem;
+$header-color-light: #fff;
+$header-text-light: $light-color;
+$header-text-dark: darken($dark-color, 15%);
+$header-logo-size: 3.5rem;
+
+// Dropdown Menu
+$dropmenu-bg: $primary-color;
+$dropmenu-hover-text: $light-color;
+$dropmenu-underline-color: $gray-color;
+$dropmenu-horiz-padding: 20px;
+$dropmenu-vert-padding: 7px;
+$dropmenu-child-padding: 10px;
+$dropmenu-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+
+// Mobile Menu
+$mobile-color-main: $light-color;
+$mobile-color-active: #FFF;
+$mobile-color-link: #FFF;
+$mobile-button-height: 24px;
+$mobile-button-width: 28px;
