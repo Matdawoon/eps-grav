@@ -63,8 +63,6 @@ abbr[title] {
   text-decoration: none;
 }
 
-
-
 // Blockquote
 blockquote {
   border-left: $border-width-lg solid $border-color;
@@ -88,7 +86,7 @@ ol {
   }
 
   li {
-    margin-top: $unit-2;
+    margin-top: $unit-n;
   }
 }
 

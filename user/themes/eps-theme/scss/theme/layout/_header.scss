@@ -69,9 +69,9 @@
 
   // Fixed Header solution
   .header-fixed & {
-    position: relative;
+    position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 9999;
   }
 }
 
