@@ -54,3 +54,21 @@ $body-font-color: lighten($dark-color, 5%) !default;
 $link-color: $primary-color !default;
 $link-color-dark: darken($link-color, 10%) !default;
 $link-color-light: lighten($link-color, 10%) !default;
+
+//Controlling colors RGB
+$cd-color-1: hsl(213, 7%, 33%);
+$cd-color-1-h: 213;
+$cd-color-1-s: 7%;
+$cd-color-1-l: 33%;
+$cd-color-2: hsl(73, 46%, 55%);
+$cd-color-2-h: 73;
+$cd-color-2-s: 46%;
+$cd-color-2-l: 55%;
+$cd-color-3: hsl(210, 14%, 49%);
+$cd-color-3-h: 210;
+$cd-color-3-s: 14%;
+$cd-color-3-l: 49%;
+$cd-color-4: hsl(0, 0%, 100%);
+$cd-color-4-h: 0;
+$cd-color-4-s: 0%;
+$cd-color-4-l: 100%;
