@@ -5,7 +5,7 @@
   top: 40%;
   left: 0;
   margin:  0 auto;
-  z-index: 2;
+
 }
 
 .mobile-logo {
@@ -27,7 +27,7 @@
   display: none;
   top: 0;
   right: 0;
-  z-index: 3;
+  z-index: $zindex-4;
 
   .header-fixed & {
     position: fixed;
@@ -44,7 +44,7 @@
     height: $mobile-button-height;
     width: $mobile-button-width;
     cursor: pointer;
-    z-index: 100;
+    z-index: $zindex-4;
     transition: opacity .25s ease, top 0.5s ease;
 
     $bar-offset: $mobile-button-height / 3;
@@ -108,6 +108,7 @@
     opacity: .95;
     visibility: visible;
     height: 100%;
+    z-index: $zindex-4;
 
   }
   nav {

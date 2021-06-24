@@ -35,7 +35,7 @@
 				if(!window.requestAnimationFrame) return;
 				event.preventDefault();
 				var windowScrollTop = window.scrollY || document.documentElement.scrollTop;
-				Util.scrollTo(document.getElementById(selectedCategory).getBoundingClientRect().top + windowScrollTop + 2, 200);
+				Util.scrollTo(document.getElementById(selectedCategory).getBoundingClientRect().top + windowScrollTop - 100, 200);
 			}
 		});
 		
