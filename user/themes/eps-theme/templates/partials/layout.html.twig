@@ -1,0 +1,14 @@
+{% set item_col = show_sidebar ? 'col-12 col-md-10' : 'col-9' %}
+{% set sidebar_col = show_sidebar ? 'col-12 col-md-2' : 'col-9' %}
+
+<div class="row">
+    <div id="item" class="col {{ item_col }}">
+        {% block item %}{% endblock %}
+    </div>
+    {% if show_sidebar %}
+    <div id="sidebar" class="col {{ sidebar_col }}">
+        {% block sidebar %}{% endblock %}
+    </div>
+    {% endif %}
+</div>
+

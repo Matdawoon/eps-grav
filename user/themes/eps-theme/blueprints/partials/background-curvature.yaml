@@ -23,8 +23,8 @@ form:
       type: checkboxes
       label: Courbure
       default:
-          curvature_top: true
-          curvature_bottom: true
+          curvature_top: false
+          curvature_bottom: false
       options:
           curvature_top: Courbure haut
           curvature_bottom: Courbure bas
