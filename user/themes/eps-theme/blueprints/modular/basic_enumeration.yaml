@@ -1,0 +1,51 @@
+title: Basic enumeration
+'@extends':
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      fields:
+        enumeration:
+          type: tab
+          title: Basic Enumeration        
+          fields: 
+            header.basic_enumeration_title:
+              type: text
+              label: Basic Enumeration Title
+              default: titre Basic Enumeration
+              size: medium
+            header.basic_enumeration_description:
+              type: textarea
+              label: Basic Enumeration Descritpion
+              default: Description du Basic Enumeration
+              size: medium  
+              toggleable: true 
+            header.basic_enumeration_col_num:
+              type: number
+              label: Basic Enumeration col number
+              default: 1
+              size: medium
+
+            header.basic_enumeration_style:
+              type: number
+              label: Basic Enumeration col number
+              default: 1
+              size: medium
+                    
+
+            section_list:
+                type: section
+                title: Basic Enumeration List
+                underline: true
+
+                fields:                    
+                  header.enum_item_list:
+                    type: list
+                    style: vertical
+                    label: Enumeration List
+
+                    import@:
+                      type: partials/basic_item
+                

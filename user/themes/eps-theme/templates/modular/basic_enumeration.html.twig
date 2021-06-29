@@ -1,0 +1,20 @@
+{% set item_style = page.header.basic_enumeration_style %}
+{% set grid_size = theme_var('grid-size') %}
+{% import 'macros/basic_item.html.twig' as macro_basic_item %}
+
+<section class="container {{ grid_size }} basic-item-list">
+    <div>
+        <h2>{{page.header.basic_enumeration_title}}</h2>
+        <p>{{page.header.basic_enumeration_description}}</p>
+    </div>
+    <div >
+        <ol class="row">
+            {% for item in page.header.enum_item_list  %}
+                <li class="col w-100"> {{macro_basic_item.basic_item(item.item_list_title, item.item_list_description, "basic-item-list__text-container" )}}</li>
+            {% endfor %}
+
+        </ol>
+    </div>
+</section>
+
+

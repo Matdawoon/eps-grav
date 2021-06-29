@@ -1,0 +1,11 @@
+
+form:
+  fields:
+    .item_list_title:
+      type: text
+      label: item list title
+      toggleable: true
+    .item_list_description:
+      type: textarea
+      label: item list description
+      toggleable: true
