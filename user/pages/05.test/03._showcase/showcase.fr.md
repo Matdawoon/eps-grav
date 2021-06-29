@@ -19,7 +19,7 @@ showcase_description: qsdqsdqsdqsdqsd
 showcase_curvature:
     curvature_top: true
     curvature_bottom: true
-showcase_curvature_height: 100px
-showcase_bg_color: '#ff0000'
+showcase_curvature_height: 50px
+showcase_bg_color: 'rgba(179, 167, 204, 1.00)'
 ---
 

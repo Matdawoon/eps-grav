@@ -1,0 +1,73 @@
+$bricklayer-column-gutter: 10px;
+
+.bricklayer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &-column-sizer {
+    width: 100%;
+    display: none;
+
+    @media screen and (min-width: 640px) {
+      width: 50%;
+    }
+/*
+    @media screen and (min-width: 980px) {
+      width: 33.333%;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 25%;
+    }
+*/
+  }
+
+  &-column {
+    flex: 1;
+    padding-left: $bricklayer-column-gutter / 2;
+    padding-right: $bricklayer-column-gutter / 2;
+  }
+
+}
+
+
+
+/** Extra columns spacing **/
+.extra-spacing:not(.col-12), :not(.col12) > .e-content {
+    padding-right: 1rem;
+  
+    @include breakpoint(md) {
+      padding-right: 0;
+    }
+  }
+  
+  /** Breadcrumbs styling **/
+  #breadcrumbs {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+  
+  
+    i {
+      display: none;
+    }
+  
+    span, a {
+      padding: 0 0.5rem;
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+  
+    span, a {
+      &:not(:first-child)::before {
+        color: #e7e9ed;
+        content: "/";
+        padding-right: 1rem;
+      }
+    }
+  }
