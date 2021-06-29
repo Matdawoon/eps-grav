@@ -1,12 +1,12 @@
 ---
 title: blog
 showcase_curvature:
-    curvature_top: true
-    curvature_bottom: true
+    curvature_top: false
+    curvature_bottom: false
 content:
     items:
         - '@self.children'
-    limit: 5
+    limit: 2
     order:
         by: date
         dir: desc
@@ -16,5 +16,9 @@ blog_url: /blog
 show_sidebar: true
 show_breadcrumbs: true
 show_pagination: true
+hero_image: mountain.jpg
+hero_classes: 'text-light title-h1h2 overlay-dark-gradient hero-large parallax '
 ---
 
+# **EPS** Blog
+## **La French Fintech** nouvelle génération
