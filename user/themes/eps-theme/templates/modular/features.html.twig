@@ -1,14 +1,14 @@
 <section id='features' class="container">
   {% for row in page.header.rows %}
-    <div class="container-features__row container-features__row__row--ligne-inverse {{row.name}}">
+    <div class="container-features__row py-3 {% if row.inverse_responsive == 'image-start' %}flex-column-reverse{% else %}flex-column{% endif %} {% if row.global_position == 'right' %}flex-md-row-reverse{% else %}flex-md-row{% endif %} ">
 
-      <div class="{% if row.image or row.video %}container-features__row__image{% endif %} {{ row.description_position }}">
+      <div class="py-2 {% if row.image or row.video %}container-features__row__image{% endif %} {{ row.description_position }}">
         <h3>{{ row.title }}</h3>
         <p>{{ row.description }}</p>
         <button class="btn-eps">titre du bouton</button>
       </div>
 
-      <div class="{% if row.image or row.video %}container-features__row__image{% endif %} feature-media {% if row.description_position == 'right' %}left{% else %}right{% endif %}">
+      <div class="{% if row.image or row.video %}container-features__row__image{% endif %} feature-media">
         {% if row.image %}
           {{ page.media[row.image].html("","","img-responsive")|raw }}
         {% endif %}

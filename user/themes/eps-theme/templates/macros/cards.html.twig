@@ -3,8 +3,11 @@
 {% macro card(page,img, titre, description, card_btn ) %}
 
 
-<div class=" card-container" style="" >
-                <img src="{{page.media[img].url}}" class="card-img" >
+<div class="card card-container" style="" >
+
+        <div class="card-image">
+        <a href="">{{ page.media[img].cropZoom(800,400).html("","","img-responsive card-image")|raw }}</a>
+        </div>
         <h3>{{titre}}</h3>
         <p>{{description}}</p>
         <button class="btn-eps {{page.header.css_btn}}">{{card_btn}}</button>

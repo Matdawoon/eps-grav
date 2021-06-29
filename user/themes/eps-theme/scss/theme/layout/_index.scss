@@ -9,5 +9,6 @@
 @import "navbar";
 @import "mobile";
 @import "bricklayer";
-@import "blog";
-@import "basic_item_list";
+@import "blog/breadcrumbs.scss";
+@import "blog/basic_item_list";
+@import "blog/blog";

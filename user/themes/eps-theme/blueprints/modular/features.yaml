@@ -39,14 +39,27 @@ form:
                   type: textarea
                   label: Description
 
-                .description_position:
+                .global_position:
                   type: select
-                  label: position
+                  label: img position
                   default: left
                   options:
                     left: Descriptif à gauche
                     right: Descriptif à droite
-
+                .description_position:
+                  type: select
+                  label: text position 
+                  default: text-start
+                  options:
+                    text-start: text-start
+                    text-center: text-center
+                    text-end: text-end
+                .inverse_responsive:
+                  type: select
+                  label: Position image en mobile
+                  options:
+                    image-start: image-debut
+                    image-end: image-fin
 
                 
 

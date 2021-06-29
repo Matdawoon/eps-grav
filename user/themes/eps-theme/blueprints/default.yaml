@@ -29,3 +29,19 @@ form:
                             type: text
                             label: class css padding
                             description: "se référencer à la doc de bootstrap https://getbootstrap.com/docs/4.0/utilities/spacing/"
+
+                      section_shown_in_footer:
+                        type: section
+                        title: menu footer
+                        underline: true
+                        fields:
+                          header.shown_in_footer:
+                            type: toggle
+                            toggleable: false
+                            label: Affichage du menu footer
+                            help:
+                            options:
+                              1: PLUGIN_ADMIN.YES
+                              0: PLUGIN_ADMIN.NO
+                            validate:
+                                type: bool

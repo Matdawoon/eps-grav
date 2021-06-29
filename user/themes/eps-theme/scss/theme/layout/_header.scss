@@ -1,106 +1,93 @@
 #header {
-  width: 100%;
-  height: $header-height-large;
-  /*border-bottom: 1px solid rgba($gray-color, 10);*/
-  /*@include default-animation(0.5s);*/
-
-  font-size: $header-font-size;
-  font-weight: 700;
-
-  background-color: $primary-color ;
-  color: $light-color;
-
-  a {
-    color: $light-color;
-  }
-
-  .logo svg path {
-    fill: $header-color-light;
-  }
-
-  .header-dark &:not(.scrolled) {
-    background: $header-color-dark;
+    width: 100%;
+    height: $header-height-large;
+    /*border-bottom: 1px solid rgba($gray-color, 10);*/
+    /*@include default-animation(0.5s);*/
+    font-size: $header-font-size;
+    font-weight: 700;
+    background-color: $primary-color;
     color: $light-color;
     a {
-      color: rgba($light-color, 0.7) !important;
-    }
-    a.active {
-      color: $light-color !important;
-    }
-    .dropmenu ul ul a {
-        color: $dark-color !important;
+        color: $light-color;
     }
     .logo svg path {
-      fill: $light-color;
+        fill: $header-color-light;
     }
-  }
-
-  .header-dark.header-transparent &:not(.scrolled) {
-    background: rgba(#000, 0.05);
-  }
-
-  .header-transparent &:not(.scrolled) {
-    background: rgba(#fff, 0.05);
-    //border-bottom: 0 !important;
-  }
-
-  .navbar-section {
-    height: $header-height-large;
-    @include default-animation(0.5s);
-
-    @include breakpoint(md) {
-      margin-right: 2rem;
+    .header-dark &:not(.scrolled) {
+        background: $header-color-dark;
+        color: $light-color;
+        a {
+            color: rgba($light-color, 0.7) !important;
+        }
+        a.active {
+            color: $light-color !important;
+        }
+        .dropmenu ul ul a {
+            color: $dark-color !important;
+        }
+        .logo svg path {
+            fill: $light-color;
+        }
     }
-  }
-
-  .navbar-section.desktop-menu {
-    @include breakpoint(md) {
-      display: none;
+    .header-dark.header-transparent &:not(.scrolled) {
+        background: rgba(#000, 0.05);
     }
-  }
-
-  .logo {
-    svg, img {
-      height: $header-logo-size;
-      display: inherit;
-      /*@include default-animation(0.5s);*/
+    .header-transparent &:not(.scrolled) {
+        background: rgba(#fff, 0.05);
+        //border-bottom: 0 !important;
     }
-  }
-
-  // Fixed Header solution
-  .header-fixed & {
-    position: sticky;
-    top: 0;
-    z-index: $zindex-3;
-  }
+    .navbar-section {
+        height: $header-height-large;
+        @include default-animation(0.5s);
+        @include breakpoint(md) {
+            margin-right: 2rem;
+        }
+    }
+    .navbar-section.desktop-menu {
+        @include breakpoint(md) {
+            display: none;
+        }
+    }
+    .logo {
+        svg,
+        img {
+            height: $header-logo-size;
+            display: inherit;
+            /*@include default-animation(0.5s);*/
+        }
+    }
+    // Fixed Header solution
+    .header-fixed & {
+        position: sticky;
+        top: 0;
+        z-index: $zindex-3;
+    }
 }
 
-#header.scrolled{
-  background: transparentize($primary-color, 0.2);
-  @include default-animation(0.7s);
+#header.scrolled {
+    background: transparentize($primary-color, 0.2);
+    @include default-animation(0.7s);
 }
 
 // Animate Fixed Header
 body.header-fixed.header-animated {
-  #header.scrolled {
-    height: $header-height-small;
-
-    .navbar-section {
-      height: $header-height-small;
+    #header.scrolled {
+        height: $header-height-small;
+        .navbar-section {
+            height: $header-height-small;
+        }
+        .logo {
+            svg,
+            img {
+                height: 28px;
+            }
+        }
+        ~.mobile-menu .button_container {
+            top: 0.5rem;
+        }
     }
-
-    .logo {
-      svg, img {
-        height: 28px;
-      }
-    }
-
-    ~ .mobile-menu .button_container {
-      top: 0.5rem;
-    }
-  }
 }
 
 .login-status-wrapper {
-  white-space: nowrap;
+    white-space: nowrap;
 }
