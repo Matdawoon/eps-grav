@@ -5,17 +5,17 @@ carousel_title: 'titre carousel'
 carousel_description: 'Description du carousel'
 card_list:
     -
-        card_image: programme-grand-public.png
+        card_image: cross-depenses-professionnelles.png
         card_title: qsdqsd
         card_description: qsd
         card_btn: qsdqsd
     -
-        card_image: programme-grand-public.png
+        card_image: cross-solutions-sur-mesure.png
         card_title: 'un autre titre'
         card_description: azeazeazeazeazeazeazeazeaze
         card_btn: azeazeaze
     -
-        card_image: programme-grand-public.png
+        card_image: cross-depenses-professionnelles.png
         card_title: azeae
         card_description: aze
         card_btn: aze
@@ -57,5 +57,8 @@ carousel_responsive_list:
         nav: true
         dots: true
         stagePadding: 0
+showcase_curvature:
+    curvature_top: false
+    curvature_bottom: false
 ---
 
