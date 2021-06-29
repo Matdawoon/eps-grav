@@ -13,10 +13,19 @@ form:
                       header.body_classes:
                        markdown: true
                        description: 'Available classes in Quark Theme (space separated):<br />`header-fixed`, `header-animated`, `header-dark`, `header-transparent`, `sticky-footer`'
-                      content:
+                      section_curvature:
                         type: section
                         title: background curvature 
                         underline: true
 
                         import@:
                           type: partials/background-curvature   
+                      section_padding:
+                        type: section
+                        title: padding classes
+                        underline: true
+                        fields:
+                          header.section_container_padding_class:
+                            type: text
+                            label: class css padding
+                            description: "se référencer à la doc de bootstrap https://getbootstrap.com/docs/4.0/utilities/spacing/"
