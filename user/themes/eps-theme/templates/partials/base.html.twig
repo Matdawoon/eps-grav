@@ -25,6 +25,9 @@
 {% endblock %}
 
 {% block javascripts %}
+    {% do assets.addJs('/user/themes/eps-theme/js/util.js',{group:'bottom'}) %}
+    {% do assets.addJs('/user/themes/eps-theme/js/modal.js',{group:'bottom'}) %}
+
     {% do assets.addJs('jquery', 101) %}
     {% do assets.addJs('theme://js/jquery.treemenu.js', {group:'bottom'}) %}
     {% do assets.addJs('theme://js/site.js', {group:'bottom'}) %}

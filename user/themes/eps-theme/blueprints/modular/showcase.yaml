@@ -27,23 +27,14 @@ form:
                       label: shwocase description
                       outerclasses: conditional
 
+
+                    btn_config:
+                      type: section
+                      title: Button config
+                      underline: true
+                      import@:
+                        type: partials/button
                     
-
-                    header.showcase_btn_list:
-                      name: button list
-                      type: list
-                      label: button list
-
-                      fields:
-                        .title:
-                          type: text
-                          label: title
-                        .css:
-                          type: text
-                          label: css
-                        .href:
-                          type: text
-                          label: href
                     
                 
                 img_settings:
