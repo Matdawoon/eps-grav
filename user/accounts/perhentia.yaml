@@ -2,10 +2,15 @@ state: enabled
 email: dmille@mextor.com
 fullname: 'Delphine Millet'
 title: Administrator
+hashed_password: $2y$10$.E9r/2eFdiTx6qK3ZqhjluwOiTJtndzlm4h9rRo3D4Z6L2S6ImV0i
+language: fr
+content_editor: default
+twofa_enabled: false
+twofa_secret: LLUZHLK5JK5PIRNRZOIFGRRTFL3NJ64Q
+avatar: {  }
 access:
+  site:
+    login: true
   admin:
     login: true
     super: true
-  site:
-    login: true
-hashed_password: $2y$10$.E9r/2eFdiTx6qK3ZqhjluwOiTJtndzlm4h9rRo3D4Z6L2S6ImV0i

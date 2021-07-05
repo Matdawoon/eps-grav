@@ -20,3 +20,32 @@ spectre:
   icons: false
 custom_logo: {  }
 custom_logo_mobile: {  }
+footer_icons:
+  -
+    icon: fa-linkedin
+    url: 'https://www.linkedin.com/company/epayspace/'
+  -
+    icon: fa-youtube
+    url: 'https://www.youtube.com/channel/UCQLxx4aMfJE6DzsEN1Bn5IA'
+footer_blocks:
+  -
+    title: Informations
+    content: "Immatriculée en France sous le numéro 829 162 064 R.C.S. PARIS.\nSiège au 32 Boulevard de Vaugirard, 75015 Paris FRANCE\nEnregistrée à l'Autorité de Contrôle Prudentiel et de Résolution (Banque de France)."
+    logo: false
+    icons: false
+  -
+    title: Entreprise
+    content: "<ul>\n<li><a href=\"https://epayspace.com/fr/a-propos/la-societe\">À propos d'E-Pay Space</a></li>\n<li><a href=\"https://epayspace.com/fr/a-propos/la-securite\">Sécurité</a></li>\n<li><a href=\"https://www.jaimelesstartups.fr/e-pay-space-solution-de-paiement-sur-mesure/\">Ils parlent de nous !</a></li>\n<li><a href=\"https://epayspace.com/fr/a-propos/nos-partenaires\">Partenariats</a></li>\n<li><a href=\"https://epayspace.com/mentions-legales.pdf\">Mentions Légales</a></li>\n<li><a href=\"https://epayspace.com/Protection-des-donnees.pdf\">Politique de confidentialité des données</a></li>\n<li><a href=\"https://epayspace.com/Cookies_e-pay-space.pdf\">Cookies</a></li>\n</ul>"
+    logo: false
+    icons: false
+  -
+    title: 'Aide en ligne'
+    content: "<ul>\n<li><a href=\"tel:+33186555555\">Service client</a></li>\n<li><a href=\"mailto:hello@epayspace.com\">Demande d'informations</a></li>\n</ul>"
+    logo: false
+    icons: false
+  -
+    title: 'Social média'
+    content: "<ul>\n<li><a href=\"https://www.epayspace.com/fr/ressources/blog\">Blog E-Pay Space</a></li>\n</ul>"
+    logo: false
+    icons: true
+copyright: '© E-Pay Space 2021. Tous droits réservés'

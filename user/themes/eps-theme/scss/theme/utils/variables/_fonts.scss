@@ -1,30 +1,60 @@
 // Fonts EPS
-$base-font-family: "Maven Pro", sans-serif, "BlinkMacSystemFont", "Segoe UI", "Roboto" !default;
-$mono-font-family: "SF Mono", "Segoe UI Mono", "Roboto Mono", Menlo, Courier, monospace !default;
-$fallback-font-family: "Helvetica Neue", sans-serif !default;
-$cjk-zh-hans-font-family: $base-font-family, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", $fallback-font-family !default;
-$cjk-zh-hant-font-family: $base-font-family, "PingFang TC", "Hiragino Sans CNS", "Microsoft JhengHei", $fallback-font-family !default;
-$cjk-jp-font-family: $base-font-family, "Hiragino Sans", "Hiragino Kaku Gothic Pro", "Yu Gothic", YuGothic, Meiryo, $fallback-font-family !default;
-$cjk-ko-font-family: $base-font-family, "Malgun Gothic", $fallback-font-family !default;
-$body-font-family: $base-font-family, $fallback-font-family !default;
+$base-font-family: "Maven Pro",
+sans-serif,
+"BlinkMacSystemFont",
+"Segoe UI",
+"Roboto" !default;
+$mono-font-family: "Roboto",
+"Segoe UI Mono",
+"Roboto Mono",
+Menlo,
+Courier,
+monospace !default;
+$fallback-font-family: "Helvetica Neue",
+sans-serif !default;
+$cjk-zh-hans-font-family: $base-font-family,
+"PingFang SC",
+"Hiragino Sans GB",
+"Microsoft YaHei",
+$fallback-font-family !default;
+$cjk-zh-hant-font-family: $base-font-family,
+"PingFang TC",
+"Hiragino Sans CNS",
+"Microsoft JhengHei",
+$fallback-font-family !default;
+$cjk-jp-font-family: $base-font-family,
+"Hiragino Sans",
+"Hiragino Kaku Gothic Pro",
+"Yu Gothic",
+YuGothic,
+Meiryo,
+$fallback-font-family !default;
+$cjk-ko-font-family: $base-font-family,
+"Malgun Gothic",
+$fallback-font-family !default;
+$body-font-family: $base-font-family,
+$fallback-font-family !default;
 $title-font-family: $base-font-family;
-
+$paragraph-font-family: $mono-font-family;
 // Font sizes
 $html-font-size: 1rem !default;
-$html-line-height: 1.5 !default;
 $font-size: .8rem !default;
 $font-size-sm: .7rem !default;
 $font-size-md: .8rem !default;
 $font-size-lg: .9rem !default;
 $font-size-xlg: 1.2rem !default;
+// Font line-height
 $line-height: 1.2rem !default;
-
+$html-line-height: 1.5 !default;
+$body-line-height: 1.4 !default;
+$heading-line-height: 1.2 !default;
 // Font weight
+$font-weight-light-xs: 300;
 $font-weight-light: 400;
 $font-weight-regular: 500;
 $font-weight-medium: 500;
+$font-weight-bold: 600;
 $font-weight-black: 700;
-
 // Layout Spacing - Border Sizes - Control Padding - Line-height
 $layout-spacing: $unit-2 !default;
 $layout-spacing-sm: $unit-1 !default;
@@ -38,29 +68,23 @@ $control-size-lg: $unit-10 !default;
 $control-padding-x: $unit-2 !default;
 $control-padding-x-sm: $unit-2 * .75 !default;
 $control-padding-x-lg: $unit-2 * 1.5 !default;
+
 /*
 $control-padding-y: ($control-size - $line-height) / 2 - $border-width !default;
 $control-padding-y-sm: ($control-size-sm - $line-height) / 2 - $border-width !default;
 $control-padding-y-lg: ($control-size-lg - $line-height) / 2 - $border-width !default;
 */
 
-$body-line-height: 1.4;
-$heading-line-height: 1.2;
 $font-primary-capital-letter: 1;
-
 $text-base-size: 1.25em;
 $text-scale-ratio: 1.25em;
-
 $control-icon-size: .8rem !default;
-
 $control-width-xs: 180px !default;
 $control-width-sm: 320px !default;
 $control-width-md: 640px !default;
 $control-width-lg: 960px !default;
 $control-width-xl: 1280px !default;
-
 // Text Size
-
 $text-sm: calc(var($text-xs)*var($text-scale-ratio));
 $text-md: calc(var($text-sm)*var($text-scale-ratio)*var($text-scale-ratio));
 $text-lg: calc(var($text-md)*var($text-scale-ratio));
@@ -68,14 +92,21 @@ $text-xl: calc(var($text-lg)*var($text-scale-ratio));
 $text-xxl: calc(var($text-xl)*var($text-scale-ratio));
 $text-xxxl: calc(var($text-xxl)*var($text-scale-ratio));
 $text-xxxxl: calc(var($text-xxxl)*var($text-scale-ratio));
-
 $text-xs: calc(1em/var #{$text-scale-ratio}/#{$text-scale-ratio});
-
-
 $text-xl: calc(var($text-lg)*var($text-scale-ratio));
 $text-xxl: calc(var($text-xl)*var($text-scale-ratio));
 $text-xxxl: calc(var($text-xxl)*var($text-scale-ratio));
-
-
 // Fonts
 $min-responsive-font-size: 16px;
+// Base Sizes
+$core-font-size: 1rem !default;
+$core-line-height: 1.7 !default;
+// Heading Sizes
+$h1-font-size: $core-font-size+1.188 !default;
+$h2-font-size: $core-font-size - 1.60 !default;
+$h3-font-size: $core-font-size - 1.50 !default;
+$h4-font-size: $core-font-size+0.75 !default;
+$h5-font-size: $core-font-size+0.35 !default;
+$h6-font-size: $core-font-size - 0.15 !default;
+// Spacing
+$leading-margin: $core-line-height * 1rem !default;

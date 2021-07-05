@@ -2,15 +2,15 @@
 {% set image = page.media.images|first %}
 
 
-    <div class="container container-showcase ">
+    <div class="container container-showcase">
         <div class="container-showcase__row container {{ page.header.image_align|default('align-right') }}">
             {% if page.header.main_img %}
             <div class="container-showcase__row__desc ">
                 {% if page.header.secondary_img %}
                     {{ page.media[page.header.secondary_img].html("","","secondary-image")|raw }}
                 {% endif %}
-                <h1> {{page.header.showcase_title}}</h1>
-                <p> {{page.header.showcase_description}}</p>
+                <h1> {{page.header.showcase_title|raw}}</h1>
+                <p> {{page.header.showcase_description|raw}}</p>
                 {{button.macro_button(page.header.btn_list)}}
             </div>
             <div class="primary-image">
@@ -19,8 +19,8 @@
             {% else %}
             <div class="column col-12">
 
-                <h1> {{page.header.showcase_title}}  </h1>
-                <p> {{page.header.showcase_description}}</p>
+                <h1> {{ page.header.showcase_title|raw }}  </h1>
+                <p> {{ page.header.showcase_description|raw }}</p>
             </div>
             {% endif %}
         </div>
