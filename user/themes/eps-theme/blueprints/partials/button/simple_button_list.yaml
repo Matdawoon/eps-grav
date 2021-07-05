@@ -1,0 +1,7 @@
+form:
+  .btn_list:
+    type: list
+    label: Button list
+    import@:
+      type: partials/button/simple_button
+      context: theme://blueprints

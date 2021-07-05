@@ -12,12 +12,14 @@ form:
             header.main_title:
               type: text
               label: Titre
+            header.main_description:
+              type: textarea
+              label: Description
 
 
-                
             header.rows:
               type: list
-              label: Row           
+              label: Row
 
               fields:
 
@@ -54,6 +56,16 @@ form:
                     text-start: text-start
                     text-center: text-center
                     text-end: text-end
+
+                import@:
+                    type: partials/button/simple_button_list
+                    context: theme://blueprints
+                .inverse_responsive:
+                  type: select
+                  label: Position image en mobile
+                  options:
+                    image-start: image-debut
+                    image-end: image-fin
 
                 
 

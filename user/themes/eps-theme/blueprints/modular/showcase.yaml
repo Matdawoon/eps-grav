@@ -27,23 +27,16 @@ form:
                       label: shwocase description
                       outerclasses: conditional
 
-                    
 
-                    header.showcase_btn_list:
-                      name: button list
-                      type: list
-                      label: button list
-
+                    btn_config:
+                      type: section
+                      title: Button config
+                      underline: true
                       fields:
-                        .title:
-                          type: text
-                          label: title
-                        .css:
-                          type: text
-                          label: css
-                        .href:
-                          type: text
-                          label: href
+                        import@:
+                            type: partials/button/button_list_header
+                            context: theme://blueprints
+                    
                     
                 
                 img_settings:

@@ -4,7 +4,7 @@ sans-serif,
 "BlinkMacSystemFont",
 "Segoe UI",
 "Roboto" !default;
-$mono-font-family: "SF Mono",
+$mono-font-family: "Roboto",
 "Segoe UI Mono",
 "Roboto Mono",
 Menlo,
@@ -35,19 +35,25 @@ $fallback-font-family !default;
 $body-font-family: $base-font-family,
 $fallback-font-family !default;
 $title-font-family: $base-font-family;
+$paragraph-font-family: $mono-font-family;
 // Font sizes
 $html-font-size: 1rem !default;
-$html-line-height: 1.5 !default;
 $font-size: .8rem !default;
 $font-size-sm: .7rem !default;
 $font-size-md: .8rem !default;
 $font-size-lg: .9rem !default;
 $font-size-xlg: 1.2rem !default;
+// Font line-height
 $line-height: 1.2rem !default;
+$html-line-height: 1.5 !default;
+$body-line-height: 1.4 !default;
+$heading-line-height: 1.2 !default;
 // Font weight
+$font-weight-light-xs: 300;
 $font-weight-light: 400;
 $font-weight-regular: 500;
 $font-weight-medium: 500;
+$font-weight-bold: 600;
 $font-weight-black: 700;
 // Layout Spacing - Border Sizes - Control Padding - Line-height
 $layout-spacing: $unit-2 !default;
@@ -69,8 +75,6 @@ $control-padding-y-sm: ($control-size-sm - $line-height) / 2 - $border-width !de
 $control-padding-y-lg: ($control-size-lg - $line-height) / 2 - $border-width !default;
 */
 
-$body-line-height: 1.4;
-$heading-line-height: 1.2;
 $font-primary-capital-letter: 1;
 $text-base-size: 1.25em;
 $text-scale-ratio: 1.25em;
@@ -94,3 +98,15 @@ $text-xxl: calc(var($text-xl)*var($text-scale-ratio));
 $text-xxxl: calc(var($text-xxl)*var($text-scale-ratio));
 // Fonts
 $min-responsive-font-size: 16px;
+// Base Sizes
+$core-font-size: 1rem !default;
+$core-line-height: 1.7 !default;
+// Heading Sizes
+$h1-font-size: $core-font-size+1.188 !default;
+$h2-font-size: $core-font-size - 1.60 !default;
+$h3-font-size: $core-font-size - 1.50 !default;
+$h4-font-size: $core-font-size+0.75 !default;
+$h5-font-size: $core-font-size+0.35 !default;
+$h6-font-size: $core-font-size - 0.15 !default;
+// Spacing
+$leading-margin: $core-line-height * 1rem !default;

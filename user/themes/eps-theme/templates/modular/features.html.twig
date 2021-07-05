@@ -1,11 +1,17 @@
-<section id='features' class="container">
-  {% for row in page.header.rows %}
-    <div class="container-features__row flex-column py-3 {% if row.global_position == 'right' %}flex-md-row-reverse{% else %}flex-md-row{% endif %} ">
+{% import 'macros/button.html.twig' as button %}
 
+<section id='features' class="container">
+  <div class="container text-center py-5 px-5">
+    <h1 class="py-3">{{ page.header.main_title|raw }}</h1>
+    <p>{{ page.header.main_description|raw }}</p>
+  </div>
+
+    {% for row in page.header.rows %}
+    <div class="container-features__row py-3 {% if row.inverse_responsive == 'image-start' %}flex-column-reverse{% else %}flex-column{% endif %} {% if row.global_position == 'right' %}flex-md-row-reverse{% else %}flex-md-row{% endif %} ">
       <div class="py-2 {% if row.image or row.video %}container-features__row__image{% endif %} {{ row.description_position }}">
-        <h3>{{ row.title }}</h3>
-        <p>{{ row.description }}</p>
-        <button class="btn-eps">titre du bouton</button>
+        <h3>{{ row.title|raw }}</h3>
+        <p>{{ row.description|raw }}</p>
+        {{button.macro_button(row.btn_list)}}
       </div>
 
       <div class="{% if row.image or row.video %}container-features__row__image{% endif %} feature-media">

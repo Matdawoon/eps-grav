@@ -1,0 +1,40 @@
+
+
+form:
+  fields:
+    .btn_tabs:
+      type: tabs
+      active: 2
+      fields:
+        .tab_btn:
+          type: tab
+          title: Classic button configs
+          fields:
+            .title:
+              type: text
+              label: title
+            .css:
+              type: text
+              label: css
+            .href:
+              type: text
+              label: href
+        .tab_modal:
+          type: tab
+          title: Modal button (Pop-in)
+          fields:
+            .html_area:
+              type: textarea
+              label: html
+              toggleable: true
+            .id:
+              type: text
+              label: id=
+            .modalHeader:
+              type: text
+              label: Titre Modal Header
+              toggleable: true
+            .modalFooter:
+              type: text
+              label: Titre Modal Footer
+              toggleable: true

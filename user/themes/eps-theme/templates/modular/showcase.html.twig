@@ -1,19 +1,17 @@
-{% set grid_size = theme_var('grid-size') %}
+{% import 'macros/button.html.twig' as button %}
 {% set image = page.media.images|first %}
 
 
-    <div class="container container-showcase ">
-        <div class="container-showcase__row container {{ grid_size }} {{ page.header.image_align|default('align-right') }}">
+    <div class="container container-showcase">
+        <div class="container-showcase__row container {{ page.header.image_align|default('align-right') }}">
             {% if page.header.main_img %}
             <div class="container-showcase__row__desc ">
                 {% if page.header.secondary_img %}
                     {{ page.media[page.header.secondary_img].html("","","secondary-image")|raw }}
                 {% endif %}
-                <h1> {{page.header.showcase_title}}</h1>
-                <p> {{page.header.showcase_description}}</p>
-                {% for btn in page.header.showcase_btn_list %}
-                <button class="{{btn.css}}">{{btn.title}}</button>
-                {% endfor %}
+                <h1> {{page.header.showcase_title|raw}}</h1>
+                <p> {{page.header.showcase_description|raw}}</p>
+                {{button.macro_button(page.header.btn_list)}}
             </div>
             <div class="primary-image">
                 <img src="{{ page.media[page.header.main_img].cropResize(897, 680).url }}" class="img-responsive img-centered">
@@ -21,8 +19,8 @@
             {% else %}
             <div class="column col-12">
 
-                <h1> {{page.header.showcase_title}}  </h1>
-                <p> {{page.header.showcase_description}}</p>
+                <h1> {{ page.header.showcase_title|raw }}  </h1>
+                <p> {{ page.header.showcase_description|raw }}</p>
             </div>
             {% endif %}
         </div>

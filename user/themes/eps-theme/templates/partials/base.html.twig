@@ -25,9 +25,13 @@
 {% endblock %}
 
 {% block javascripts %}
+    {% do assets.addJs('/user/themes/eps-theme/js/util.js',{group:'bottom'}) %}
+    {% do assets.addJs('/user/themes/eps-theme/js/modal.js',{group:'bottom'}) %}
+
     {% do assets.addJs('jquery', 101) %}
     {% do assets.addJs('theme://js/jquery.treemenu.js', {group:'bottom'}) %}
     {% do assets.addJs('theme://js/site.js', {group:'bottom'}) %}
+    {% do assets.addJs('/user/themes/eps-theme/js/footer.js') %}
 {% endblock %}
 <script>document.getElementsByTagName("html")[0].className += " js";</script>
 {% block assets deferred %}
@@ -94,8 +98,6 @@
     {% block footer %}
         {% include 'partials/footer.html.twig' %}
     {% endblock %}
-
-
 
 {% block bottom %}
     {{ assets.js('bottom')|raw }}
