@@ -32,8 +32,10 @@ form:
                       type: section
                       title: Button config
                       underline: true
-                      import@:
-                        type: partials/button
+                      fields:
+                        import@:
+                            type: partials/button/button_list_header
+                            context: theme://blueprints
                     
                     
                 

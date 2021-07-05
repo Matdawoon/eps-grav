@@ -5,20 +5,29 @@ carousel_title: 'titre carousel'
 carousel_description: 'Description du carousel'
 card_list:
     -
+        btn_list:
+            -
+                btn_tabs:
+                    tab_btn:
+                        title: aze
+                        css: btn-eps
+                        href: aze
+                    tab_modal:
+                        html_area: null
+                        id: null
+                        modalHeader: null
+                        modalFooter: null
         card_image: cross-depenses-professionnelles.png
         card_title: qsdqsd
         card_description: qsd
-        card_btn: qsdqsd
     -
         card_image: cross-solutions-sur-mesure.png
         card_title: 'un autre titre'
         card_description: azeazeazeazeazeazeazeazeaze
-        card_btn: azeazeaze
     -
         card_image: cross-depenses-professionnelles.png
         card_title: azeae
         card_description: aze
-        card_btn: aze
 css_conteneur: zef
 css_conteneur_image: era
 css_conteneur_text: eaze

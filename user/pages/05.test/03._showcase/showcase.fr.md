@@ -38,7 +38,7 @@ btn_list:
     -
         btn_tabs:
             tab_btn:
-                title: 'mon bouton'
+                title: 'mon boutonazeazeaze'
                 css: aze
                 href: null
             tab_modal:

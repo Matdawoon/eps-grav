@@ -14,7 +14,6 @@ form:
       type: text
       label: card description
       toggleable: true
-    .card_btn:
-      type: text
-      label: button text
-      toggleable: true
+    import@:
+        type: partials/button/simple_button_list
+        context: theme://blueprints

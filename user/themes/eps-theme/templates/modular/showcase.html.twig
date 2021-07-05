@@ -1,4 +1,4 @@
-{% import 'macros/modal.html.twig' as macro_modal %}
+{% import 'macros/button.html.twig' as button %}
 {% set image = page.media.images|first %}
 
 
@@ -11,16 +11,7 @@
                 {% endif %}
                 <h1> {{page.header.showcase_title}}</h1>
                 <p> {{page.header.showcase_description}}</p>
-                {% for btn in page.header.btn_list %}
-                <button {{btn.btn_tabs.tab_modal.html_area ? 'id='~ btn.btn_tabs.tab_modal.id ~' onclick=modalCreation("'~ btn.btn_tabs.tab_modal.id ~'")': "" }} class="{{btn.btn_tabs.tab_btn.css}}" href="{{btn.btn_tabs.tab_btn.href}}">{{btn.btn_tabs.tab_btn.title}}</button>
-                    {% if btn.btn_tabs.tab_modal.html_area %}
-                        {{macro_modal.macro_modal(btn.btn_tabs.tab_modal.id,
-                                                    btn.btn_tabs.tab_modal.html_area,
-                                                    btn.btn_tabs.tab_modal.modalHeader,
-                                                    btn.btn_tabs.tab_modal.modalFooter,
-                                                    )}}
-                    {% endif %}
-                {% endfor %}
+                {{button.macro_button(page.header.btn_list)}}
             </div>
             <div class="primary-image">
                 <img src="{{ page.media[page.header.main_img].cropResize(897, 680).url }}" class="img-responsive img-centered">

@@ -1,3 +1,4 @@
+{% import 'macros/button.html.twig' as button %}
 <section id='features' class="container">
   {% for row in page.header.rows %}
     <div class="container-features__row flex-column py-3 {% if row.global_position == 'right' %}flex-md-row-reverse{% else %}flex-md-row{% endif %} ">
@@ -5,7 +6,8 @@
       <div class="py-2 {% if row.image or row.video %}container-features__row__image{% endif %} {{ row.description_position }}">
         <h3>{{ row.title }}</h3>
         <p>{{ row.description }}</p>
-        <button class="btn-eps">titre du bouton</button>
+        {{button.macro_button(row.btn_list)}}
+       
       </div>
 
       <div class="{% if row.image or row.video %}container-features__row__image{% endif %} feature-media">

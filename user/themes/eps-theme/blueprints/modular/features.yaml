@@ -13,11 +13,9 @@ form:
               type: text
               label: Titre
 
-
-                
             header.rows:
               type: list
-              label: Row           
+              label: Row
 
               fields:
 
@@ -48,12 +46,13 @@ form:
                     right: Descriptif à droite
                 .description_position:
                   type: select
-                  label: text position 
+                  label: text position
                   default: text-start
                   options:
                     text-start: text-start
                     text-center: text-center
                     text-end: text-end
 
-                
-
+                import@:
+                    type: partials/button/simple_button_list
+                    context: theme://blueprints
