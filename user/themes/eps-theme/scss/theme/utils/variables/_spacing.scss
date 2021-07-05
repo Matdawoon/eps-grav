@@ -13,21 +13,11 @@ $space-xl: calc(3.25 * #{$space-unit});
 $space-xxl: calc(5.25 * #{$space-unit});
 $space-xxxl: calc(8.5 * #{$space-unit});
 $space-xxxxl: calc(13.75 * #{$space-unit});
-
 $component-padding: $space-md;
-
 // Letter Spacing
-$letter-spacing-xs : -0.1em; 
-$letter-spacing-sm : -0.05em; 
-$letter-spacing-md : 0.05em; 
-$letter-spacing-lg : 0.1em; 
-$letter-spacing-xl : 0.2em;
-
-
-
-
-
-
-
-
-
+$letter-spacing-xs: -0.1em;
+$letter-spacing-sm: -0.05em;
+$letter-spacing: -0.03em;
+$letter-spacing-md: 0.05em;
+$letter-spacing-lg: 0.1em;
+$letter-spacing-xl: 0.2em;

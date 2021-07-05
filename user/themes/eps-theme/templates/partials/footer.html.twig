@@ -1,40 +1,56 @@
-<footer class="container-fluid">
-    <div class="container row">         
-        <div class="six columns info">
-
-            <p>
-                {{ site.footer.text }}
-            </p>
-        </div>
-        <div class="six columns right-cols">
+{% set footer_blocks = theme_var('footer_blocks') %}
+{% set footer_icons = theme_var('footer_icons') %}
+{% set footer_copyright = theme_var('copyright') %}
+<footer class="footer">
+    {% if footer_blocks|length > 0 %}
+    <div class="footer-widget-section">
+        <div class="container text-left">
             <div class="row">
-                <div class="columns">
-                    <h3 class="address">{{ site.footer.address.title }}</h3>
-                    <p>
-                        {% for item in site.footer.address.lines %}
-                           {{ item.line }} <br>
-                        {% endfor %}
-                    </p>
+                {% for block in footer_blocks %}
+                <div class="col-sm-{{ (12 / footer_blocks|length)|round }} footer-block">
+                    <div class="footer-widget">
+                        {% if block.title %}
+                        <h3>{{ block.title|raw }}</h3>
+                        {% endif %}
+                        {% if block.logo %}
+                        <div class="footer-logo">
+                            <a href="{{ base_url == '' ? '/' : base_url }}">
+                                <img src="{{ url('theme://images/eps-logo.svg') }}" alt="eps-logo">
+                            </a>
+                        </div>
+                        {% endif %}
+                        {% if block.content %}
+                        <p>{{ block.content|raw }}</p>
+                        {% endif %}
+                        {% if block.icons and footer_icons|length > 0 %}
+                        <ul class="list-inline social-links">
+                            {% for icon in footer_icons %}
+                            <li><a href="{{ icon.url }}"><i class="fa {{ icon.icon }}"></i></a></li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </div>
                 </div>
-                <div class="columns">
-                    <h3 class="social">{{ site.footer.social_title }}</h3>
-                    <ul>
-                        {% for item in site.social %}
-                            <li><a href="{{ item.url }}">{{ item.icon|capitalize }}</a></li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="columns last">
-                    <h3 class="contact">{{ site.footer.contact.title }}</h3>
-                    <ul>
-                        {% for item in site.footer.contact.lines %}
-                            <li><a href="{{ item.url }}">{{ item.text }}</a></li>
-                        {% endfor %}
-                    </ul>
-                </div>
+                {% endfor %}
             </div>
         </div>
-        <p class="copyright">&copy; 2014 Woo | Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a> | Converted to GRAV by <a title="Grav" href="http://www.getgrav.org/">Grav Team</a></p>
+    </div>
+    {% endif %}
 
+    <div class="copyright-section">
+        <div class="container clearfix">
+            <span class="copytext">
+                <p>{{ footer_copyright|raw }}</p>
+            </span>
+
+            <ul class="list-inline pull-right">
+            {% for page in pages.children.visible %}
+                {% if page.header.shown_in_footer %}
+                {% set activeClass = (page.active) ? 'active' : '' %}
+                <li class="{{ activeClass|raw }}"><a href="{{ page.url }}">{{ page.menu }}</a></li>
+                {% endif %}
+            {% endfor %}
+            </ul>
+        </div>
     </div>
 </footer>
