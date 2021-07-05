@@ -84,10 +84,11 @@ list_faq_sections:
             -
                 question: 'Who takes care of shipping?'
                 answer: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis provident officiis, reprehenderit numquam. Praesentium veritatis eos tenetur magni debitis inventore fugit, magnam, reiciendis, saepe obcaecati ex vero quaerat distinctio velit.'
-section_container_padding_class: 'py-5 my-5'
 shown_in_footer: true
 showcase_curvature:
-    curvature_top: false
-    curvature_bottom: false
+    curvature_top: true
+    curvature_bottom: true
+showcase_curvature_height: 10rem
+showcase_bg_color: '#f7f7f7'
 ---
 

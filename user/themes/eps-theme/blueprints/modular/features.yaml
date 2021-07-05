@@ -12,6 +12,10 @@ form:
             header.main_title:
               type: text
               label: Titre
+            header.main_description:
+              type: textarea
+              label: Description
+
 
 
                 

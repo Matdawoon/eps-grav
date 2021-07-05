@@ -47,11 +47,15 @@
 
     {% for module in page.collection() %}
         <section class="container-fluid {{module.header.section_container_padding_class}}">
-            <div class ="container-fluid {% if module.header.showcase_curvature["curvature_top"] %} top-radius-bg {% endif %}" style="background-color:{{module.header.showcase_bg_color}}; height:{{module.header.showcase_curvature_height}};" ></div>
-                <section class="custom-container container-fluid {{module.header.showcase_bg_radius}}" style=" background-image: url('{{module.media[module.header.showcase_bg_img].url}}'); background-color:{{module.header.showcase_bg_color}};">
+        {% if module.header.showcase_curvature["curvature_top"] %}
+            <div class ="container-fluid top-radius-bg" style="background-color:{{module.header.showcase_bg_color}}; height:{{module.header.showcase_curvature_height}};" ></div>
+        {% endif %}
+                <section class="custom-container container-fluid" style=" background-image: url('{{module.media[module.header.showcase_bg_img].url}}'); background-color:{{module.header.showcase_bg_color}};">
                     {{ module.content|raw }}
                 </section>
-            <div class ="container-fluid {% if module.header.showcase_curvature["curvature_bottom"] %} bottom-radius-bg {% endif %}"  style="background-color:{{module.header.showcase_bg_color}}; height: {{module.header.showcase_curvature_height}};" ></div>
+        {% if module.header.showcase_curvature["curvature_bottom"] %}
+            <div class ="container-fluid bottom-radius-bg"  style="background-color:{{module.header.showcase_bg_color}}; height: {{module.header.showcase_curvature_height}};" ></div>
+        {% endif %}
         </section>
     {% endfor %}
 {% endblock %}
