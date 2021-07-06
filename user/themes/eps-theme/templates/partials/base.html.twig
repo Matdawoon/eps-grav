@@ -48,6 +48,9 @@
             <nav class="overlay-menu">
                 {% include 'partials/navigation.html.twig' with {tree: true} %}
             </nav>
+            {% if config.plugins.langswitcher.enabled %}
+                {% include 'partials/langswitcher.html.twig' with {tree: true, mobile:true} %}
+            {% endif %}
         </div>
     </div>
     {% endblock %}

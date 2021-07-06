@@ -1,6 +1,6 @@
-<nav class="dropmenu animated">
+<nav class=" {{ mobile ? 'overlay-menu' : 'dropmenu animated'}}">
 
-    <ul class="">
+    <ul class="{{ tree ? 'tree' : '' }} ">
         <li>
         
         <a><span class="flag-icon flag-icon-{{langswitcher.current}}"></span> {{langswitcher.current}}</a><ul>
