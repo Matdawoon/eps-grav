@@ -1,9 +1,9 @@
-<nav class="dropmenu animated">
+<nav class=" {{ mobile ? 'overlay-menu' : 'dropmenu animated'}}">
 
-    <ul class="">
+    <ul class="{{ tree ? 'tree' : '' }} ">
         <li>
         
-        <a><span class="flag-icon flag-icon-{{langswitcher.current}}"></span> {{langswitcher.current}}</a><ul>
+        <a><span class="flag-icon flag-icon-{{langswitcher.current}} mx-1"></span> {{native_name(langswitcher.current)|capitalize }}</a><ul>
         {% set display_format = display_format ?? config.get('plugins.langswitcher.language_display', 'long') %}
         {% for language in langswitcher.languages %}
 
@@ -31,7 +31,7 @@
             {% if show_language %}
                 <li>
                     <a href="{{ lang_url ~ uri.params }}" class="external{{ active_class }}">
-                        <span class="flag-icon flag-icon-{{language}}"></span>
+                        <span class="flag-icon flag-icon-{{language}} mx-1"></span>
                         {% include 'partials/langswitcher-' ~ display_format ~ '.html.twig' %}
                     </a>
                 </li> 
