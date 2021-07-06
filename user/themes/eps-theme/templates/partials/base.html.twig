@@ -66,6 +66,9 @@
                         {% endblock %}
                         </nav>
 
+                        {% if config.plugins.langswitcher.enabled %}
+                            {% include 'partials/langswitcher.html.twig' %}
+                        {% endif %}
 
                     </section>
                 </nav>
