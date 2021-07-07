@@ -12,18 +12,6 @@ form:
           title: FAQ settings
 
           fields: 
-            header.faq_title:
-              type: text
-              label: FAQ Title
-              default: titre FAQ
-              size: medium
-              toggleable: true 
-            header.faq_description:
-              type: text
-              label: FAQ Descritpion
-              default: Description du FAQ
-              size: medium  
-              toggleable: true 
 
             header.list_faq_sections:
               type: list

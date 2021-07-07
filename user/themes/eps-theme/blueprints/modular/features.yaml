@@ -9,13 +9,6 @@ form:
           type: tab
           title: Features
           fields:
-            header.main_title:
-              type: text
-              label: Titre
-            header.main_description:
-              type: textarea
-              label: Description
-
 
             header.rows:
               type: list

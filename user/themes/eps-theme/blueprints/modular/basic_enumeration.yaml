@@ -11,17 +11,6 @@ form:
           type: tab
           title: Basic Enumeration        
           fields: 
-            header.basic_enumeration_title:
-              type: text
-              label: Basic Enumeration Title
-              default: titre Basic Enumeration
-              size: medium
-            header.basic_enumeration_description:
-              type: textarea
-              label: Basic Enumeration Descritpion
-              default: Description du Basic Enumeration
-              size: medium  
-              toggleable: true 
             header.basic_enumeration_col_num:
               type: number
               label: Basic Enumeration col number

@@ -11,15 +11,16 @@ form:
                 column1:
                    fields:
                       header.body_classes:
-                       markdown: true
-                       description: 'Available classes in Quark Theme (space separated):<br />`header-fixed`, `header-animated`, `header-dark`, `header-transparent`, `sticky-footer`'
+                        markdown: true
+                        description: 'Available classes in Quark Theme (space separated):<br />`header-fixed`, `header-animated`, `header-dark`, `header-transparent`, `sticky-footer`'
+                      
                       section_curvature:
                         type: section
                         title: background curvature 
                         underline: true
-
                         import@:
-                          type: partials/background-curvature   
+                          type: partials/background-curvature 
+
                       section_padding:
                         type: section
                         title: padding classes
@@ -45,3 +46,30 @@ form:
                               0: PLUGIN_ADMIN.NO
                             validate:
                                 type: bool
+
+                      general_text_information:
+                        type: section
+                        title: THEME_EPS-THEME.GENERAL_MAIN_TEXT.SECTION.TITLE
+                        underline: true
+                        fields:
+                          header.main_title:
+                            type: text
+                            label: THEME_EPS-THEME.ADMIN.CONTENT.TITLE.LABEL
+                            help: THEME_EPS-THEME.ADMIN.CONTENT.TITLE.HELP
+                            default: THEME_EPS-THEME.GENERAL_MAIN_TEXT.DEFAULT.TITLE
+                            size: medium
+                            toggleable: true 
+                          header.main_description:
+                            type: textarea
+                            label: THEME_EPS-THEME.ADMIN.CONTENT.DESC.LABEL
+                            help: THEME_EPS-THEME.ADMIN.CONTENT.DESC.HELP
+                            default: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            size: medium  
+                            toggleable: true 
+                          header.main_text_align:
+                            type: text
+                            label: THEME_EPS-THEME.ADMIN.CONTENT.CSS_CLASS.LABEL
+                            help: THEME_EPS-THEME.ADMIN.CONTENT.CSS_CLASS.HELP
+                            description: THEME_EPS-THEME.ADMIN.CONTENT.HELP_DESCRIPTIONS.TEXT_HELPERS_CLASS
+                            size: medium  
+                            toggleable: true                             

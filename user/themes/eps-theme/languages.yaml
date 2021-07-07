@@ -4,6 +4,16 @@ en:
       CONTENT:
         LABEL: Content
         HELP: Text or HTML code.
+        TITLE:
+          LABEL: Title
+          HELP: Block titre.
+        DESC:
+          LABEL: Description
+          HELP: Block Description.
+        DEFAULT:
+          TITLE: Default Title 
+          DESC: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
       FOOTER_BLOCKS:
         LABEL: Footer's Blocks
         HELP: Shown in footer.
@@ -37,10 +47,48 @@ en:
         HEADLINE: Archives
       SYNDICATE:
         HEADLINE: Syndicate
+    GENERAL_MAIN_TEXT:
+        SECTION:
+          TITLE: General Title and Description 
+        DEFAULT:
+          TITLE: Default Title
+          DESC: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
 
 fr:
   THEME_EPS-THEME:
-    TRANSLATION_TEST: Quark !
+    TRANSLATION_TEST: EPS !
+    ADMIN:
+      CONTENT:
+        LABEL: Content
+        HELP: Text or HTML code.
+        TITLE:
+          LABEL: Titre
+          HELP: Block titre.
+        DESC:
+          LABEL: Description
+          HELP: Block Description.
+        DEFAULT:
+          TITLE: Un Titre Par Default
+          DESC: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        CSS_CLASS:
+          LABEL: Class CSS
+          HELP: Block css class
+        HELP_DESCRIPTIONS:
+          TEXT_HELPERS_CLASS: 'Class modificatrises de text : <br /> `text-xx-start`, `text-xx-end`, `text-xx-center`, `text-start`, `text-end`, `text-center`, `text-decoration-none`, `text-decoration-underline`, `text-decoration-line-through`, `text-lowercase`, `text-uppercase`, `text-capitalize`, `text-wrap`, `text-nowrap`'
+
+    FOOTER_BLOCKS:
+        LABEL: Footer's Blocks
+        HELP: Shown in footer.
+        TITLE:
+          LABEL: Title
+          HELP: Block title.
+        LOGO:
+          LABEL: Show Logo
+          HELP: Show site's logo.
+        ICONS:
+          LABEL: Show Footer Icons
+          HELP: Show footer's icons.
     BLOG:
       ITEM:
         CONTINUE_READING: Continuer la lecture...
@@ -62,3 +110,12 @@ fr:
         HEADLINE: Archives
       SYNDICATE:
         HEADLINE: Syndication
+    GENERAL_MAIN_TEXT:
+        SECTION:
+          TITLE: Titre et Description General
+        DEFAULT:
+          TITLE: Un Titre Par Default
+          DESC: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+
+        

@@ -19,14 +19,6 @@ form:
                   type: tab
                   title: general settings
                   fields:
-                    header.showcase_title:
-                      type: text
-                      label: showcase title
-                    header.showcase_description:
-                      type: text
-                      label: shwocase description
-                      outerclasses: conditional
-
 
                     btn_config:
                       type: section

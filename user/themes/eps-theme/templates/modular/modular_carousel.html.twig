@@ -1,8 +1,7 @@
 {% import 'macros/cards.html.twig' as macro_card %}
 <section class="container">
 
-  <h1>{{page.header.carousel_title}}</h1>
-  <p>{{ page.header.carousel_description }}</p>
+    {% include 'partials/general-title-description.html.twig' %}
 
    <div id="owl-carousel" class="owl-carousel owl-theme" style="width: {{page.header.carousel_wd_size}}; margin: 0 auto;">
       {% for card in page.header.card_list %}

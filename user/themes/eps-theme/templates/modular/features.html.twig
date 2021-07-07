@@ -1,10 +1,9 @@
 {% import 'macros/button.html.twig' as button %}
 
 <section id='features' class="container">
-  <div class="container text-center py-5 px-5">
-    <h1 class="py-3">{{ page.header.main_title|raw }}</h1>
-    <p>{{ page.header.main_description|raw }}</p>
-  </div>
+
+    {% include 'partials/general-title-description.html.twig' %}
+
 
     {% for row in page.header.rows %}
     <div class="container-features__row py-3 {% if row.inverse_responsive == 'image-start' %}flex-column-reverse{% else %}flex-column{% endif %} {% if row.global_position == 'right' %}flex-md-row-reverse{% else %}flex-md-row{% endif %} ">

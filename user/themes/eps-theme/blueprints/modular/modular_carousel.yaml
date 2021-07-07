@@ -12,27 +12,7 @@ form:
           title: Carousel
 
           fields: 
-            header.carousel_title:
-              type: text
-              label: Carousel Title
-              default: titre carousel
-              size: medium
-            header.carousel_description:
-              type: text
-              label: Carousel Descritpion
-              default: Description du carousel
-              size: medium  
-              toggleable: true 
-            header.carousel_cta:
-              type: text
-              underline: true
-              label: Carousel Description
-              default: Description du carousel
-              size: medium  
-              toggleable: true 
-                    
-
-
+     
             tabs:
               type: tabs
               active: 1
