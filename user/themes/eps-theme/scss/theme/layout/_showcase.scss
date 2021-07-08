@@ -1,18 +1,18 @@
 .container-showcase {
+    padding-top: $unit-5;
     h1 {
         margin: 1rem 0;
     }
     .container-showcase__row {
         display: flex;
         flex-flow: row wrap;
-        justify-content: right;
         align-content: space-between;
         align-items: center;
         & .primary-image {
-            flex: 1 0 50%;
+            flex: 0 0 50%;
         }
         &__desc {
-            flex: 0 0 20%;
+            flex: 0 0 50%;
             & .secondary-image {
                 width: auto;
                 max-width: 395px;

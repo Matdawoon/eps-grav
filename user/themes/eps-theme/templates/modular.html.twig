@@ -46,7 +46,7 @@
 {% block body %}
 
     {% for module in page.collection() %}
-        <section class="container-fluid {{module.header.section_container_padding_class}}">
+        <section class="{{module.header.section_container_padding_class}}">
         {% if module.header.showcase_curvature["curvature_top"] %}
             <div class ="container-fluid top-radius-bg" style="background-color:{{module.header.showcase_bg_color}}; height:{{module.header.showcase_curvature_height}};" ></div>
         {% endif %}

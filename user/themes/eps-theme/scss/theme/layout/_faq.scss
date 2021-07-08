@@ -1,37 +1,36 @@
-
-
 .max-width-md {
-  max-width: $max-width-md;
+    max-width: $max-width-md;
 }
 
 .margin-top-lg {
-  margin-top: $space-lg;
+    margin-top: $space-lg;
 }
 
 .cd-faq {
-
-  ul, li, a{
-    box-sizing: inherit;
-  }
-  &::before { // never visible - this is used in JavaScript to check the current MQ
-    content: 'mobile';
-    display: none;
-  }
-
-  a {
-    text-decoration: none;
-    box-shadow: none;
-  }
-
-	@include breakpoint-min(md) {
-		position: relative;
-		box-shadow: none;
-    display: flex;
+    ul,
+    li,
+    a {
+        box-sizing: inherit;
+    }
+    &::before {
+        // never visible - this is used in JavaScript to check the current MQ
+        content: 'mobile';
+        display: none;
+    }
+    a {
+        text-decoration: none;
+        box-shadow: none;
+    }
+    @include media-breakpoint-up(md) {
+        position: relative;
+        box-shadow: none;
+        display: flex;
         &::before {
             content: 'desktop';
         }
     }
 }
+
 .container-faq {
     margin-left: auto;
     margin-right: auto;
@@ -39,7 +38,7 @@
 
 .cd-faq__categories {
     z-index: $zindex-2;
-    @include breakpoint-min(md) {
+    @include media-breakpoint-up(md) {
         position: sticky; // fix element on scrolling
         align-self: flex-start;
         flex-shrink: 0;
@@ -53,7 +52,7 @@
     a {
         color: $white-full-eps-color;
     }
-    @include breakpoint-min(md) {
+    @include media-breakpoint-up(md) {
         width: 200px;
     }
 }
@@ -85,7 +84,7 @@
     li:last-child & {
         border-bottom: none;
     }
-    @include breakpoint-min(md) {
+    @include media-breakpoint-up(md) {
         font-size: $text-md;
         font-weight: 600;
         padding-left: $space-md;
@@ -112,7 +111,7 @@
     }
 }
 
-@include breakpoint-min(md) {
+@include media-breakpoint-up(md) {
     .cd-faq__category-selected {
         background: $blue-dark-eps-color;
         color: $blue-flat-eps-color;
@@ -142,7 +141,7 @@
     ul {
         margin-left: 0;
     }
-    @include breakpoint-min(md) {
+    @include media-breakpoint-up(md) {
         position: static;
         height: auto;
         width: auto;
@@ -166,7 +165,7 @@ html:not(.js) .cd-faq__items {
 
 .cd-faq__group {
     display: none; // hide group not selected
-    @include breakpoint-min(md) {
+    @include media-breakpoint-up(md) {
         // all groups visible
         display: block;
         padding-top: 1px; // fix issue with collapsing margin
@@ -187,7 +186,7 @@ html:not(.js) .cd-faq__group,
         color: lighten($blue-dark-eps-color, 0.9);
         padding-left: $unit-5;
     }
-    @include breakpoint-min(md) {
+    @include media-breakpoint-up(md) {
         margin-bottom: $space-md;
         h2 {
             font-size: $text-md;
@@ -196,7 +195,7 @@ html:not(.js) .cd-faq__group,
 }
 
 .cd-faq__item {
-    @include breakpoint-min(md) {
+    @include media-breakpoint-up(md) {
         background: $white-full-eps-color;
         margin-bottom: $space-sm;
         padding-left: $unit-5;
@@ -223,7 +222,7 @@ html:not(.js) .cd-faq__group,
     font-size: $font-size-xlg;
     $font-weight-light: 400;
     padding-left: $space-sm;
-    @include breakpoint-min(md) {
+    @include media-breakpoint-up(md) {
         font-weight: 300;
         margin: 0;
         padding: $space-sm $space-lg $space-sm $space-sm;
@@ -266,7 +265,7 @@ html:not(.js) .cd-faq__group,
         padding-right: $unit-5;
         padding-left: $unit-5;
     }
-    @include breakpoint-min(md) {
+    @include media-breakpoint-up(md) {
         display: none;
         overflow: hidden;
         .text-component {
@@ -280,7 +279,7 @@ html:not(.js) .cd-faq__group,
 }
 
 html:not(.js) .cd-faq__content {
-    @include breakpoint-min(md) {
+    @include media-breakpoint-up(md) {
         display: block; // always display faq content
     }
 }
@@ -316,7 +315,7 @@ html:not(.js) .cd-faq__content {
     &::after {
         transform: rotate(-45deg);
     }
-    @include breakpoint-min(md) {
+    @include media-breakpoint-up(md) {
         display: none;
     }
 }
@@ -337,7 +336,7 @@ html:not(.js) .cd-faq__content {
     visibility: hidden;
     opacity: 0;
     transition: opacity .3s, visibility .3s;
-    @include breakpoint-min(md) {
+    @include media-breakpoint-up(md) {
         display: none;
     }
 }
