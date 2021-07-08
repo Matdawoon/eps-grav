@@ -51,8 +51,10 @@
             <div class ="container-fluid top-radius-bg" style="background-color:{{module.header.showcase_bg_color}}; " ></div>
         {% endif %}
                 <section class="custom-container container-fluid" style=" background-image: url('{{module.media[module.header.showcase_bg_img].url}}'); background-color:{{module.header.showcase_bg_color}};">
+                    {% if module.template != 'modular/showcase' %}
                     {% include 'partials/general-title-description.html.twig' with {obj: module.header} %}
-                    {{ module.content|raw }}
+                    {% endif %}
+                    {{ module.content|raw }} 
                 </section>
         {% if module.header.showcase_curvature["curvature_bottom"] %}
             <div class ="container-fluid bottom-radius-bg"  style="background-color:{{module.header.showcase_bg_color}};" ></div>

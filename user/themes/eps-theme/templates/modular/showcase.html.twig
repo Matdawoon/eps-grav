@@ -9,7 +9,7 @@
                 {% if page.header.secondary_img %}
                     {{ page.media[page.header.secondary_img].html("","","secondary-image")|raw }}
                 {% endif %}
-                {% include 'partials/general-title-description.html.twig' %}
+                 {% include 'partials/general-title-description.html.twig' with {obj: page.header} %}
                 {{button.macro_button(page.header.btn_list)}}
             </div>
             <div class="primary-image">

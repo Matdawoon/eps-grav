@@ -2,6 +2,10 @@
     padding-top: $unit-5;
     h1 {
         margin: 1rem 0;
+        font-weight: $font-weight-light;
+    }
+    p {
+        margin: 0rem 0 1.2rem;
     }
     .container-showcase__row {
         display: flex;

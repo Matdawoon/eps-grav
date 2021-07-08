@@ -36,5 +36,7 @@ btn_list:
                 id: id-test-2
                 modalHeader: null
                 modalFooter: null
+main_title: 'Dépenses  <strong class="eps__color--blue-green">Professionnelles</strong>'
+main_description: '<strong class="eps__color--blue-green">EPS Business :</strong> Solution clé-en-main de cartes pour les entreprises'
 ---
 

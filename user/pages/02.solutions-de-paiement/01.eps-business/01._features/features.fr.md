@@ -18,9 +18,11 @@ rows:
         description_position: text-end
         inverse_responsive: image-end
 showcase_curvature:
-    curvature_top: false
+    curvature_top: true
     curvature_bottom: false
 showcase_bg_color: '#ffffff'
 main_description: 'Les dépenses d''entreprises sont simplifiées grâce à une solution tout en un qui va bien plus loin que la simple émission de cartes de paiement. Vous disposez d''une interface web de gestion qui vous laisse la liberté totale de gestion.'
+main_text_align: text-center
+section_container_padding_class: py-5
 ---
 
