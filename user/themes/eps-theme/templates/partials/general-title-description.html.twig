@@ -1,7 +1,7 @@
   
-  {% if ( page.header.main_title or page.header.main_description )%}
-  <div class="container {{ page.header.main_text_align }} p-3">
-    <h1 class="py-3">{{ page.header.main_title|raw }}</h1>
-    <p>{{ page.header.main_description|raw }}</p>
+  {% if ( obj.main_title or obj.main_description )%}
+  <div class="container {{ obj.main_text_align }} p-3">
+    <h1 class="py-3">{{ obj.main_title|raw }}</h1>
+    <p>{{ obj.main_description|raw }}</p>
   </div>
   {% endif %}

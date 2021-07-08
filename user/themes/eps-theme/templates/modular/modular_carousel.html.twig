@@ -1,11 +1,10 @@
 {% import 'macros/cards.html.twig' as macro_card %}
 <section class="container">
 
-    {% include 'partials/general-title-description.html.twig' %}
-
-   <div id="owl-carousel" class="owl-carousel owl-theme" style="width: {{page.header.carousel_wd_size}}; margin: 0 auto;">
+   <div class="owl-carousel owl-theme p-5" >
       {% for card in page.header.card_list %}
-          {{macro_card.card(page,card.card_image, card.card_title, card.card_description, card.btn_list)}}
+        {{macro_card.card(page,card.image, card.title, card.description, card.btn_list,  card.css_text_class)}}
+  
       {% endfor %}
     </div>
 
@@ -15,16 +14,15 @@
 
 
   <script>
-      jQuery(document).ready(function($){
-        let slider = $('.owl-carousel');
-        slider.each(function () {
+$(document).ready(function(){
             $('.owl-carousel').owlCarousel({
-              loop: true,    
+              loop: false,    
               dots: true,
               nav: true,
+              center: true,
               margin: {{page.header.carousel_item_margin}},
               items: {{page.header.carousel_nb_items}},
-
+navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
               {% if page.header.carousel_responsive_list %}
                 responsive:{
 
@@ -44,8 +42,9 @@
               {% endif %}
               
             });
-        });
-      });
+   });
+
+
 </script>
 
 

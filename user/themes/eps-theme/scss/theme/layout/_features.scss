@@ -1,27 +1,15 @@
 .container-features {
-    display:flex;
-    flex-flow: column wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
-    width: 100%;
-    box-sizing: border-box;
-    &__row {
-        justify-content: space-around;
-        align-content: center;
-        flex-direction: row;
-        align-items: center;
-        display: flex;
-        flex-wrap: wrap;
-        &__image {
-            flex: 0 0 45%;
-        }
-        &__desc {
-            flex: 0 0 25%;
-        }
-            &__row--ligne-inverse {
-                flex-direction: row-reverse; /*Axe principal = axe horizontal*/
-            }
-
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    &__image {
+        flex: 0 0 49%;
     }
-    
+    &__desc {
+        flex: 0 0 49%;
+    }
 }
+    

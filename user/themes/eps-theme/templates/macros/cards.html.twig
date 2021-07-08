@@ -1,17 +1,18 @@
 
 
-{% macro card(page,img, titre, description, btn_list ) %}
+{% macro card(page, img, titre, description, btn_list,css_text_class ) %}
 
 {% import 'macros/button.html.twig' as button %}
-<div class="card card-container" style="" >
+<div class="card-carousel" >
 
-        <div class="card-image">
-        <a href="">{{ page.media[img].cropZoom(800,400).html("","","img-responsive card-image")|raw }}</a>
-        </div>
-        <h3>{{titre}}</h3>
-        <p>{{description}}</p>
-        {{button.macro_button(btn_list)}}
-        
+  <div class="card-image">
+    <a href="">{{ page.media[img.img].html("","","img-responsive")|raw }}</a>
+  </div>
+  <div class="card-body {{css_text_class}}">
+    <h3>{{titre}}</h3>
+    <p>{{description}}</p>
+    {{button.macro_button(btn_list)}}
+  </div>
 </div>
 {% endmacro %}
 

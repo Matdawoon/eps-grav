@@ -2,18 +2,30 @@
 form:
   fields:
     
-    .card_image:
+    .image.img:
       type: filepicker
       label: Card Image
       preview_images: true
       description: 'If not specified, this defaults to the first image found in the page''s folder'
-    .card_title:
+    .image.height:
+      type: text
+      label: Image height
+      description: en vh
+    .title:
       type: text
       label: card title
-    .card_description:
+    .description:
       type: text
       label: card description
       toggleable: true
+    .css_text_class:
+      type: text
+      label: text position
+      description: THEME_EPS-THEME.ADMIN.CONTENT.HELP_DESCRIPTIONS.TEXT_HELPERS_CLASS
+      toggleable: true
+
+
+
     import@:
         type: partials/button/simple_button_list
         context: theme://blueprints
