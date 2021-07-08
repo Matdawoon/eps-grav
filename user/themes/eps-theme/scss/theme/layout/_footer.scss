@@ -19,6 +19,9 @@
 
 .footer-widget {
     color: lighten($gray-dark-eps-color, 15);
+    & p {
+        font-size: $font-size;
+    }
     & li a {
         color: lighten($gray-dark-eps-color, 15);
     }
@@ -35,13 +38,13 @@
     min-height: $space-xl;
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@include media-breakpoint-only(lg) {
     .footer .footer-block {
         padding: 60px 50px;
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@include media-breakpoint-only(md) {
     .footer .footer-block {
         padding: 50px 15px;
     }
@@ -120,9 +123,12 @@
 .footer .copyright-section .copytext {
     color: lighten($gray-dark-eps-color, 20);
     font-weight: $font-weight-light;
+    & p {
+        font-size: $font-size;
+    }
 }
 
-@media (min-width: 768px) {
+@include media-breakpoint-up(md) {
     .footer .copyright-section .list-inline>li {
         padding-right: 10px;
         padding-left: 10px;

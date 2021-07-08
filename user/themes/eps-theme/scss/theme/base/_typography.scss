@@ -70,28 +70,6 @@ em {
     font-weight: $font-weight-regular;
 }
 
-.keyword__color {
-    color: $blue-dark-eps-color;
-    &--white {
-        color: $white-full-eps-color;
-    }
-    &--gray-dark {
-        color: $gray-dark-eps-color;
-    }
-    &--gray-pale {
-        color: $gray-pale-eps-color;
-    }
-    &--blue-dark {
-        color: $blue-dark-eps-color;
-    }
-    &--blue-azul {
-        color: $blue-azul-eps-color;
-    }
-    &--blue-flat {
-        color: $blue-flat-eps-color;
-    }
-}
-
 // Blockquote
 blockquote {
     border-left: $border-width-lg solid $border-color;

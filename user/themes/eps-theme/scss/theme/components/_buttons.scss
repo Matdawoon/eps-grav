@@ -1,36 +1,55 @@
+@keyframes changeLetter {
+    0% {
+        content: "";
+    }
+    100% {
+        content: "\2192";
+    }
+}
+
+.letter-changer::after {
+    animation: changeLetter 3s linear infinite alternate;
+}
+
 // Buttons EPS
-.btn-eps {
-    @include button-outline-variant($blue-flat-eps-color);
-    appearance: none;
-    background: $bg-color-light;
+.btneps {
     border: $border-width solid $blue-flat-eps-color;
     border-radius: $border-radius;
     color: $blue-flat-eps-color;
     cursor: pointer;
     display: inline-block;
     font-weight: $font-weight-medium;
-    font-size: $font-size;
+    font-size: $core-font-size;
     height: $control-size;
     line-height: $line-height;
-    outline: none;
-    /*
-  padding: $control-padding-y $control-padding-x;
-  */
+    transition: all 0.5s;
+    margin-right: $unit-3;
+    margin-top: $unit-3;
+    margin-bottom: $unit-3;
     text-align: center;
     text-decoration: none;
-    transition: background .2s, border .2s, box-shadow .2s, color .2s;
-    user-select: none;
     vertical-align: middle;
     white-space: nowrap;
+    padding: $unit-4l $unit-10 $unit-8l $unit-10;
     &:focus,
     &:hover {
-        border-color: $blue-flat-eps-color;
-        text-decoration: none;
-        content: '&#x2192';
+        &:after {
+            opacity: 1;
+            top: 0px;
+            left: 10px;
+            //transition: all 600ms;
+            padding-right: $unit-2;
+            //visibility: visible;
+            animation: changeLetter 1s linear infinite alternate;
+        }
+    }
+    &:after {
+        //transition: all 600ms ease;
+        //content: "\2192";
+        //visibility: hidden;
         position: relative;
-        opacity: 1;
-        top: 0;
-        transition: 0.5s;
+        opacity: 0;
+        left: -10px;
     }
     &:active,
     &.active {
@@ -44,14 +63,15 @@
             }
         }
     }
-}
-
-.btn-eps--red {
-    @include button-outline-variant($red-warmpink-eps-color);
-}
-
-.btn-eps--blue {
-    @include button-outline-variant($blue-flat-eps-color);
+    &__color--red-warmpink {
+        @include button-outline-variant($red-warmpink-eps-color);
+    }
+    &__color--blue-flat {
+        @include button-outline-variant($blue-flat-eps-color);
+    }
+    &__color--blue-green {
+        @include button-outline-variant($blue-green-eps-color);
+    }
 }
 
 // Buttons

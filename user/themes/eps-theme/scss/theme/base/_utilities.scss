@@ -1,29 +1,53 @@
 // Loop over each breakpoint
 @each $breakpoint in map-keys($grid-breakpoints) {
-
     // Generate media query if needed
     @include media-breakpoint-up($breakpoint) {
-      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-  
-      // Loop over each utility property
-      @each $key, $utility in $utilities {
-        // The utility can be disabled with `false`, thus check if the utility is a map first
-        // Only proceed if responsive media queries are enabled or if it's the base media query
-        @if type-of($utility) == "map" and (map-get($utility, responsive) or $infix == "") {
-          @include generate-utility($utility, $infix);
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+        // Loop over each utility property
+        @each $key,
+        $utility in $utilities {
+            // The utility can be disabled with `false`, thus check if the utility is a map first
+            // Only proceed if responsive media queries are enabled or if it's the base media query
+            @if type-of($utility)=="map" and (map-get($utility, responsive) or $infix=="") {
+                @include generate-utility($utility, $infix);
+            }
         }
-      }
     }
-  }
+}
 
-  
-  // Print utilities
-  @media print {
-    @each $key, $utility in $utilities {
-      // The utility can be disabled with `false`, thus check if the utility is a map first
-      // Then check if the utility needs print styles
-      @if type-of($utility) == "map" and map-get($utility, print) == true {
-        @include generate-utility($utility, "-print");
-      }
+// Print utilities
+@media print {
+    @each $key,
+    $utility in $utilities {
+        // The utility can be disabled with `false`, thus check if the utility is a map first
+        // Then check if the utility needs print styles
+        @if type-of($utility)=="map" and map-get($utility, print)==true {
+            @include generate-utility($utility, "-print");
+        }
     }
-  }
+}
+
+// Colors utilities
+.eps__color {
+    &--white {
+        color: $white-full-eps-color;
+    }
+    &--gray-dark {
+        color: $gray-dark-eps-color;
+    }
+    &--gray-pale {
+        color: $gray-pale-eps-color;
+    }
+    &--blue-dark {
+        color: $blue-dark-eps-color;
+    }
+    &--blue-azul {
+        color: $blue-azul-eps-color;
+    }
+    &--blue-flat {
+        color: $blue-flat-eps-color;
+    }
+    &--blue-green {
+        color: $blue-green-eps-color;
+    }
+}

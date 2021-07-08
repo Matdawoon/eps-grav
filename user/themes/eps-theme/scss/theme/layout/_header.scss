@@ -39,12 +39,12 @@
     .navbar-section {
         height: $header-height-large;
         @include default-animation(0.5s);
-        @include breakpoint(md) {
+        @include media-breakpoint-down(md) {
             margin-right: 2rem;
         }
     }
     .navbar-section.desktop-menu {
-        @include breakpoint(md) {
+        @include media-breakpoint-down(md) {
             display: none;
         }
     }
