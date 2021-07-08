@@ -6,7 +6,7 @@
 
 
     {% for row in page.header.rows %}
-    <div class="container-features py-3 {% if row.inverse_responsive == 'image-start' %}flex-column-reverse{% else %}flex-column{% endif %} {% if row.global_position == 'right' %}flex-md-row-reverse{% else %}flex-md-row{% endif %} ">
+    <div class="container-features py-3 {% if row.inverse_responsive == 'image-start' %}flex-column-reverse{% else %}flex-column{% endif %} {% if row.global_position == 'right' %}flex-lg-row-reverse{% else %}flex-lg-row{% endif %} ">
       <div class="py-2 container-features__desc {{ row.description_position }}">
         <h3>{{ row.title|raw }}</h3>
         <p>{{ row.description|raw }}</p>

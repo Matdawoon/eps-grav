@@ -5,11 +5,11 @@
         <a href="{{ page.url }}">{{ image.cropZoom(800,400).html("","","img-responsive")|raw }}</a>
     </div>
     {% endif %}
-    <div class="card-header">
+    <div class="card-header mb-0">
         <div class="card-subtitle text-gray">
             {% include 'partials/blog/date.html.twig' %}
     </div>
-        <div class="card-title">
+        <div class="card-title mb-0">
         {% include 'partials/blog/title.html.twig' with {title_level: 'h5'} %}
         </div>
     </div>

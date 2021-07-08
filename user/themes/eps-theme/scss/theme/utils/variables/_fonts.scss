@@ -77,11 +77,11 @@ $min-responsive-font-size: 16px;
 $core-font-size: 1rem !default;
 $core-line-height: 1.7 !default;
 // Heading Sizes
-$h1-font-size: $core-font-size+1.188 !default;
-$h2-font-size: $core-font-size - 1.60 !default;
-$h3-font-size: $core-font-size - 1.50 !default;
-$h4-font-size: $core-font-size+0.75 !default;
-$h5-font-size: $core-font-size+0.35 !default;
-$h6-font-size: $core-font-size - 0.15 !default;
+$h1-font-size: $core-font-size + 1.80 !default;
+$h2-font-size: $core-font-size + 1.50 !default;
+$h3-font-size: $core-font-size + 1.30 !default;
+$h4-font-size: $core-font-size + 0.75 !default;
+$h5-font-size: $core-font-size + 0.35 !default;
+$h6-font-size: $core-font-size + 0.15 !default;
 // Spacing
 $leading-margin: $core-line-height * 1rem !default;

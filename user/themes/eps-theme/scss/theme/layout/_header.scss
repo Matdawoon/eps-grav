@@ -1,6 +1,6 @@
 #header {
     width: 100%;
-    height: $header-height-large;
+    height: auto;
     /*border-bottom: 1px solid rgba($gray-color, 10);*/
     /*@include default-animation(0.5s);*/
     font-size: $header-font-size;
@@ -9,6 +9,9 @@
     color: $light-color;
     a {
         color: $light-color;
+        font-size: $html-font-size;
+        font-weight: $font-weight-bold;
+        
     }
     .logo svg path {
         fill: $header-color-light;

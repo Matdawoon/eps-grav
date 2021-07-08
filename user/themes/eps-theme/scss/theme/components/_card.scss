@@ -94,8 +94,9 @@ $card-border-radius: .1rem;
     .card-header,
     .card-body,
     .card-footer {
-      padding: $layout-spacing-lg;
+      padding: $layout-spacing-md;
       padding-bottom: 0;
+      padding-top: 0;
   
       &:last-child {
         padding-bottom: $layout-spacing-lg;
@@ -115,9 +116,7 @@ $card-border-radius: .1rem;
         img {
           border-top-left-radius: $card-border-radius;
           border-top-right-radius: $card-border-radius;
-                  height: 20vh;
-        width: 100%;
-        object-fit: contain;
+
         }
       }
   
