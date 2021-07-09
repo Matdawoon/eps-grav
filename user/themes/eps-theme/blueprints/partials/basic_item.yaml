@@ -1,11 +1,29 @@
 
 form:
   fields:
-    .item_list_title:
+    .title:
       type: text
       label: item list title
       toggleable: true
-    .item_list_description:
+    .description:
       type: textarea
       label: item list description
       toggleable: true
+    test:
+        type: spacer
+        title: Logos or numbers
+        text: ATTENTION DE CHOISIR SOIT L'UN SOIT L'AUTRE !
+        underline: true
+
+    .logo:
+      type: filepicker
+      label: List img
+      preview_images: true
+      description: 'If not specified, this defaults to the first image found in the page''s folder'
+      toggleable: true
+
+    .number:
+      type: text
+      label: Numbre item
+      toggleable: true
+

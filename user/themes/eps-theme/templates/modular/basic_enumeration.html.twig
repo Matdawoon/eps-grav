@@ -2,15 +2,24 @@
 {% import 'macros/basic_item.html.twig' as macro_basic_item %}
 
 <section class="container basic-item-list">
-
-    <div >
-        <ol class="row">
+    <div class="row" >
+        {% if page.header.basic_enumeration.isRowDisplay %}
             {% for item in page.header.enum_item_list  %}
-                <li class="rcol-12 col-md"> {{macro_basic_item.basic_item(item.item_list_title, item.item_list_description, "basic-item-list__text-container" )}}</li>
+                <div class="col-lg-{{ (12 / page.header.basic_enumeration.col_num)|round }} item order-{{item.number}} order-lg-1">
+                    <div class ={{item.number ? "number" : "item_logo"}}>
+                    {% if item.number %}
+                        <span>{{item.number}}</span>
+                    {% else %}
+                        {{ page.media[item.logo].html("","","img-responsive")|raw }}
+                    {% endif %}
+                    </div>
+                    <div class="infos">
+                        {{macro_basic_item.basic_item(item.title, item.description, page.header.basic_enumeration.text_align )}}
+                    </div>
+                </div>
             {% endfor %}
-
-        </ol>
+        {% else %}
+        {% endif %}
     </div>
 </section>
-
 

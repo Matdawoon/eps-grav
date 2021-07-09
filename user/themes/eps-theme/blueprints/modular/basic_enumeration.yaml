@@ -11,18 +11,29 @@ form:
           type: tab
           title: Basic Enumeration        
           fields: 
-            header.basic_enumeration_col_num:
+            header.basic_enumeration.col_num:
               type: number
               label: Basic Enumeration col number
               default: 1
               size: medium
 
-            header.basic_enumeration_style:
-              type: number
-              label: Basic Enumeration col number
-              default: 1
-              size: medium
-                    
+            header.basic_enumeration.isRowDisplay:
+              type: toggle
+              label: Affichage En lignes ?
+              highlight: 1
+              options:
+                  1: PLUGIN_ADMIN.YES
+                  0: PLUGIN_ADMIN.NO
+              validate:
+                  type: bool
+
+            header.basic_enumeration.text_align:
+              type: text
+              label: THEME_EPS-THEME.ADMIN.CONTENT.CSS_CLASS.LABEL
+              help: THEME_EPS-THEME.ADMIN.CONTENT.CSS_CLASS.HELP
+              description: THEME_EPS-THEME.ADMIN.CONTENT.HELP_DESCRIPTIONS.TEXT_HELPERS_CLASS
+              size: medium  
+              toggleable: true                       
 
             section_list:
                 type: section
