@@ -40,13 +40,19 @@ form:
                       label: Main Image
                       preview_images: true
                       description: 'If not specified, this defaults to the first image found in the page''s folder'
- 
+                      toggleable: true
                     header.secondary_img:
                       type: filepicker
                       label: secondary Image
                       preview_images: true
                       description: 'If not specified, this defaults to the first image found in the page''s folder'
-
+                      toggleable: true
+                    header.mobile_img:
+                      type: filepicker
+                      label: Mobile Image
+                      preview_images: true
+                      description: 'If not specified, this defaults to the first image found in the page''s folder'
+                      toggleable: true
                        
                 
                 positions_settings:

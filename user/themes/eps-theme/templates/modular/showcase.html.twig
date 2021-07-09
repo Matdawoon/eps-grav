@@ -9,17 +9,18 @@
                 {% if page.header.secondary_img %}
                     {{ page.media[page.header.secondary_img].html("","","secondary-image")|raw }}
                 {% endif %}
-                 {% include 'partials/general-title-description.html.twig' with {obj: page.header} %}
+                {% include 'partials/general-title-description.html.twig' with {obj: page.header} %}
                 {{button.macro_button(page.header.btn_list)}}
             </div>
             <div class="primary-image">
-                <img src="{{ page.media[page.header.main_img].cropResize(897, 680).url }}" class="img-responsive img-centered">
+                <img src="{{ page.media[page.header.main_img].cropResize(897, 680).url }}" class="img-responsive showcase_desktop_view">
+                <img src="{{ page.media[page.header.mobile_img].cropResize(897, 680).url }}" class="img-responsive showcase_mobile_view">
             </div>
             {% else %}
-            <div class="column col-12">
+            <div class="text-center">
 
-                <h1> {{ page.header.showcase_title|raw }}  </h1>
-                <p> {{ page.header.showcase_description|raw }}</p>
+                {% include 'partials/general-title-description.html.twig' with {obj: page.header} %}
+                {{button.macro_button(page.header.btn_list)}}
             </div>
             {% endif %}
         </div>

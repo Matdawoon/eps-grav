@@ -9,18 +9,48 @@
     }
     .container-showcase__row {
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column-reverse wrap;
         align-content: space-between;
-        align-items: center;
+        align-items: center; 
+        justify-content: center;
+        @include media-breakpoint-up(lg) {
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-between;
+            align-items: center;
+        }
         & .primary-image {
             flex: 0 0 50%;
+            .showcase_desktop_view{
+                display: none;
+                @include media-breakpoint-up(lg) {
+                    display: inline-block;
+                }
+            }
+            .showcase_mobile_view{
+                @include media-breakpoint-up(lg) {
+                    display: none;
+                }
+            }
         }
         &__desc {
             flex: 0 0 50%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            @include media-breakpoint-up(lg) {
+                align-items: flex-start;
+                justify-content: start;
+            }
             & .secondary-image {
-                width: auto;
-                max-width: 395px;
-                max-height: 130px;
+                display: none;
+                @include media-breakpoint-up(lg) {
+                    display: block;
+                    width: auto;
+                    max-width: 395px;
+                    max-height: 130px;
+                }
             }
         }
         &.ligne-inverse {
