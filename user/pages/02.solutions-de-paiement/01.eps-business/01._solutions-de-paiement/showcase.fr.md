@@ -32,6 +32,13 @@ btn_list:
 main_title: '<strong class="eps__color--blue-green">Professionnelles</strong>'
 main_description: '<strong class="eps__color--blue-green">EPS Business :</strong> Solution clé-en-main de cartes pour les entreprises'
 showcase_bg_color: '#F7F7F7'
-main_text_align: text-center
+main_text_align: 'text-center text-lg-start'
+module_bg_color: '#f7f7f7'
+module_curvature:
+    curvature_top: true
+    curvature_bottom: true
+main_img: solution-business-e-pay-space-2.png
+secondary_img: carte-depenses-professionnelles-e-pay-space-1.png
+mobile_img: solution-business-e-pay-space-mobile.png
 ---
 
