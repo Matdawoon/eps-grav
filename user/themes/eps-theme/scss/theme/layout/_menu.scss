@@ -10,7 +10,7 @@
             position: relative;
             margin: 0;
             a {
-                padding: $dropmenu-vert-padding ($dropmenu-horiz-padding + $dropmenu-child-padding) $dropmenu-vert-padding $dropmenu-horiz-padding;
+                padding: $dropmenu-vert-padding-xs ($dropmenu-horiz-padding + $dropmenu-child-padding) $dropmenu-vert-padding-xs $dropmenu-horiz-padding;
                 display: block;
                 text-decoration-color: transparent;
                 &:hover,
@@ -28,11 +28,10 @@
                 &:after {
                     display: block;
                     content: "";
-                    position: absolute;
+                    position: relative;
                     left: 0;
                     bottom: -2px;
-                    width: 100%;
-                    height: 4px;
+                    height: 1px;
                     background: $blue-azul-eps-color;
                     transform-origin: right;
                     transform: scaleX(0);
@@ -41,6 +40,7 @@
                 &:before {
                     content: '\f107';
                     font-family: 'FontAwesome';
+                    font-weight: $font-weight-light;
                     display: inline-block;
                     vertical-align: middle;
                     float: right;
@@ -58,9 +58,10 @@
                 &>ul {
                     display: block;
                     visibility: visible;
+                    /*
                     .scrolled & {
                         background: transparentize($primary-color, 0.2);
-                    }
+                    }*/
                     border-radius: 0.5rem;
                     padding: 0.3rem;
                 }
@@ -73,8 +74,8 @@
             position: absolute;
             top: 100%;
             list-style: none;
-            background: $dropmenu-bg;
-            box-shadow: $dropmenu-shadow;
+            background: $white-dropdown-eps-color;
+            box-shadow: $box-shadow;
             visibility: hidden;
             display: flex;
             flex-direction: column;
@@ -101,6 +102,36 @@
             transition: transform .3s, opacity .5s;
             opacity: 0;
             transform: translateY(-10px);
+        }
+    }
+}
+
+.dropdown-nav {
+    font-size: $core-font-size;
+    font-weight: $font-weight-light;
+    box-shadow: 0 10px 50px 0 rgba(107, 107, 107, 0.5%);
+    & ul li {
+        height: $dropmenu-child-padding;
+    }
+    &__color--item {
+        font-size: $font-size-lg;
+        font-weight: $font-weight-light;
+        & a:hover {
+            color: $blue-azul-eps-color!important;
+        }
+        & a:active {
+            color: $blue-azul-eps-color!important;
+        }
+    }
+    @include media-breakpoint-down(xl) {
+        box-shadow: none;
+        .tree-empty {
+            padding: 0px 0px;
+        }
+        span.toggler::before {
+            list-style: none;
+            outline-style: none;
+            text-decoration: none;
         }
     }
 }

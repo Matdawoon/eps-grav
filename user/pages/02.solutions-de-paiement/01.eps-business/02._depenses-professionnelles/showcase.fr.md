@@ -18,7 +18,7 @@ btn_list:
         btn_tabs:
             tab_btn:
                 title: 'Voir nos tarifs'
-                css: 'btneps btneps__color--blue-green'
+                css: 'btneps btneps__color--blue-green-outline'
                 href: 'https://epayspace.com/fr/pricing'
             tab_modal:
                 html_area: '<script type="text/javascript" src="//hello.perhentia.com/form/generate.js?id=40"></script>'

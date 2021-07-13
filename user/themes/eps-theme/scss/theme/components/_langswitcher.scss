@@ -8,17 +8,13 @@
     transform: translateY(-50%);
     margin-left: 1rem !important;
     display: inline-block;
-
     & .active {
-        font-weight: bold;
+        font-weight: $font-weight-bold;
         text-decoration: underline;
     }
-
     & li {
         display: inline-block;
         margin-left: 0.5rem;
         line-height: 1rem;
     }
-    
 }
-
