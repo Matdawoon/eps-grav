@@ -42,21 +42,7 @@
 {% endblock %}
 </head>
 <body id="top" class="{% block body_classes %}{{ body_classes }}{% endblock %}">
-    {% block mobile %}
-    <div class="container mobile-container">
-        <div class="overlay" id="overlay">
-            <div class="container mobile-logo">
-                {% include 'partials/logo.html.twig' with {mobile: true} %}
-            </div>
-            <nav class="container overlay-menu">
-                {% include 'partials/navigation.html.twig' with {tree: true} %}
-            </nav>
-            {% if config.plugins.langswitcher.enabled %}
-                {% include 'partials/langswitcher.html.twig' with {tree: true, mobile:true} %}
-            {% endif %}
-        </div>
-    </div>
-    {% endblock %}
+
     {% block header %}
         <section id="header" class="section container-fluid">
             <section class="container">
@@ -77,16 +63,35 @@
                         {% endif %}
 
                     </section>
+                    {% block mobile %}
+                    <div class="i-mobile-menu" >
+                        <div class="button_container" id="toggle">
+                            <span class="top"></span>
+                            <span class="middle"></span>
+                            <span class="bottom"></span>
+                        </div>
+                    </div>
+                    <section class="container">
+    
+                        <div class="container mobile-container">
+                            <div class="overlay" id="overlay">
+                                <div class="container mobile-logo">
+                                    {% include 'partials/logo.html.twig' with {mobile: true} %}
+                                </div>
+                                <nav class="container overlay-menu">
+                                    {% include 'partials/navigation.html.twig' with {tree: true} %}
+                                </nav>
+                                {% if config.plugins.langswitcher.enabled %}
+                                    {% include 'partials/langswitcher.html.twig' with {tree: true, mobile:true} %}
+                                {% endif %}
+                            </div>
+                        </div>
+                    </section>
+                    {% endblock %}
                 </nav>
             </section>
         </section>
-        <div class="container mobile-menu">
-            <div class="button_container" id="toggle">
-                <span class="top"></span>
-                <span class="middle"></span>
-                <span class="bottom"></span>
-            </div>
-        </div>
+
     {% endblock %}
 
     {% block hero %}{% endblock %}
