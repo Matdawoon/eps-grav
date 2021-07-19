@@ -1,11 +1,8 @@
 $card-border-radius: .1rem;
-.card-container{
-
-    
+.card-container {
     width: 100%;
     padding: 5%;
     background-color: $light-color;
-
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-start;
@@ -13,75 +10,51 @@ $card-border-radius: .1rem;
     border-radius: 5%;
     box-shadow: 0 0 31px #dce1ed;
     text-align: center;
-
-
-    & .card-img{
+    & .card-img {
         height: 20vh;
         width: 100%;
         object-fit: fill;
-        
     }
-
-    & .card-desc{
-
-    }
-
-    & .card-btn{
-
-    }
-
+    & .card-desc {}
+    & .card-btn {}
 }
 
-
-.card-carousel{
-  width: 100%;
-  height: 100%;
-  padding: 3rem;
-  margin: 3rem;
-  background-color: $light-color;
-
-  display: flex;
-  display: block;
-  flex-flow: column nowrap;
-  justify-content: center;
-  border-radius: 2%;
-  box-shadow: 0 0 31px #dce1ed;
-
-
-  & .card-image {
-    padding-top: $layout-spacing-lg;
-
-    &:first-child {
-      padding-top: 0;
-
-      img {
-        border-top-left-radius: $card-border-radius;
-        border-top-right-radius: $card-border-radius;
-        height: 30vh;
-        width: 100%;
-        object-fit: contain;
-      }
+.card-carousel {
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+    margin: 0rem;
+    background-color: $light-color;
+    display: flex;
+    display: block;
+    flex-flow: column nowrap;
+    justify-content: center;
+    border-radius: 2%;
+    box-shadow: 0 0 31px #dce1ed;
+    & .card-image {
+        padding-top: $layout-spacing-lg;
+        &:first-child {
+            padding-top: 0;
+            img {
+                border-top-left-radius: $card-border-radius;
+                border-top-right-radius: $card-border-radius;
+                height: 30vh;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+        &:last-child {
+            img {
+                border-bottom-left-radius: $card-border-radius;
+                border-bottom-right-radius: $card-border-radius;
+            }
+        }
     }
-
-    &:last-child {
-      img {
-        border-bottom-left-radius: $card-border-radius;
-        border-bottom-right-radius: $card-border-radius;
-      }
+    & .card-body {
+        padding: $layout-spacing-lg;
+        padding-bottom: 0;
     }
-  }
-
-  & .card-body{
-    padding: $layout-spacing-lg;
-    padding-bottom: 0;
-  }
-
-
-
 }
-
-
-
 
 // Cards
 .card {
@@ -90,42 +63,33 @@ $card-border-radius: .1rem;
     //border-radius: $border-radius;
     display: flex;
     flex-direction: column;
-  
     .card-header,
     .card-body,
     .card-footer {
-      padding: $layout-spacing-lg;
-      padding-bottom: 0;
-      padding-top: 0;
-  
-      &:last-child {
-        padding-bottom: $layout-spacing-lg;
-      }
-    }
-  
-    .card-body {
-      flex: 1 1 auto;
-    }
-  
-    .card-image {
-      padding-top: $layout-spacing-lg;
-  
-      &:first-child {
+        padding: $layout-spacing-lg;
+        padding-bottom: 0;
         padding-top: 0;
-  
-        img {
-          border-top-left-radius: $card-border-radius;
-          border-top-right-radius: $card-border-radius;
-
+        &:last-child {
+            padding-bottom: $layout-spacing-lg;
         }
-      }
-  
-      &:last-child {
-        img {
-          border-bottom-left-radius: $card-border-radius;
-          border-bottom-right-radius: $card-border-radius;
-        }
-      }
     }
-  }
-  
+    .card-body {
+        flex: 1 1 auto;
+    }
+    .card-image {
+        padding-top: $layout-spacing-lg;
+        &:first-child {
+            padding-top: 0;
+            img {
+                border-top-left-radius: $card-border-radius;
+                border-top-right-radius: $card-border-radius;
+            }
+        }
+        &:last-child {
+            img {
+                border-bottom-left-radius: $card-border-radius;
+                border-bottom-right-radius: $card-border-radius;
+            }
+        }
+    }
+}
