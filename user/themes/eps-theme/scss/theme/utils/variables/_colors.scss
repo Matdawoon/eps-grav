@@ -2,8 +2,10 @@
 $white-full-eps-color: #ffffff !default;
 $gray-dark-eps-color: #3b3b3b !default;
 $gray-eps-color: #434343 !default;
+$gray-extreme-eps-color: #272727 !default;
 $gray-pale-eps-color: #f7f9fc !default;
 $blue-dark-eps-color: #24283e !default;
+$blue-extreme-dark-eps-color: #0c0e18 !default;
 $blue-azul-eps-color: #2e80dd !default;
 $blue-flat-eps-color: #3f83b6 !default;
 $blue-green-eps-color: #137d8a !default;
@@ -18,6 +20,8 @@ $btn-eps-blue: $blue-azul-eps-color;
 $btn-eps-red: $red-warmpink-eps-color;
 $btn-eps-gray: $gray-dark-eps-color;
 $btn-eps-blue-green: $blue-green-eps-color;
+// EPS Dropmenu - Dropdown
+$white-dropdown-eps-color: #f1F1F1 !default;
 // Core colors
 $primary-color: #24283e !default;
 $primary-color-dark: darken($primary-color, 3%) !default;

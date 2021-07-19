@@ -63,14 +63,23 @@
             }
         }
     }
-    &__color--red-warmpink {
+    &__color--red-warmpink-outline {
         @include button-outline-variant($red-warmpink-eps-color);
     }
-    &__color--blue-flat {
+    &__color--red-warmpink {
+        @include button-variant($red-warmpink-eps-color);
+    }
+    &__color--blue-flat-outline {
         @include button-outline-variant($blue-flat-eps-color);
     }
-    &__color--blue-green {
+    &__color--blue-flat {
+        @include button-variant($blue-flat-eps-color);
+    }
+    &__color--blue-green-outline {
         @include button-outline-variant($blue-green-eps-color);
+    }
+    &__color--blue-green {
+        @include button-variant($blue-green-eps-color);
     }
 }
 

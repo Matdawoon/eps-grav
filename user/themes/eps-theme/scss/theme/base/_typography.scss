@@ -15,16 +15,25 @@ h6 {
 h1,
 .h1 {
     font-size: $h1-font-size;
+    @include media-breakpoint-down(xl) {
+        font-size: $font-size-xxxlg;
+    }
 }
 
 h2,
 .h2 {
     font-size: $h2-font-size;
+    @include media-breakpoint-down(xl) {
+        font-size: $font-size-xxlg;
+    }
 }
 
 h3,
 .h3 {
     font-size: $h3-font-size;
+    @include media-breakpoint-down(xl) {
+        font-size: $font-size-xlg;
+    }
 }
 
 h4,

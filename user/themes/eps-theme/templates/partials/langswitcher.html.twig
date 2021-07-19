@@ -1,9 +1,9 @@
-<nav class=" {{ mobile ? 'overlay-menu' : 'dropmenu animated'}}">
+<nav class="container {{ mobile ? 'overlay-menu' : 'dropmenu animated'}}">
 
     <ul class="{{ tree ? 'tree' : '' }} ">
         <li>
         
-        <a><span class="flag-icon flag-icon-{{langswitcher.current}} mx-1"></span> {{native_name(langswitcher.current)|capitalize }}</a><ul>
+        <a><span class="flag-icon flag-icon-{{langswitcher.current}} mx-1"></span> {{native_name(langswitcher.current)|capitalize }}</a><ul class="dropdown-nav dropdown-nav__color--item px-1 py-3">
         {% set display_format = display_format ?? config.get('plugins.langswitcher.language_display', 'long') %}
         {% for language in langswitcher.languages %}
 

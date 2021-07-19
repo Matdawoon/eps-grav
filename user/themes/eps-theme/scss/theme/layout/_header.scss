@@ -10,8 +10,12 @@
     a {
         color: $light-color;
         font-size: $html-font-size;
-        font-weight: $font-weight-bold;
-        
+        font-weight: $font-weight-light;
+    }
+    .dropmenu ul ul a {
+        color: #434343;
+        font-size: .9rem;
+        font-weight: $font-weight-light;
     }
     .logo svg path {
         fill: $header-color-light;
@@ -47,7 +51,7 @@
         }
     }
     .navbar-section.desktop-menu {
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(xl) {
             display: none;
         }
     }
@@ -68,7 +72,6 @@
 }
 
 #header.scrolled {
-    background: transparentize($primary-color, 0.2);
     @include default-animation(0.7s);
 }
 
