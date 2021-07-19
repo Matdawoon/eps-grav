@@ -58,4 +58,18 @@
             /*Axe principal = axe horizontal*/
         }
     }
+    @include media-breakpoint-up(lg) {
+        & .primary-image img {
+            width: 87%;
+        }
+    }
+}
+
+.container-showcase__card__desc {
+    h1 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 30px;
+        line-height: 1.3;
+    }
 }
