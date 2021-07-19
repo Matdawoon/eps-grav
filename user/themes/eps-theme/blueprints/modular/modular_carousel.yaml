@@ -32,45 +32,6 @@ form:
                       import@:
                         type: partials/cards
                 
-                cards_class:
-                  type: tab
-                  title: Cards css
-
-                  fields:
-                    header.css_card_conteneur:
-                      type: text
-                      label: css class card conteneur
-                      toggleable: true
-
-                    header.css_conteneur_image:
-                      type: text
-                      label: css class conteneur img
-                      toggleable: true
-
-                    header.css_conteneur_text:
-                      type: text
-                      label: css class conteneur text
-                      toggleable: true
-
-                    header.css_image:
-                      type: text
-                      label: css class card img 
-                      toggleable: true
-
-                    header.css_title:
-                      type: text
-                      label: css class card title
-                      toggleable: true
-
-                    header.css_description:
-                      type: text
-                      label: css class card description
-                      toggleable: true
-
-                    header.css_btn:
-                      type: text
-                      label: css class card button 
-                      toggleable: true   
 
                 carousel_settings:
                   type: tab

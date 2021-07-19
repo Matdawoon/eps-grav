@@ -4,6 +4,7 @@
 
 .owl-carousel {
     display: none;
+    //overflow: hidden;
     width: 100%;
     -webkit-tap-highlight-color: transparent;
     /* position relative and z-index fix webkit rendering fonts issue */
@@ -16,7 +17,7 @@
         touch-action: manipulation;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
+        align-items: stretch;
         -moz-backface-visibility: hidden;
         /* fix firefox animation glitch */
     }
@@ -30,7 +31,8 @@
     }
     .owl-stage-outer {
         position: relative;
-        overflow: hidden;
+        //overflow: hidden;
+        overflow: visible;
         /* fix for flashing background */
         -webkit-transform: translate3d(0px, 0px, 0px);
     }
@@ -50,6 +52,12 @@
         -webkit-backface-visibility: hidden;
         -webkit-tap-highlight-color: transparent;
         -webkit-touch-callout: none;
+
+        opacity: 0;
+        transition: opacity 500ms;
+        &.active{
+            opacity: 1;
+        }
     }
     .owl-item img {
         display: block;

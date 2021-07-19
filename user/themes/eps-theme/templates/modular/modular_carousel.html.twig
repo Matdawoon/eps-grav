@@ -1,7 +1,7 @@
 {% import 'macros/cards.html.twig' as macro_card %}
 <section class="container">
 
-   <div class="owl-carousel owl-theme p-5" >
+   <div class="owl-carousel owl-theme owl-loaded owl-drag " >
       {% for card in page.header.card_list %}
         {{macro_card.card(page,card.image, card.title, card.description, card.btn_list,  card.css_text_class)}}
   
@@ -19,8 +19,12 @@ $(document).ready(function(){
               loop: false,    
               dots: true,
               nav: true,
+              center: false,
               margin: {{page.header.carousel_item_margin}},
               items: {{page.header.carousel_nb_items}},
+              items: 1,
+              stagePadding: 10,
+              margin: 10,
 navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
               {% if page.header.carousel_responsive_list %}
                 responsive:{

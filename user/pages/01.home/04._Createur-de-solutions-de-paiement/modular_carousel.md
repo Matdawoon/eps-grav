@@ -27,7 +27,7 @@ card_list:
                         modalFooter: null
         image:
             img: cross-solutions-sur-mesure.png
-            height: 30vh
+            height: '50'
         title: 'Solution <strong class="eps__color--red">sur-mesure</strong>'
         description: '<strong class="eps__color--red">EPS Factory</strong> : votre solution personnalisée et à votre image'
         css_text_class: text-center
@@ -46,7 +46,7 @@ card_list:
                         modalFooter: null
         image:
             img: cross-depenses-professionnelles.png
-            height: 30vh
+            height: '50'
         title: 'Ma carte 1'
         description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially'
         css_text_class: 'text-center text-md-end'
@@ -73,5 +73,8 @@ section_container_padding_class: 'py-3 px-3'
 media_order: 'cross-depenses-professionnelles.png,cross-solutions-sur-mesure.png,pattern-eps-01-2021-4.png'
 showcase_bg_img: pattern-eps-01-2021-4.png
 css_conteneur_text: card-carousel__desc
+module_curvature:
+    curvature_top: false
+    curvature_bottom: false
 ---
 

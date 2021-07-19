@@ -11,6 +11,11 @@ form:
       type: text
       label: Image height
       description: en vh
+    .image.fit:
+      type: text
+      label: Image fit
+      description: "fill, contain, cover, none, scale-down"
+      toggleable: true
     .title:
       type: text
       label: card title

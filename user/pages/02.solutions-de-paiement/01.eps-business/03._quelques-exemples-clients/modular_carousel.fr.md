@@ -25,7 +25,8 @@ card_list:
                         modalFooter: null
         image:
             img: note-de-frais-paiement-fournisseurs.png
-            height: '300'
+            height: '18'
+            fit: cover
         title: 'Notes de frais'
         description: 'Equipez vos collaborateurs sur le terrain d’une carte de paiement rechargeable pour leurs dépenses quotidiennes'
         css_text_class: text-left
@@ -44,7 +45,8 @@ card_list:
                         modalFooter: null
         image:
             img: media-buy.png
-            height: '300'
+            height: '18'
+            fit: cover
         title: 'Achats Média'
         description: 'Emettez des cartes virtuelles à volonté et en temps réel pour gérer vos campagnes digitales et vos achats média'
         css_text_class: text-left
@@ -63,55 +65,18 @@ card_list:
                         modalFooter: null
         image:
             img: association.png
-            height: '300'
+            height: '18'
+            fit: cover
         title: Associations
         description: 'Rationalisez et sécurisez les processus de dépenses de votre association avec des cartes de paiements faciles d’usage'
         css_text_class: text-left
 carousel_item_loop: false
 media_order: 'association.png,media-buy.png,note-de-frais-paiement-fournisseurs.png'
-carousel_item_margin: '20'
-carousel_responsive_list:
-    -
-        breakpoint: '1920'
-        items: 2
-        margin: 15
-        loop: false
-        nav: true
-        dots: false
-        stagePadding: 0
-    -
-        breakpoint: '1440'
-        items: 2
-        margin: 20
-        loop: false
-        nav: true
-        dots: false
-        stagePadding: 0
-    -
-        breakpoint: '1200'
-        items: 2
-        margin: 20
-        loop: false
-        nav: true
-        dots: false
-        stagePadding: 0
-    -
-        breakpoint: '768'
-        items: 1
-        margin: 20
-        loop: false
-        nav: true
-        dots: false
-        stagePadding: 0
-    -
-        breakpoint: '0'
-        items: 1
-        margin: 20
-        loop: false
-        nav: true
-        dots: false
-        stagePadding: 0
+carousel_item_margin: '30'
 carousel_nb_items: '2'
 css_conteneur_image: container-fluid
+module_curvature:
+    curvature_top: false
+    curvature_bottom: false
 ---
 
