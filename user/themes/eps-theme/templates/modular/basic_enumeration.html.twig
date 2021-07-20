@@ -1,7 +1,7 @@
 {% set item_style = page.header.basic_enumeration_style %}
 {% import 'macros/basic_item.html.twig' as macro_basic_item %}
 
-<section class="container basic-item-list">
+<section class="{{ page.header.custom_container ? page.header.custom_container : 'container '}} basic-item-list">
     <div class="row" >
         {% if page.header.basic_enumeration.isRowDisplay %}
             {% for item in page.header.enum_item_list  %}

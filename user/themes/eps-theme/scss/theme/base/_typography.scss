@@ -15,8 +15,17 @@ h6 {
 h1,
 .h1 {
     font-size: $h1-font-size;
-    @include media-breakpoint-down(xl) {
+    @include media-breakpoint-down(sm) {
+        font-size: $font-size-xlg;
+    }
+    @include media-breakpoint-down(md) {
+        font-size: $font-size-xxlg;
+    }
+    @include media-breakpoint-down(lg) {
         font-size: $font-size-xxxlg;
+    }
+    @include media-breakpoint-up(lg) {
+        font-size: $font-size-xxxxlg;
     }
 }
 

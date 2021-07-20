@@ -17,6 +17,30 @@ rows:
         global_position: right
         description_position: text-end
         inverse_responsive: image-end
+    -
+        btn_list:
+            -
+                btn_tabs:
+                    tab_btn:
+                        title: 'Voir les tarifs'
+                        css: 'btneps btneps__color--blue-green-outline'
+                        href: '#'
+                    tab_modal:
+                        id: null
+            -
+                btn_tabs:
+                    tab_btn:
+                        title: 'Voir les tarifs'
+                        css: 'btneps btneps__color--blue-green-outline'
+                        href: '#'
+                    tab_modal:
+                        id: null
+        image: null
+        title: null
+        description: null
+        global_position: left
+        description_position: text-start
+        inverse_responsive: image-start
 showcase_curvature:
     curvature_top: true
     curvature_bottom: false
@@ -24,5 +48,8 @@ showcase_bg_color: '#ffffff'
 main_description: 'Les dépenses d''entreprises sont simplifiées grâce à une solution tout en un qui va bien plus loin que la simple émission de cartes de paiement. Vous disposez d''une interface web de gestion qui vous laisse la liberté totale de gestion.'
 main_text_align: text-center
 section_container_padding_class: py-5
+module_curvature:
+    curvature_top: false
+    curvature_bottom: false
 ---
 
