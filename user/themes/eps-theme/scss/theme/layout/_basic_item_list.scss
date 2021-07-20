@@ -88,4 +88,22 @@
 
 }
 
-  
+.item-list-cards{
+  .logo_img{
+    display: flex;
+    flex-flow: row nowrap;
+
+    img{
+      object-fit: contain;
+      display: inline-block;
+      margin: 0;
+    }
+  }
+  i{
+    font-size: 1.3rem;
+    color: $blue-azul-eps-color;
+  }
+  img{
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,39 @@
+title: Enumeration Cards
+'@extends':
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      fields:
+        enumeration_card:
+          type: tab
+          title: Enumeration cards        
+          fields: 
+            header.main_image:
+              type: filepicker
+              label: List img
+              preview_images: true
+              description: 'If not specified, this defaults to the first image found in the page''s folder'
+              toggleable: true   
+
+            header.list_items:
+              type: list
+              style: vertical
+              label: Enumeration List
+              fields:
+                .description:
+                  type: textarea
+                  label: item list description
+                  toggleable: true
+                .img:
+                  type: filepicker
+                  label: List img
+                  preview_images: true
+                  description: 'If not specified, this defaults to the first image found in the page''s folder'
+                  toggleable: true
+                .fa_icon:
+                  type: text
+                  label: fa icon class
+                  toggleable: true
