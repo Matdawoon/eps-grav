@@ -13,7 +13,7 @@ module_curvature:
     curvature_top: false
     curvature_bottom: false
 media_order: solution-interface-eps-small.png
-section_container_padding_class: 'py-5 pe-5'
+section_container_padding_class: py-5
 shown_in_footer: true
 ---
 
