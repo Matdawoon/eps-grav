@@ -10,9 +10,9 @@
             {{ page.media[page.header.main_image].html("","","img-responsive")|raw }}
         </div>
         <div class="col-12 col-md-4 order-1">
-            {% for i in range(0, moitieTab-1) %}
+            {% for i in range(0, moitieTab -1) %}
                 {# descriptions de droite #}
-                    {{macro_basic_item.basic_item_card(page.header.list_items[i], true)}}
+                    {{macro_basic_item.basic_item_card(page,page.header.list_items[i], true)}}
             {% endfor %}
         </div>
 

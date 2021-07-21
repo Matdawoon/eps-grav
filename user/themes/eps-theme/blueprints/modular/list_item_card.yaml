@@ -36,4 +36,5 @@ form:
                 .fa_icon:
                   type: text
                   label: fa icon class
+                  help: fa-check
                   toggleable: true

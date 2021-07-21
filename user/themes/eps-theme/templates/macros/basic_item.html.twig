@@ -14,7 +14,7 @@
 {% set content %}
     {% if item.img %}
         <div class="logo_img">
-             {{page.media[item.img].html("","",'img-responsive ' ~ isReverse ? 'order-first' : 'order-last')|raw}}  {#~ isReverse ? "order-first":"order-last"#}
+            {{page.media[item.img].html("","",'img-responsive ' ~ isReverse ? 'order-last' : 'order-first')|raw}}  {#~ isReverse ? "order-first":"order-last"#}
             <p>{{item.description}}</p>
         </div>
     {% else %}
@@ -29,8 +29,8 @@
 
 <div class="text-center {{isReverse ? 'text-md-end' : 'text-md-start'}}">
     {% if item.img %}
-        <div class="logo_img">
-             {{page.media[item.img].html("","","img-responsive " ~ (isReverse ? "order-first" : "order-last"))|raw}}  {#~ isReverse ? "order-first":"order-last"#}
+        <div class="logo_img{{(isReverse ? ' justify-content-end' : ' justify-content-start')}}">
+             {{page.media[item.img].html("","",'img-responsive mx-2' ~ (isReverse ? ' order-last' : ' order-first'))|raw}}  {#~ isReverse ? "order-first":"order-last"#}
             <p>{{item.description}}</p>
         </div>
     {% else %}

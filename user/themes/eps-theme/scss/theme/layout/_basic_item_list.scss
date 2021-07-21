@@ -92,10 +92,11 @@
   .logo_img{
     display: flex;
     flex-flow: row nowrap;
-
+    p{
+       margin: .5rem;
+    }
     img{
       object-fit: contain;
-      display: inline-block;
       margin: 0;
     }
   }

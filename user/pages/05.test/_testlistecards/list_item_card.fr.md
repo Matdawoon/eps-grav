@@ -2,33 +2,31 @@
 title: testListecards
 body_classes: modular
 module_curvature:
-    curvature_top: false
-    curvature_bottom: false
+    curvature_top: true
+    curvature_bottom: true
 media_order: 'carte-mastercard-eps-business.png,tick-eps-business.png'
 main_image: carte-mastercard-eps-business.png
 list_items:
     -
-        description: 'azeaze 1'
-        fa_icon: fa-check
+        description: 'Paiement sans contact'
+        img: tick-eps-business.png
     -
-        description: azeaze2
-        fa_icon: fa-check
+        description: '4e ligne personnalisable'
+        img: tick-eps-business.png
     -
-        description: azeaze3
-        fa_icon: fa-check
+        description: 'Solde en EUR/USD/GBP'
+        img: tick-eps-business.png
     -
-        description: azeaze4
-        fa_icon: fa-check
+        description: 'Retrait en distributeur'
+        img: tick-eps-business.png
     -
-        description: azeaze5
-        fa_icon: fa-check
+        description: 'Paiement en point physique'
+        img: tick-eps-business.png
     -
-        description: azeaze6
-        fa_icon: fa-check
-    -
-        description: azeaze7
-        fa_icon: fa-check
+        description: 'Paiement sur internet'
+        img: tick-eps-business.png
 main_title: 'Votre carte Mastercard® EPS Business'
 main_text_align: text-center
+module_bg_color: '#f7f7f7'
 ---
 
