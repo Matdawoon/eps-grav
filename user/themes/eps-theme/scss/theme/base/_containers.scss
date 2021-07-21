@@ -1,3 +1,14 @@
+.container-sp {
+    @include media-breakpoint-up(xl) {
+        max-width: 789px!important;
+        margin: 0 auto;
+    }
+    @include media-breakpoint-only(md) {
+        max-width: 100%!important;
+        margin: 0 auto;
+    }
+}
+
 .custom-container {
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
@@ -9,23 +20,11 @@
 .top-radius-bg {
     border-radius: 100% 100% 0 0 / 100% 100% 0 0;
     height: 4rem;
-    @include media-breakpoint-only(lg) {
-        height: 6.5rem;
-    }
-    @include media-breakpoint-only(xl) {
-        height: 0;
-    }
 }
 
 .bottom-radius-bg {
     border-radius: 0 0 100% 100% / 0 0 100% 100%;
     height: 4rem;
-    @include media-breakpoint-only(lg) {
-        height: 6.5rem;
-    }
-    @include media-breakpoint-only(xl) {
-        height: 0;
-    }
 }
 
 // Container widths

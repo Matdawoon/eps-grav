@@ -90,8 +90,12 @@ showcase_curvature:
     curvature_bottom: true
 showcase_curvature_height: 10rem
 showcase_bg_color: '#f7f7f7'
-main_title: 'TITRE FAQ '
-main_description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
-main_text_align: 'text-md-end text-center'
+main_title: FAQ
+main_text_align: text-center
+module_bg_color: '#f7f7f7'
+module_curvature:
+    curvature_top: true
+    curvature_bottom: true
+section_container_padding_class: py-5
 ---
 

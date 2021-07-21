@@ -73,3 +73,10 @@ form:
                             description: THEME_EPS-THEME.ADMIN.CONTENT.HELP_DESCRIPTIONS.TEXT_HELPERS_CLASS
                             size: medium  
                             toggleable: true                             
+                          header.custom_container:
+                            type: text
+                            label: THEME_EPS-THEME.ADMIN.CONTENT.CONTAINER.LABEL
+                            help: THEME_EPS-THEME.ADMIN.CONTENT.CONTAINER.HELP
+                            description: THEME_EPS-THEME.ADMIN.CONTENT.CONTAINER.HELP
+                            size: medium  
+                            toggleable: true  

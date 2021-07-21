@@ -76,6 +76,9 @@ fr:
           HELP: Block css class
         HELP_DESCRIPTIONS:
           TEXT_HELPERS_CLASS: 'Class modificatrises de text : <br /> `text-xx-start`, `text-xx-end`, `text-xx-center`, `text-start`, `text-end`, `text-center`, `text-decoration-none`, `text-decoration-underline`, `text-decoration-line-through`, `text-lowercase`, `text-uppercase`, `text-capitalize`, `text-wrap`, `text-nowrap`'
+        CONTAINER:
+          LABEL: Container Class CSS
+          HELP: Class modificatrises `container-sp`,
 
     FOOTER_BLOCKS:
         LABEL: Footer's Blocks
