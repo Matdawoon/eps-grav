@@ -96,3 +96,26 @@
         }
     }
 }
+
+
+.item-list-cards{
+  .logo_img{
+    display: flex;
+    flex-flow: row nowrap;
+    p{
+       margin: .5rem;
+    }
+    img{
+      object-fit: contain;
+      margin: 0;
+    }
+  }
+  i{
+    margin: auto 0;
+    font-size: 1.3rem;
+    color: $blue-azul-eps-color;
+  }
+  img{
+    margin: 0 auto;
+  }
+}

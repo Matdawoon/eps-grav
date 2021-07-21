@@ -25,11 +25,11 @@ card_list:
                         modalFooter: null
         image:
             img: note-de-frais-paiement-fournisseurs.png
-            height: '18'
+            height: '30'
             fit: cover
         title: 'Notes de frais'
         description: 'Equipez vos collaborateurs sur le terrain d’une carte de paiement rechargeable pour leurs dépenses quotidiennes'
-        css_text_class: text-left
+        css_text_class: 'text-center text-md-end'
     -
         btn_list:
             -

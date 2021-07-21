@@ -54,7 +54,12 @@
                     {% if module.template != 'modular/showcase' %}
                         {% include 'partials/general-title-description.html.twig' with {obj: module.header} %}
                     {% endif %}
+
                     {{ module.content|raw }} 
+
+                    {% if module.template != 'modular/showcase' %}
+                        {% include 'partials/button_block.html.twig' with {obj: module.header} %}
+                    {% endif %}                    
                 </section>
         {% if module.header.module_curvature["curvature_bottom"] %}
             <div class ="container-fluid bottom-radius-bg"  style="background-color:{{module.header.module_bg_color}};" ></div>

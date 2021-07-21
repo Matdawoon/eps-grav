@@ -5,7 +5,7 @@
 {% macro macro_button(btn_list) %}
 {% import 'macros/modal.html.twig' as macro_modal %}
     {% for btn in btn_list %}
-    <button {{btn.btn_tabs.tab_modal.html_area ? 'id='~ btn.btn_tabs.tab_modal.id ~' onclick=modalCreation("'~ btn.btn_tabs.tab_modal.id ~'")': "" }} class="{{btn.btn_tabs.tab_btn.css}}" href="{{btn.btn_tabs.tab_btn.href}}">{{btn.btn_tabs.tab_btn.title}}</button>
+    <button {{btn.btn_tabs.tab_modal.html_area ? 'id='~ btn.btn_tabs.tab_modal.id ~' onclick=modalCreation("'~ btn.btn_tabs.tab_modal.id ~'")': "" }} class="btneps {{btn.btn_tabs.tab_btn.css}}" href="{{btn.btn_tabs.tab_btn.href}}">{{btn.btn_tabs.tab_btn.title}}</button>
         {% if btn.btn_tabs.tab_modal.html_area %}
             {{macro_modal.macro_modal(btn.btn_tabs.tab_modal.id,
                                         btn.btn_tabs.tab_modal.html_area,
