@@ -13,7 +13,7 @@
         height: 6.5rem;
     }
     @include media-breakpoint-only(xl) {
-        height: 0;
+        //height: 5rem;
     }
 }
 
@@ -24,7 +24,7 @@
         height: 6.5rem;
     }
     @include media-breakpoint-only(xl) {
-        height: 0;
+       // height: 0;
     }
 }
 

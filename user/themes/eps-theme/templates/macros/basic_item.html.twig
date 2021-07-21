@@ -28,18 +28,17 @@
 
 
 <div class="text-center {{isReverse ? 'text-md-end' : 'text-md-start'}}">
+        <div class="logo_img justify-content-center {{(isReverse ? ' justify-content-md-end' : ' justify-content-md-start')}}">
     {% if item.img %}
-        <div class="logo_img{{(isReverse ? ' justify-content-end' : ' justify-content-start')}}">
-             {{page.media[item.img].html("","",'img-responsive mx-2' ~ (isReverse ? ' order-last' : ' order-first'))|raw}}  {#~ isReverse ? "order-first":"order-last"#}
-            <p>{{item.description}}</p>
-        </div>
+        {{page.media[item.img].html("","",'img-responsive mx-2 order-first' ~ (isReverse ? ' order-md-last' : ' order-md-first'))|raw}}  {#~ isReverse ? "order-first":"order-last"#}
+        <p>{{item.description}}</p>
     {% else %}
-        {% if isReverse %}
-            <p>{{item.description}}<i class="fa {{item.fa_icon}} mx-2"></i></p>
-        {% else %}
-            <p><i class="fa {{item.fa_icon}} mx-2"></i>{{item.description}}</p>
-        {% endif %}
+
+        <i class="fa {{item.fa_icon}} mx-2 {{(isReverse ? ' order-md-last' : ' order-md-first')}}"></i>
+        <p>{{item.description}}</p>
+
     {% endif %}
+        </div>
 </div>
 
 {% endmacro %}

@@ -18,7 +18,7 @@ form:
                         type: section
                         title: background curvature 
                         underline: true
-                        import@:
+                        import@1:
                           type: partials/background-curvature 
 
                       section_padding:
@@ -73,3 +73,6 @@ form:
                             description: THEME_EPS-THEME.ADMIN.CONTENT.HELP_DESCRIPTIONS.TEXT_HELPERS_CLASS
                             size: medium  
                             toggleable: true                             
+                          import@2:
+                            type: partials/button/button_list_header
+                            context: theme://blueprints
