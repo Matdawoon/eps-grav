@@ -2,7 +2,7 @@
 title: _creation-de-solutions-de-paiement
 body_classes: modular
 class: small
-carousel_nb_items: '2'
+carousel_nb_items: '3'
 carousel_item_margin: '30'
 main_title: '<strong class="eps__color--blue-flat">Créateur de solutions</strong> de paiement'
 main_description: 'Faites de l''innovation financière, le moteur de votre croissance'
@@ -27,7 +27,7 @@ card_list:
                         modalFooter: null
         image:
             img: cross-solutions-sur-mesure.png
-            height: '50'
+            height: '30'
         title: 'Solution <strong class="eps__color--red">sur-mesure</strong>'
         description: '<strong class="eps__color--red">EPS Factory</strong> : votre solution personnalisée et à votre image'
         css_text_class: text-center
@@ -46,10 +46,15 @@ card_list:
                         modalFooter: null
         image:
             img: cross-depenses-professionnelles.png
-            height: '50'
-        title: 'Ma carte 1'
-        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially'
-        css_text_class: 'text-center text-md-end'
+            height: '30'
+        title: 'Dépenses <strong class="eps__color--blue-green">professionnelles</strong>'
+        description: '<strong class="eps__color--blue-green">EPS Business :</strong> solution clé-en-main de cartes pour les entreprises'
+        css_text_class: text-center
+    -
+        image:
+            img: null
+            height: '30'
+        title: null
 carousel_responsive_list:
     -
         breakpoint: '0'
@@ -74,7 +79,8 @@ media_order: 'cross-depenses-professionnelles.png,cross-solutions-sur-mesure.png
 showcase_bg_img: pattern-eps-01-2021-4.png
 css_conteneur_text: card-carousel__desc
 module_curvature:
+    curvature_bottom: true
     curvature_top: false
-    curvature_bottom: false
+module_bg_img: pattern-eps-01-2021-4.png
 ---
 
