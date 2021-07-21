@@ -5,7 +5,7 @@
     <div class="row" >
         {% if page.header.basic_enumeration.isRowDisplay %}
             {% for item in page.header.enum_item_list  %}
-                <div class="col-lg-{{ (12 / page.header.basic_enumeration.col_num)|round }} item order-{{item.number}} order-lg-1">
+                <div class="col-lg-{{ (12 / page.header.basic_enumeration.col_num)|round }} item {{item.number ? "order-" ~ item.number : ""}}  order-lg-1">
                     <div class ={{item.number ? "number" : "item_logo"}}>
                     {% if item.number %}
                         <span>{{item.number}}</span>

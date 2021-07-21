@@ -1,5 +1,5 @@
 .container-sp {
-    @include media-breakpoint-up(xl) {
+    @include media-breakpoint-up(lg) {
         max-width: 789px!important;
         margin: 0 auto;
     }
