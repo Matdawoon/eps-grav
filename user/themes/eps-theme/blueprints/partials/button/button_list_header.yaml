@@ -3,7 +3,7 @@
 form:
   header.btn_list:
     type: list
-    label: Button list
+    label: Les boutons
 
     import@:
       type: partials/button/simple_button

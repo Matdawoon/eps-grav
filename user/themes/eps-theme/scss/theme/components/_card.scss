@@ -44,19 +44,19 @@ $card-border-radius: .1rem;
                 padding-bottom: 0;
                 object-fit: contain;
                 //cette partie devrait etre facto
-                &.cover{
+                &.cover {
                     object-fit: cover;
                     padding: 0;
                 }
-                &.fill{
+                &.fill {
                     object-fit: fill;
                     padding: 0;
                 }
-                &.none{
+                &.none {
                     object-fit: none;
                     padding: 0;
                 }
-                &.scale-down{
+                &.scale-down {
                     object-fit: scale-down;
                     padding: 0;
                 }
@@ -73,14 +73,13 @@ $card-border-radius: .1rem;
         //padding: $layout-spacing-lg;
         padding: 3rem;
         padding-top: 0;
-
-        h3{
+        h3 {
             margin-bottom: 0;
+            font-size: 1.8rem;
         }
-        p{
+        p {
             margin-top: .5rem;
         }
-
     }
 }
 

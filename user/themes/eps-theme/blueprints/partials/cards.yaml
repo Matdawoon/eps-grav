@@ -3,29 +3,33 @@ form:
   fields:
     
     .image.img:
+      markdown: true
       type: filepicker
-      label: Card Image
+      label: Intégrer une image
       preview_images: true
-      description: 'If not specified, this defaults to the first image found in the page''s folder'
+      description: THEME_EPS-THEME.ADMIN.CONTENT.HELP_DESCRIPTIONS.IMAGE_HELPERS_CLASS
     .image.height:
+      markdown: true
       type: text
-      label: Image height
-      description: en vh
+      label: Hauteur de l'image
+      description: '<em>VH (1VH = 1% de la hauteur de la fenêtre)</em>'
     .image.fit:
+      markdown: true
       type: text
-      label: Image fit
-      description: "fill, contain, cover, none, scale-down"
+      label: Aperçu de l'image (étiré, mis à l'échelle, en couverture)
+      description: '<em>fill</em>, <em>contain</em>, <em>cover</em>, <em>none</em>, <em>scale-down</em>'
       toggleable: true
     .title:
       type: text
-      label: card title
+      label: Titre de la carte
     .description:
       type: text
-      label: card description
+      label: Description de la carte
       toggleable: true
     .css_text_class:
+      markdown: true
       type: text
-      label: text position
+      label: Positionnement du texte
       description: THEME_EPS-THEME.ADMIN.CONTENT.HELP_DESCRIPTIONS.TEXT_HELPERS_CLASS
       toggleable: true
 

@@ -7,15 +7,15 @@ form:
           fields:
             header.module_bg_img:
               type: filepicker
-              label: bg img
+              label: Image
               preview_images: true
               toggleable: true
-              description: 'If not specified, this defaults to the first image found in the page''s folder'
+              description: 'Si non spécifié, il s''agit par défaut de la première image trouvée dans le dossier de la page'
         column2:
           fields:
             header.module_bg_color:
               type: colorpicker
-              label: Choose a color
+              label: Couleur
               toggleable: true
 
 
@@ -26,11 +26,11 @@ form:
           curvature_top: false
           curvature_bottom: false
       options:
-          curvature_top: Courbure haut
-          curvature_bottom: Courbure bas
+          curvature_top: Courbure vers le haut
+          curvature_bottom: Courbure vers le bas
       use: keys
 
     header.module_curvature_height:
       type: text
-      label: hauteur de la Courbure
+      label: Hauteur de la courbure
 

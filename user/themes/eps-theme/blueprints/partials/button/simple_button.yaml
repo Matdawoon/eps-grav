@@ -8,33 +8,35 @@ form:
       fields:
         .tab_btn:
           type: tab
-          title: Classic button configs
+          title: Créer un bouton classique
           fields:
             .title:
               type: text
-              label: title
+              label: Titre du bouton
             .css:
               type: text
-              label: css
+              label: THEME_EPS-THEME.ADMIN.CONTENT.CSS_CLASS.LABEL
+              markdown: true
+              description: THEME_EPS-THEME.ADMIN.CONTENT.HELP_DESCRIPTIONS.BUTTON_HELPERS_CLASS
             .href:
-              type: text
-              label: href
+              type: Contenu du bouton
+              label: Lien du bouton
         .tab_modal:
           type: tab
-          title: Modal button (Pop-in)
+          title: Créer un bouton pop-in
           fields:
             .html_area:
               type: textarea
-              label: html
+              label: Contenu de la pop-in (en Html ou/et JS)
               toggleable: true
             .id:
               type: text
-              label: id=
+              label: Ajouter un identifiant unique (ex:id=5)
             .modalHeader:
               type: text
-              label: Titre Modal Header
+              label: Titre en haut de la pop-in
               toggleable: true
             .modalFooter:
               type: text
-              label: Titre Modal Footer
+              label: Titre en bas de la pop-in
               toggleable: true

@@ -81,6 +81,12 @@
     &__color--blue-green {
         @include button-variant($blue-green-eps-color);
     }
+    &__color--red-corail-outline {
+        @include button-outline-variant($red-corail-eps-color);
+    }
+    &__color--red-corail {
+        @include button-variant($red-corail-eps-color);
+    }
 }
 
 // Buttons

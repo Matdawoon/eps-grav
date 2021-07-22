@@ -69,23 +69,26 @@ fr:
           LABEL: Description
           HELP: Block Description.
         DEFAULT:
-          TITLE: Un Titre Par Default
-          DESC: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          TITLE: Titre par défaut
+          DESC: Description par défaut
         CSS_CLASS:
           LABEL: Class CSS
           HELP: Block css class
         HELP_DESCRIPTIONS:
-          TEXT_HELPERS_CLASS: 'Class modificatrises de text : <br /> `text-xx-start`, `text-xx-end`, `text-xx-center`, `text-start`, `text-end`, `text-center`, `text-decoration-none`, `text-decoration-underline`, `text-decoration-line-through`, `text-lowercase`, `text-uppercase`, `text-capitalize`, `text-wrap`, `text-nowrap`'
+          POSITION_HELPERS_CLASS: 'Informations utiles : <a href="https://getbootstrap.com/docs/4.0/utilities/spacing/">Gestion des espaces avec bootstrap</a>' 
+          TEXT_HELPERS_CLASS: '`text-xx-start`, `text-xx-end`, `text-xx-center`, `text-start`, `text-end`, `text-center`, `text-decoration-none`, `text-decoration-underline`, `text-decoration-line-through`, `text-lowercase`, `text-uppercase`, `text-capitalize`, `text-wrap`, `text-nowrap`'
+          BUTTON_HELPERS_CLASS: 'Class bouton obligatoire = `btneps` <br /> Modificateurs (couleur en contour) = `btneps__color--blue-flat-outline`, `color--blue-green-outline`, `btneps__color--red-warmpink-outline`, `btneps__color--red-corail-outline`'
+          IMAGE_HELPERS_CLASS: '- Formats recommandés : `.jpg`, `.png8` ou `.gif`<br />- Privilégier le PNG 8 au PNG 24<br />- Poids idéal : 200Ko à 1Mo'
         CONTAINER:
           LABEL: Container Class CSS
           HELP: Class modificatrises `container-sp`,
 
     FOOTER_BLOCKS:
-        LABEL: Footer's Blocks
+        LABEL: Blocs du footer
         HELP: Shown in footer.
         TITLE:
-          LABEL: Title
-          HELP: Block title.
+          LABEL: Titre
+          HELP: Bloc titre.
         LOGO:
           LABEL: Show Logo
           HELP: Show site's logo.
@@ -115,10 +118,10 @@ fr:
         HEADLINE: Syndication
     GENERAL_MAIN_TEXT:
         SECTION:
-          TITLE: Titre et Description General
+          TITLE: Titre et description général
         DEFAULT:
-          TITLE: Un Titre Par Default
-          DESC: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          TITLE: Titre par défaut
+          DESC: Description par défaut
 
 
         

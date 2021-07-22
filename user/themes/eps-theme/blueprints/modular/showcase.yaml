@@ -17,12 +17,12 @@ form:
               fields:
                 general_settings:
                   type: tab
-                  title: general settings
+                  title: Paramètres généraux
                   fields:
 
                     btn_config:
                       type: section
-                      title: Button config
+                      title: Configuration des boutons
                       underline: true
                       fields:
                         import@:
@@ -33,35 +33,35 @@ form:
                 
                 img_settings:
                   type: tab
-                  title: images settings
+                  title: Configuration des images
                   fields:
                     header.main_img:
                       type: filepicker
-                      label: Main Image
+                      label: Image principale
                       preview_images: true
-                      description: 'If not specified, this defaults to the first image found in the page''s folder'
+                      description: '<em>Si non spécifié, il s''agit par défaut de la première image trouvée dans le dossier de la page</em>'
                       toggleable: true
                     header.secondary_img:
                       type: filepicker
-                      label: secondary Image
+                      label: Image secondaire
                       preview_images: true
-                      description: 'If not specified, this defaults to the first image found in the page''s folder'
+                      description: '<em>Si non spécifié, il s''agit par défaut de la première image trouvée dans le dossier de la page</em>'
                       toggleable: true
                     header.mobile_img:
                       type: filepicker
-                      label: Mobile Image
+                      label: Image pour le mobile
                       preview_images: true
-                      description: 'If not specified, this defaults to the first image found in the page''s folder'
+                      description: '<em>Si non spécifié, il s''agit par défaut de la première image trouvée dans le dossier de la page</em>'
                       toggleable: true
                        
                 
                 positions_settings:
                   type: tab
-                  title: position settings
+                  title: Disposition de l'image principale
                   fields:
                     header.disposition:
                       type: select
-                      label: disposition
+                      label: Dispositions
                       default: main_img_right
                       size: medium
                       options:

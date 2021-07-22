@@ -12,24 +12,24 @@ form:
                    fields:
                       header.body_classes:
                         markdown: true
-                        description: 'Available classes in Quark Theme (space separated):<br />`header-fixed`, `header-animated`, `header-dark`, `header-transparent`, `sticky-footer`'
+                        description: 'Class disponibles avec Quark Theme (space separated):<br />`header-fixed`, `header-animated`, `header-dark`, `header-transparent`, `sticky-footer`'
                       
                       section_curvature:
                         type: section
-                        title: background curvature 
+                        title: Style de la section
                         underline: true
                         import@1:
                           type: partials/background-curvature 
 
                       section_padding:
                         type: section
-                        title: padding classes
+                        title: Les espacements (margin/padding)
                         underline: true
                         fields:
                           header.section_container_padding_class:
                             type: text
                             label: class css padding
-                            description: "se référencer à la doc de bootstrap https://getbootstrap.com/docs/4.0/utilities/spacing/"
+                            description: THEME_EPS-THEME.ADMIN.CONTENT.HELP_DESCRIPTIONS.POSITION_HELPERS_CLASS
 
                       section_shown_in_footer:
                         type: section
@@ -63,7 +63,7 @@ form:
                             type: textarea
                             label: THEME_EPS-THEME.ADMIN.CONTENT.DESC.LABEL
                             help: THEME_EPS-THEME.ADMIN.CONTENT.DESC.HELP
-                            default: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            default: Description
                             size: medium  
                             toggleable: true 
                           header.main_text_align:
