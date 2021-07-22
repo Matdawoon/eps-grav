@@ -1,0 +1,20 @@
+
+
+.tableau_comparatif{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: stretch;
+    & > ul{
+        text-align: end;
+        padding-left: $unit-7;
+        padding-right: $unit-7;
+        flex: 0 0 30%;
+    }
+    & .tableau_comparatif{
+        flex: 0 0 70%;
+        text-align: center;
+        .card-carousel{
+            justify-content: flex-start;
+        }
+    }
+}

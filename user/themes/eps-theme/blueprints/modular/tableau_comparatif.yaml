@@ -1,0 +1,89 @@
+title: Tableau Comparatif
+'@extends':
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      fields:
+        tableauComparatif:
+          type: tab
+          title: Tableau Comparatif
+          fields:
+            tabs1:
+              type: tabs
+              active: 1
+              fields:
+                tab_carousel_settings:
+                  type: tab
+                  title: carousel settings
+                  fields:
+
+                    section_configuration_carousel:
+                      type: section
+                      title: configuration carousel
+                      underline: true
+                      import@:
+                        type: partials/carousel_settings   
+                        context: theme://blueprints
+                
+                tab_titles_section:
+                  type: tab
+                  title: Section titres
+                  fields:
+                    list_titles_section:
+                      type: section
+                      title: Section List
+                      underline: true
+                      fields:                                 
+                        header.princing_section.title:
+                          type: text
+                          label: Main Title
+                        header.princing_section.list:
+                          type: list
+                          style: vertical
+                          label: Section List
+                          fields:
+                            .title:
+                              type: text
+                              label: section Title
+                            .list:
+                              type: list
+                              style: vertical
+                              label: Items List
+                              fields:
+                                .desc:
+                                  type: text
+                                  label: item 
+                tab_cards_section:
+                  type: tab
+                  title: Section titres
+                  fields:                                
+                    cards_section:
+                      type: section
+                      title: Section List Cartes
+                      underline: true
+                      fields:
+                        header.card_princing_list:
+                          type: list
+                          style: vertical
+                          label: Section List
+                          fields:
+                            .title:
+                              type: text
+                              label: section Title
+                            .list:
+                              type: list
+                              style: vertical
+                              label: Items List
+                              fields:
+                                .list:
+                                  type: list
+                                  style: vertical
+                                  label: Items List
+                                  fields:
+                                    .desc:
+                                      type: text
+                                      label: section Title
+          

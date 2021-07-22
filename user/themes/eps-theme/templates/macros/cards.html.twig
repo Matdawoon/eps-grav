@@ -17,3 +17,21 @@
 {% endmacro %}
 
 
+{% macro card_comparatif( card ) %}
+
+    <ul class="card-carousel">
+        <li><h3>{{card.title}}</h3></li>
+        <hr>
+    {% for section_items in card.list %}
+        <ul>
+        {% for item in section_items.list %}
+            <li><p>{{item.desc}}</p></li>
+        {% endfor %}
+            <hr>
+        </ul>
+    {% endfor %}
+    </ul>
+
+{% endmacro %}
+
+
