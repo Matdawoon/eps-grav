@@ -97,15 +97,15 @@ carousel_responsive_list:
     -
         breakpoint: '1440'
         items: 2
-        margin: 20
+        margin: 35
         loop: false
-        nav: true
-        dots: true
+        nav: false
+        dots: false
         stagePadding: 0
     -
         breakpoint: '1920'
         items: 3
-        margin: 20
+        margin: 35
         loop: false
         nav: false
         dots: false

@@ -56,14 +56,15 @@ form:
                             type: text
                             label: THEME_EPS-THEME.ADMIN.CONTENT.TITLE.LABEL
                             help: THEME_EPS-THEME.ADMIN.CONTENT.TITLE.HELP
-                            default: THEME_EPS-THEME.GENERAL_MAIN_TEXT.DEFAULT.TITLE
+                            placeholder: THEME_EPS-THEME.GENERAL_MAIN_TEXT.DEFAULT.TITLE
                             size: medium
                             toggleable: true 
                           header.main_description:
                             type: textarea
                             label: THEME_EPS-THEME.ADMIN.CONTENT.DESC.LABEL
                             help: THEME_EPS-THEME.ADMIN.CONTENT.DESC.HELP
-                            default: Description
+                            description: THEME_EPS-THEME.ADMIN.CONTENT.HELP_DESCRIPTIONS.COLOR_HELPERS_CLASS
+                            placeholder: THEME_EPS-THEME.GENERAL_MAIN_TEXT.DEFAULT.DESC
                             size: medium  
                             toggleable: true 
                           header.main_text_align:

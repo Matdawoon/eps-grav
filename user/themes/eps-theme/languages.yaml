@@ -12,7 +12,7 @@ en:
           HELP: Block Description.
         DEFAULT:
           TITLE: Default Title 
-          DESC: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          DESC: Description
 
       FOOTER_BLOCKS:
         LABEL: Footer's Blocks
@@ -68,6 +68,7 @@ fr:
         DESC:
           LABEL: Description
           HELP: Block Description.
+          PLACEHOLDER_VALUE: Insérer votre description
         DEFAULT:
           TITLE: Titre par défaut
           DESC: Description par défaut
@@ -75,9 +76,10 @@ fr:
           LABEL: Class CSS
           HELP: Block css class
         HELP_DESCRIPTIONS:
+          COLOR_HELPERS_CLASS: 'Couleurs possibles = `eps__color--white`, `eps__color--gray-dark`, `eps__color--gray-pale`, `eps__color--blue-dark`, `eps__color--blue-green`,`eps__color--red`,`eps__color--red-corail`'
           POSITION_HELPERS_CLASS: 'Informations utiles : <a href="https://getbootstrap.com/docs/4.0/utilities/spacing/">Gestion des espaces avec bootstrap</a>' 
           TEXT_HELPERS_CLASS: '`text-xx-start`, `text-xx-end`, `text-xx-center`, `text-start`, `text-end`, `text-center`, `text-decoration-none`, `text-decoration-underline`, `text-decoration-line-through`, `text-lowercase`, `text-uppercase`, `text-capitalize`, `text-wrap`, `text-nowrap`'
-          BUTTON_HELPERS_CLASS: 'Class bouton obligatoire = `btneps` <br /> Modificateurs (couleur en contour) = `btneps__color--blue-flat-outline`, `color--blue-green-outline`, `btneps__color--red-warmpink-outline`, `btneps__color--red-corail-outline`'
+          BUTTON_HELPERS_CLASS: 'Class bouton obligatoire = `btneps` <br /> Modificateurs (couleur en contour) = `btneps__color--blue-flat-outline`, `btneps__color--blue-green-outline`, `btneps__color--red-warmpink-outline`, `btneps__color--red-corail-outline`'
           IMAGE_HELPERS_CLASS: '- Formats recommandés : `.jpg`, `.png8` ou `.gif`<br />- Privilégier le PNG 8 au PNG 24<br />- Poids idéal : 200Ko à 1Mo'
         CONTAINER:
           LABEL: Container Class CSS
@@ -122,6 +124,7 @@ fr:
         DEFAULT:
           TITLE: Titre par défaut
           DESC: Description par défaut
+
 
 
         
