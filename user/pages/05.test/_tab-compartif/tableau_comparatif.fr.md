@@ -16,17 +16,11 @@ princing_section:
                     desc: 'Item A'
                 -
                     desc: 'Item B'
-                -
-                    desc: 'Item C'
         -
             title: 'Titre 2'
             list:
                 -
                     desc: 'Item 1'
-                -
-                    desc: 'Item 2'
-        -
-            title: 'Titre 3'
 card_princing_list:
     -
         title: 'Carte 1'

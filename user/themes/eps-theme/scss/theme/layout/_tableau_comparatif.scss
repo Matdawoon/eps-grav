@@ -4,17 +4,37 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: stretch;
-    & > ul{
+    background-color: $blue-dark-eps-color;
+    padding: $unit-5;
+    .section_title{
+        color: $blue-azul-eps-color;
+        margin: 0;
+    }
+    .main_title{
+        color: $blue-flat-eps-color;
+    }
+    p{
+        color: $white-full-eps-color;
+    }
+    hr{
+        margin: 2.3rem 0;
+    }
+    &  ul{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    & .info_section{
         text-align: end;
         padding-left: $unit-7;
         padding-right: $unit-7;
         flex: 0 0 30%;
     }
-    & .tableau_comparatif{
+    & .tableau_comparatif_carousel{
         flex: 0 0 70%;
         text-align: center;
-        .card-carousel{
-            justify-content: flex-start;
+        p{
+            color: $gray-extreme-eps-color;
         }
+
     }
 }

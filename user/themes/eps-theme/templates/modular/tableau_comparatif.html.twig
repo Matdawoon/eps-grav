@@ -3,11 +3,11 @@
 <div class="container tableau_comparatif">
 
     {% include 'partials/button_block.html.twig' with {obj: page.header.nab_btn} %}
-    <ul>
-        <li><h2>{{page.header.princing_section.title}}</h2></li>
+    <ul class="info_section">
+        <li><h2 class="main_title">{{page.header.princing_section.title}}</h2></li>
     {% for section_items in page.header.princing_section.list %}
         <ul>
-            <li><h3>{{section_items.title}}</h3></li>
+            <li><h3 class="section_title">{{section_items.title}}</h3></li>
         {% for item in section_items.list %}
             <li><p>{{item.desc}}</p></li>
         {% endfor %}
@@ -15,7 +15,7 @@
     {% endfor %}
     </ul>
 
-   <div class="tableau_comparatif owl-carousel owl-theme owl-loaded owl-drag " >
+   <div class="tableau_comparatif_carousel owl-carousel owl-theme owl-loaded owl-drag " >
    {% for cards in page.header.card_princing_list %}
         {{macro_card.card_comparatif(cards)}}
     {% endfor %}
@@ -25,7 +25,7 @@
 
 
   <script>
-            $('.tableau_comparatif.owl-carousel').owlCarousel({
+            $('.tableau_comparatif_carousel.owl-carousel').owlCarousel({
               loop: false,    
               dots: true,
               nav: true,
