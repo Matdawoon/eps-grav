@@ -14,45 +14,52 @@
         </ul>
     {% endfor %}
     </ul>
-
-   <div class="tableau_comparatif_carousel owl-carousel owl-theme owl-loaded owl-drag " >
+  <div class="tableau_comparatif_carousel owl-wrapper">
+   <div class="owl-carousel owl-theme owl-loaded owl-drag " >
    {% for cards in page.header.card_princing_list %}
         {{macro_card.card_comparatif(cards)}}
     {% endfor %}
     </div>
+ </div>
 
 </div>
 
 
   <script>
-            $('.tableau_comparatif_carousel.owl-carousel').owlCarousel({
-              loop: false,    
-              dots: true,
-              nav: true,
-              center: false,
-              margin: {{page.header.carousel_item_margin}},
-              items: {{page.header.carousel_nb_items}}, 
-              stagePadding: 10,
-navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
-              {% if page.header.carousel_responsive_list %}
-                responsive:{
 
-                  {% for resp in page.header.carousel_responsive_list %}
-                    {{resp.breakpoint}}:{
-                      items: {{resp.items}},
-                      margin: {{resp.margin}},
-                      loop: {{resp.loop ? 'true':'false' }},
-                      nav: {{resp.nav ? 'true':'false' }},
-                      dots: {{resp.dots ? 'true':'false' }},
-                      stagePadding: {{resp.stagePadding}},
-                      
-                    },
 
-                  {% endfor %}
-                }
-              {% endif %}
+    $('.tableau_comparatif_carousel .owl-carousel').owlCarousel({
+      loop: false,    
+      dots: true,
+      nav: true,
+      responsiveRefreshRate:10,
+      center: false,
+      margin: {{page.header.carousel_item_margin}},
+      items: {{page.header.carousel_nb_items}}, 
+      stagePadding: 10,
+      navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+      
+      {% if page.header.carousel_responsive_list %}
+        responsive:{
+
+          {% for resp in page.header.carousel_responsive_list %}
+            {{resp.breakpoint}}:{
+              items: {{resp.items}},
+              margin: {{resp.margin}},
+              loop: {{resp.loop ? 'true':'false' }},
+              nav: {{resp.nav ? 'true':'false' }},
+              dots: {{resp.dots ? 'true':'false' }},
+              stagePadding: {{resp.stagePadding}},
               
-            });
+            },
+
+          {% endfor %}
+        }
+      {% endif %}
+      
+    });
+
+
 
 
 </script>

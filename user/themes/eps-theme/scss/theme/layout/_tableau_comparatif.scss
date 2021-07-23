@@ -1,27 +1,46 @@
 
 
 .tableau_comparatif{
+    --hr_size: #{$h3-font-size};
     display: flex;
     flex-flow: row nowrap;
     justify-content: stretch;
     background-color: $blue-dark-eps-color;
     padding: $unit-5;
+
+        @include media-breakpoint-down(xl) {
+            --hr_size: #{$font-size-xlg};
+        }
+
     .section_title{
         color: $blue-azul-eps-color;
         margin: 0;
+
+        font-size: var(--hr_size);
     }
     .main_title{
         color: $blue-flat-eps-color;
+        margin: $unit-6 0;
     }
     p{
         color: $white-full-eps-color;
+        margin-top: 1rem;
+        margin-bottom: 0;
+        &:last-child{
+            
+        }
     }
     hr{
-        margin: 2.3rem 0;
+        margin-top: calc((var(--hr_size)/2 + 2px) ) ;
+        margin-bottom: calc((var(--hr_size)/2 + 2px) ) ;
+        color: gray; border-style: inset; border-width: 1px;
+        width: 70%;
     }
     &  ul{
         display: flex;
         flex-flow: column nowrap;
+        justify-content: flex-start;
+        margin: 0;
     }
     & .info_section{
         text-align: end;
@@ -32,6 +51,8 @@
     & .tableau_comparatif_carousel{
         flex: 0 0 70%;
         text-align: center;
+        //le min width de reparer le resize du owl carousel ; https://github.com/OwlCarousel2/OwlCarousel2/issues/1401#issuecomment-277479059
+        min-width: 0;
         p{
             color: $gray-extreme-eps-color;
         }
