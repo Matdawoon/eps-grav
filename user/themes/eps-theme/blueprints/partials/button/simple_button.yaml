@@ -8,35 +8,46 @@ form:
       fields:
         .tab_btn:
           type: tab
-          title: Créer un bouton classique
+          title: THEME_EPS-THEME.BUTTONS_EPS.TAB_BTN.TITLE
           fields:
             .title:
               type: text
-              label: Titre du bouton
+              label: THEME_EPS-THEME.BUTTONS_EPS.TAB_BTN.LABEL
+              placeholder: THEME_EPS-THEME.BUTTONS_EPS.TAB_BTN.PLACEHOLDER_VALUE
             .css:
-              type: text
-              label: THEME_EPS-THEME.ADMIN.CONTENT.CSS_CLASS.LABEL
               markdown: true
+              type: text
+              placeholder: THEME_EPS-THEME.BUTTONS_EPS.CSS_CLASS_TAB_BTN.PLACEHOLDER_VALUE
+              label: THEME_EPS-THEME.BUTTONS_EPS.CSS_CLASS_TAB_BTN.LABEL
               description: THEME_EPS-THEME.ADMIN.CONTENT.HELP_DESCRIPTIONS.BUTTON_HELPERS_CLASS
             .href:
+              markdown: true
               type: Contenu du bouton
-              label: Lien du bouton
+              placeholder: THEME_EPS-THEME.BUTTONS_EPS.HREF_TAB_BTN.PLACEHOLDER_VALUE
+              label: THEME_EPS-THEME.BUTTONS_EPS.HREF_TAB_BTN.LABEL
+              description: THEME_EPS-THEME.BUTTONS_EPS.HREF_TAB_BTN.HELP
         .tab_modal:
           type: tab
-          title: Créer un bouton pop-in
+          title: THEME_EPS-THEME.BUTTONS_EPS.TAB_MODAL.TITLE
           fields:
             .html_area:
+              markdown: true
               type: textarea
-              label: Contenu de la pop-in (en Html ou/et JS)
+              label: THEME_EPS-THEME.BUTTONS_EPS.TAB_MODAL.LABEL
+              description: THEME_EPS-THEME.BUTTONS_EPS.TAB_MODAL.HELP
               toggleable: true
             .id:
+              markdown: true
               type: text
-              label: Ajouter un identifiant unique (ex:id=5)
+              label: THEME_EPS-THEME.BUTTONS_EPS.ID_MODAL.LABEL
+              description: THEME_EPS-THEME.BUTTONS_EPS.ID_MODAL.HELP
             .modalHeader:
+              markdown: true
               type: text
-              label: Titre en haut de la pop-in
+              label: THEME_EPS-THEME.BUTTONS_EPS.MODALHEADER.LABEL
               toggleable: true
             .modalFooter:
+              markdown: true
               type: text
-              label: Titre en bas de la pop-in
+              label: THEME_EPS-THEME.BUTTONS_EPS.MODALFOOTER.LABEL
               toggleable: true

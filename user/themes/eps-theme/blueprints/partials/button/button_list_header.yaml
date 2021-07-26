@@ -3,7 +3,7 @@
 form:
   header.btn_list:
     type: list
-    label: Les boutons
+    label: THEME_EPS-THEME.BUTTONS_EPS.LIST_BTN.LABEL
 
     import@:
       type: partials/button/simple_button

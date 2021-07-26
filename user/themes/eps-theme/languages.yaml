@@ -73,18 +73,40 @@ fr:
           TITLE: Titre par défaut
           DESC: Description par défaut
         CSS_CLASS:
-          LABEL: Class CSS
-          HELP: Block css class
+          LABEL: Class css
+          HELP : Appliquer vos classes adaptées au mode responsive
         HELP_DESCRIPTIONS:
-          COLOR_HELPERS_CLASS: 'Couleurs possibles = `eps__color--white`, `eps__color--gray-dark`, `eps__color--gray-pale`, `eps__color--blue-dark`, `eps__color--blue-green`,`eps__color--red`,`eps__color--red-corail`'
-          POSITION_HELPERS_CLASS: 'Informations utiles : <a href="https://getbootstrap.com/docs/4.0/utilities/spacing/">Gestion des espaces avec bootstrap</a>' 
-          TEXT_HELPERS_CLASS: '`text-xx-start`, `text-xx-end`, `text-xx-center`, `text-start`, `text-end`, `text-center`, `text-decoration-none`, `text-decoration-underline`, `text-decoration-line-through`, `text-lowercase`, `text-uppercase`, `text-capitalize`, `text-wrap`, `text-nowrap`'
-          BUTTON_HELPERS_CLASS: 'Class bouton obligatoire = `btneps` <br /> Modificateurs (couleur en contour) = `btneps__color--blue-flat-outline`, `btneps__color--blue-green-outline`, `btneps__color--red-warmpink-outline`, `btneps__color--red-corail-outline`'
+          TITLE_COLOR_HELPERS_CLASS: 'Couleurs du thème =`eps__color--white`, `eps__color--gray-dark`, `eps__color--gray-pale`, `eps__color--blue-dark`, `eps__color--blue-green`,`eps__color--red`,`eps__color--red-corail`'
+          DESC_COLOR_HELPERS_CLASS: 'Couleurs du thème =`eps__color--white`, `eps__color--gray-dark`, `eps__color--gray-pale`, `eps__color--blue-dark`, `eps__color--blue-green`,`eps__color--red`,`eps__color--red-corail`'
+          POSITION_HELPERS_CLASS: 'Informations utiles : <a href="https://getbootstrap.com/docs/4.0/utilities/spacing/">Gestion des espaces avec Bootstrap</a>' 
+          TEXT_HELPERS_CLASS: 'Informations utiles : <a href="https://getbootstrap.com/docs/4.0/utilities/text/">Gestion du texte avec Bootstrap</a>'
+          BUTTON_HELPERS_CLASS: 'Selecteur de classe obligatoire = `btneps` <br /> Modificateurs (mode contour) = `btneps__color--blue-flat-outline`, `btneps__color--blue-green-outline`, `btneps__color--red-warmpink-outline`, `btneps__color--red-corail-outline`<br /> Modificateurs (mode plein) = `btneps__color--blue-flat`, `btneps__color--blue-green`, `btneps__color--red-warmpink`, `btneps__color--red-corail`'
           IMAGE_HELPERS_CLASS: '- Formats recommandés : `.jpg`, `.png8` ou `.gif`<br />- Privilégier le PNG 8 au PNG 24<br />- Poids idéal : 200Ko à 1Mo'
         CONTAINER:
-          LABEL: Container Class CSS
-          HELP: Class modificatrises `container-sp`,
+          LABEL: Changement de présentation
+          HELP: 'Option pour réduire la largeur du conteneur principal'
+          PLACEHOLDER_VALUE: container-sp
 
+    ROWS:
+        FEATURES:
+          TITLE: Features
+        HEADER_ROWS:
+          LABEL: Liste des éléments "Row"
+        IMAGE:
+          LABEL: Image
+        TITLE_ROWS:
+          LABEL: Titre
+        DESCRIPTION_ROWS:
+          LABEL: Description
+        GLOBAL_POSITION_IMAGE_ROWS:
+          LABEL: Position de l'image
+          DEFAULT: Left
+        DESCRIPTION_POSITION_ROWS:
+          LABEL: Position du texte
+          DEFAULT: text-start
+        INVERSE_RESPONSIVE_ROWS:
+          LABEL: Position de l'image en mobile
+      
     FOOTER_BLOCKS:
         LABEL: Blocs du footer
         HELP: Shown in footer.
@@ -118,12 +140,65 @@ fr:
         HEADLINE: Archives
       SYNDICATE:
         HEADLINE: Syndication
+
     GENERAL_MAIN_TEXT:
         SECTION:
-          TITLE: Titre et description général
-        DEFAULT:
-          TITLE: Titre par défaut
-          DESC: Description par défaut
+          TITLE: Titre et description
+        TITLE_MAIN_TEXT:
+          LABEL: Titre
+          PLACEHOLDER_VALUE: <strong class="eps_color--blue-flat">Titre</strong>
+        DESCRIPTION_MAIN_TEXT:
+          LABEL: Description 
+          PLACEHOLDER_VALUE: <strong class="eps_color--blue-flat">Lorem Ipsum</strong>
+        CSS_CLASS_MAIN_TEXT:
+          LABEL: Disposition du texte
+          PLACEHOLDER_VALUE: text-xl-start text-lg-center text-md-left
+
+    BUTTONS_EPS:
+      LIST_SIMPLE_BTN:
+        LABEL: Intégrer des boutons
+      LIST_BTN:
+        LABEL: Les boutons
+      TAB_BTN:
+        TITLE: Bouton classique
+        LABEL: Texte du bouton
+        PLACEHOLDER_VALUE: En savoir plus
+      CSS_CLASS_TAB_BTN:
+        LABEL: Style du bouton
+        PLACEHOLDER_VALUE: btneps btneps__color--blue-flat-outline
+      HREF_TAB_BTN:
+        LABEL: Lien du bouton
+        HELP: 'Votre lien doit commencer par le protocol `https://` (exemple: https://le-nom-de-votre-lien)'
+        PLACEHOLDER_VALUE: https://
+      TAB_MODAL:
+        TITLE: Bouton pop-in
+        LABEL: Contenu
+        HELP: 'Vous pouvez intégrer du code : `HTML/CSS/JS`'
+      ID_MODAL:
+        LABEL: ID =
+        HELP: 'L''identifiant doit être unique :<br/>(exemple: `id=faq-12`)'
+      MODALHEADER:
+        LABEL: Titre/En-tête
+      MODALFOOTER:
+        LABEL: Titre/Pied
+
+    SECTION_CURVATURE:
+      CONTENT:
+        TITLE:
+          LABEL: Style de la section
+
+    SECTION_SHOWN_IN_FOOTER:
+      SECTION:
+        LABEL: Activer l'affichage
+        TITLE : Le menu du footer
+
+    ESPACEMENTS_SECTION:
+      SECTION:
+        LABEL: Espacements
+        TITLE : Les espacements du module
+        HELP : Appliquer vos classes adaptées au mode responsive
+        PLACEHOLDER_VALUE: py-5 my-5 px-5 mx-5
+
 
 
 

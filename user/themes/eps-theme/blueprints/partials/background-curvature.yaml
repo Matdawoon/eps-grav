@@ -10,13 +10,14 @@ form:
               label: Image
               preview_images: true
               toggleable: true
-              description: 'Si non spécifié, il s''agit par défaut de la première image trouvée dans le dossier de la page'
+              description: 'Importer votre image via l''onglet "<em>Contenu</em>" puis enregistrer votre importation puis sélectionner votre fichier ici'
         column2:
           fields:
             header.module_bg_color:
               type: colorpicker
               label: Couleur
               toggleable: true
+              description: 'Sélectionner ou copier votre référence couleur'
 
 
     header.module_curvature:
@@ -29,8 +30,4 @@ form:
           curvature_top: Courbure vers le haut
           curvature_bottom: Courbure vers le bas
       use: keys
-
-    header.module_curvature_height:
-      type: text
-      label: Hauteur de la courbure
 

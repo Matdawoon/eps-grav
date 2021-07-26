@@ -7,18 +7,18 @@ form:
       fields:
         features:
           type: tab
-          title: Features
+          title: THEME_EPS-THEME.ROWS.FEATURES.TITLE
           fields:
 
             header.rows:
               type: list
-              label: Row
+              label: THEME_EPS-THEME.ROWS.HEADER_ROWS.LABEL
 
               fields:
 
                 .image:
                   type: filepicker
-                  label: Select a file
+                  label: THEME_EPS-THEME.ROWS.IMAGE.LABEL
                   preview_image: true
                   accept:
                     - .png
@@ -28,23 +28,23 @@ form:
 
                 .title:
                   type: text
-                  label: titre
+                  label: THEME_EPS-THEME.ROWS.TITLE_ROWS.LABEL
 
                 .description:
                   type: textarea
-                  label: Description
+                  label: THEME_EPS-THEME.ROWS.DESCRIPTION_ROWS.LABEL
 
                 .global_position:
                   type: select
-                  label: img position
-                  default: left
+                  label: THEME_EPS-THEME.ROWS.GLOBAL_POSITION_IMAGE_ROWS.LABEL
+                  default: THEME_EPS-THEME.ROWS.GLOBAL_POSITION_IMAGE_ROWS.DEFAULT
                   options:
                     left: Descriptif à gauche
                     right: Descriptif à droite
                 .description_position:
                   type: select
-                  label: text position 
-                  default: text-start
+                  label: THEME_EPS-THEME.ROWS.DESCRIPTION_POSITION_ROWS.LABEL
+                  default: THEME_EPS-THEME.ROWS.DESCRIPTION_POSITION_ROWS.DEFAULT
                   options:
                     text-start: text-start
                     text-center: text-center
@@ -55,7 +55,7 @@ form:
                     context: theme://blueprints
                 .inverse_responsive:
                   type: select
-                  label: Position image en mobile
+                  label: THEME_EPS-THEME.ROWS.INVERSE_RESPONSIVE_ROWS.LABEL
                   options:
                     image-start: image-debut
                     image-end: image-fin

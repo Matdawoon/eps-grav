@@ -25,5 +25,7 @@ media_order: 'barracuda.png,Demo-Eps-06-2020.gif'
 module_curvature:
     curvature_top: false
     curvature_bottom: false
+shown_in_footer: true
+module_bg_color: '#ffffff'
 ---
 

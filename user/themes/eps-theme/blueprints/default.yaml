@@ -16,31 +16,33 @@ form:
                       
                       section_curvature:
                         type: section
-                        title: Style de la section
+                        title: THEME_EPS-THEME.SECTION_CURVATURE.CONTENT.TITLE.LABEL
                         underline: true
                         import@1:
                           type: partials/background-curvature 
 
                       section_padding:
                         type: section
-                        title: Les espacements (margin/padding)
+                        title: THEME_EPS-THEME.ESPACEMENTS_SECTION.SECTION.TITLE
                         underline: true
                         fields:
                           header.section_container_padding_class:
                             type: text
-                            label: class css padding
+                            label: THEME_EPS-THEME.ESPACEMENTS_SECTION.SECTION.LABEL
+                            placeholder: THEME_EPS-THEME.ESPACEMENTS_SECTION.SECTION.PLACEHOLDER_VALUE
+                            help: THEME_EPS-THEME.ESPACEMENTS_SECTION.SECTION.HELP
                             description: THEME_EPS-THEME.ADMIN.CONTENT.HELP_DESCRIPTIONS.POSITION_HELPERS_CLASS
 
                       section_shown_in_footer:
                         type: section
-                        title: menu footer
+                        title: THEME_EPS-THEME.SECTION_SHOWN_IN_FOOTER.SECTION.TITLE
                         underline: true
                         fields:
                           header.shown_in_footer:
                             type: toggle
                             toggleable: false
-                            label: Affichage du menu footer
-                            help:
+                            label: THEME_EPS-THEME.SECTION_SHOWN_IN_FOOTER.SECTION.LABEL
+                            help: 
                             options:
                               1: PLUGIN_ADMIN.YES
                               0: PLUGIN_ADMIN.NO
@@ -53,32 +55,36 @@ form:
                         underline: true
                         fields:
                           header.main_title:
+                            markdown: true
                             type: text
                             label: THEME_EPS-THEME.ADMIN.CONTENT.TITLE.LABEL
                             help: THEME_EPS-THEME.ADMIN.CONTENT.TITLE.HELP
-                            placeholder: THEME_EPS-THEME.GENERAL_MAIN_TEXT.DEFAULT.TITLE
+                            description: THEME_EPS-THEME.ADMIN.CONTENT.HELP_DESCRIPTIONS.TITLE_COLOR_HELPERS_CLASS
+                            placeholder: THEME_EPS-THEME.GENERAL_MAIN_TEXT.TITLE_MAIN_TEXT.PLACEHOLDER_VALUE
                             size: medium
                             toggleable: true 
                           header.main_description:
+                            markdown: true
                             type: textarea
                             label: THEME_EPS-THEME.ADMIN.CONTENT.DESC.LABEL
                             help: THEME_EPS-THEME.ADMIN.CONTENT.DESC.HELP
-                            description: THEME_EPS-THEME.ADMIN.CONTENT.HELP_DESCRIPTIONS.COLOR_HELPERS_CLASS
-                            placeholder: THEME_EPS-THEME.GENERAL_MAIN_TEXT.DEFAULT.DESC
+                            description: THEME_EPS-THEME.ADMIN.CONTENT.HELP_DESCRIPTIONS.DESC_COLOR_HELPERS_CLASS
+                            placeholder: THEME_EPS-THEME.GENERAL_MAIN_TEXT.DESCRIPTION_MAIN_TEXT.PLACEHOLDER_VALUE
                             size: medium  
                             toggleable: true 
                           header.main_text_align:
                             type: text
-                            label: THEME_EPS-THEME.ADMIN.CONTENT.CSS_CLASS.LABEL
+                            label: THEME_EPS-THEME.GENERAL_MAIN_TEXT.CSS_CLASS_MAIN_TEXT.LABEL
+                            placeholder: THEME_EPS-THEME.GENERAL_MAIN_TEXT.CSS_CLASS_MAIN_TEXT.PLACEHOLDER_VALUE
                             help: THEME_EPS-THEME.ADMIN.CONTENT.CSS_CLASS.HELP
                             description: THEME_EPS-THEME.ADMIN.CONTENT.HELP_DESCRIPTIONS.TEXT_HELPERS_CLASS
                             size: medium  
-                            toggleable: true                             
+                            toggleable: true                           
                           header.custom_container:
                             type: text
                             label: THEME_EPS-THEME.ADMIN.CONTENT.CONTAINER.LABEL
+                            placeholder: THEME_EPS-THEME.ADMIN.CONTENT.CONTAINER.PLACEHOLDER_VALUE
                             help: THEME_EPS-THEME.ADMIN.CONTENT.CONTAINER.HELP
-                            description: THEME_EPS-THEME.ADMIN.CONTENT.CONTAINER.HELP
                             size: medium  
                             toggleable: true  
                           import@2:

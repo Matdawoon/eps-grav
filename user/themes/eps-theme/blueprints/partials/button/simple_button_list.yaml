@@ -1,7 +1,7 @@
 form:
   .btn_list:
     type: list
-    label: Intégrer des boutons
+    label: THEME_EPS-THEME.BUTTONS_EPS.LIST_SIMPLE_BTN.LABEL
     import@:
       type: partials/button/simple_button
       context: theme://blueprints
