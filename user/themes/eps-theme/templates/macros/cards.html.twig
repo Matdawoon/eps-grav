@@ -21,15 +21,15 @@
 
     <ul class="card-carousel">
         <li><h2 class="main_title">{{card.title}}</h2></li>
-        <hr>
     {% for section_items in card.list %}
         <ul>
+        <hr>
         {% for item in section_items.list %}
             <li><p>{{item.desc}}</p></li>
         {% endfor %}
             
         </ul>
-        <hr>
+        
     {% endfor %}
     </ul>
 

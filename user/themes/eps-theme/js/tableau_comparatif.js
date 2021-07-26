@@ -3,7 +3,7 @@
   var TableauComparatif = function(element) {
 		this.element = element;
 		this.info_sections = this.element.getElementsByClassName('info_section');
-		this.carousel_section = this.element.getElementsByClassName('tableau_comparatif_carousel owl-wrapper');
+		this.carousel_section = this.element.getElementsByClassName('tableau_comparatif_carousel');
 		//this.faqContainer = this.element.getElementsByClassName('cd-faq__items')[0];
 		//this.faqsCategoriesContainer = this.element.getElementsByClassName('cd-faq__categories')[0];
 		//this.faqsCategories = this.faqsCategoriesContainer.getElementsByClassName('cd-faq__category');
@@ -16,13 +16,15 @@
     console.log(mq);
     $(window).resize(function(){
         var mq = getMq(tableauComparatif);
-        console.log(mq);
-        if( mq == 'mobile'){
+        console.log(!$(tableauComparatif.element).hasClass("mobile"));
+        if( mq == 'mobile' && !$(tableauComparatif.element).hasClass("mobile") ){
+            $(tableauComparatif.element).addClass("mobile");
             mobileDisplay(tableauComparatif);
             
             
         }else if(mq == "desktop"){
             desktopDisplay(tableauComparatif);
+            $(tableauComparatif.element).removeClass("mobile");
         }
     });
 
@@ -31,9 +33,43 @@
 
   function mobileDisplay(tableauComparatif){
     $(tableauComparatif.info_sections).css("display","none");
+    var cards =$(tableauComparatif.carousel_section).find(".owl-item");
+    console.log(cards);
+    $(cards).each(function(i){
+       
+        var cards_sections_list = $(cards).eq(i).find(".card-carousel ul");
+        var infos_sections_list = $(tableauComparatif.info_sections).find("ul");
+        //console.log(cards_sections_list);
+        //console.log(infos_sections_list);
+        console.log("carte : " + i );
+        cards_sections_list.each(function(index){
+            console.log($(this).eq(index));
+            console.log("this : "+ this+"carte : " + i + " ul : " + index );
+            console.log(cards_sections_list);
+            $(this).children().each(function(index1){
+                console.log("this : "+ this+"carte : " + i + " ul : " + index + " element : " + index1 );
+                //console.log(this);
+                var info =$(infos_sections_list).eq(index).children().eq(index1);
+                //console.log(info.eq(0));
+                if($(this).is("hr")) {
+                    $(this).replaceWith("<h2 class='hr'>"+$(info).eq(0).text()+"</h2>");
+                }else{
+                    console.log($(this));
+                    var p =$(this).find("p");
+                    p.prepend("<span>"+$(info).eq(0).text()+"</span>");
+
+                }
+            });
+        
+
+        });
+    });
+
   }
   function desktopDisplay(tableauComparatif){
     $(tableauComparatif.info_sections).css("display","");
+    $(tableauComparatif.carousel_section).find(".hr").replaceWith("<hr>");
+    $(tableauComparatif.carousel_section).find("span").remove();
   }
 
   function getMq(tableauComparatif) {

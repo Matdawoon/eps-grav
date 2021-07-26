@@ -21,6 +21,8 @@ princing_section:
             list:
                 -
                     desc: 'Item 1'
+                -
+                    desc: 'Item 2'
 card_princing_list:
     -
         title: 'Carte 1'
@@ -28,30 +30,49 @@ card_princing_list:
             -
                 list:
                     -
-                        desc: aze
+                        desc: 'aze 1A1'
                     -
-                        desc: aze
+                        desc: 'aze 1A2'
             -
                 list:
                     -
-                        desc: azeaze
+                        desc: 'azeaze 1B1'
                     -
-                        desc: azeaze
-            -
-                list:
-                    -
-                        desc: 'azeaze azeaze'
+                        desc: 'azeaze 1B2'
     -
         title: 'Carte 2'
         list:
             -
                 list:
                     -
-                        desc: aze
+                        desc: 'aze 2A1'
                     -
-                        desc: azeaze
-carousel_nb_items: '1'
+                        desc: 'aze 2A2'
+            -
+                list:
+                    -
+                        desc: 'azeaze 2B1'
+                    -
+                        desc: 'azeaze 2B2'
+carousel_nb_items: '2'
 carousel_item_loop: true
 carousel_item_margin: '30'
+carousel_responsive_list:
+    -
+        breakpoint: '0'
+        items: 1
+        margin: 5
+        loop: true
+        nav: true
+        dots: true
+        stagePadding: 0
+    -
+        breakpoint: '1200'
+        items: 2
+        margin: 10
+        loop: false
+        nav: false
+        dots: false
+        stagePadding: 0
 ---
 
