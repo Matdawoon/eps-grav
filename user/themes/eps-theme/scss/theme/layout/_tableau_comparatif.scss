@@ -7,11 +7,16 @@
     justify-content: stretch;
     background-color: $blue-dark-eps-color;
     padding: $unit-7;
-    content: 'desktop';
+    justify-content: center;
+    &::before {
+        content: 'desktop';
+        display: none;
+    }
 
         @include media-breakpoint-down(xl) {
             &::before {
                 content: 'mobile';
+                display: none;
             }
             --hr_size: #{$font-size-xlg};
         }

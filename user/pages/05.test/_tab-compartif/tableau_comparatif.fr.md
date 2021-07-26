@@ -50,7 +50,7 @@ card_princing_list:
                         desc: aze
                     -
                         desc: azeaze
-carousel_nb_items: '2'
+carousel_nb_items: '1'
 carousel_item_loop: true
 carousel_item_margin: '30'
 ---
