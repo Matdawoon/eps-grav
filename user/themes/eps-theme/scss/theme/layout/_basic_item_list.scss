@@ -14,9 +14,11 @@
     .item {
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: stretch;
-        justify-content: center;
+        @include media-breakpoint-down(lg) {
+          justify-content: center;
+        }
         margin: .3rem 0;
         .infos {
             flex: 0 0 60%;
@@ -40,7 +42,7 @@
             }
         }
         .number {
-            flex: 0 0 10%;
+            flex: 0 0 auto;
             align-self: baseline;
             span {
                 background: $blue-flat-eps-color;
@@ -51,15 +53,20 @@
                 font-weight: $font-weight-regular;
                 padding: 4.5px;
                 width: $size-cercle-item-list-md;
-                margin-left: $unit-4;
-                margin-right: $unit-4;
+                //margin-left: $unit-4;
+                margin-right: $unit-5;
                 text-align: center;
                 color: white;
                 font-size: $html-font-size;
             }
             &+.infos {
-                flex: 0.55 0 60%;
+                flex: 0.55 0 60%; 
+                @include media-breakpoint-down(lg) {
+                  flex: 1 0 60%; 
+                }
+                align-self: baseline;
             }
+
         }
     }
     ol {
