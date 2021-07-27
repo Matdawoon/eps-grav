@@ -9,7 +9,7 @@ form:
       fields:
         tabName:
           type: tab
-          title: Carousel
+          title: THEME_EPS-THEME.CAROUSEL_SETTINGS.TAB_NAME.TITLE
 
           fields: 
      
@@ -20,14 +20,14 @@ form:
               fields:
                 cards_settings:
                   type: tab
-                  title: Création des cartes
+                  title: THEME_EPS-THEME.CAROUSEL_SETTINGS.CARDS_SETTINGS.TITLE
 
                   fields:
                     header.card_list:
                       name: Cards
                       type: list
                       style: vertical
-                      label: Liste des cartes
+                      label: THEME_EPS-THEME.CAROUSEL_SETTINGS.HEADER_CARD_LIST.LABEL
 
                       import@:
                         type: partials/cards
@@ -35,39 +35,18 @@ form:
 
                 carousel_settings:
                   type: tab
-                  title: Affichage du carousel
+                  title: THEME_EPS-THEME.CAROUSEL_SETTINGS.TAB_CAROUSEL_SETTINGS.TITLE
 
                   fields:
-                    header.carousel_nb_items:
-                      type: text
-                      label: css class card conteneur
-                      toggleable: true
-                      default: 2
-
-                    header.carousel_item_margin:
-                      type: text
-                      label: css class conteneur img
-                      default: 30
-                      toggleable: true
-
-                    header.carousel_item_loop:
-                      type: toggle
-                      label: loop
-                      default: 1
-                      options:
-                        1: "Yes"
-                        0: "Non"
-                      validate:
-                        type: bool
-
                     header.carousel_responsive_list:
                       type: list
-                      label: Mode responsive (breakpoints)
+                      label: THEME_EPS-THEME.CAROUSEL_SETTINGS.CAROUSEL_RESPONSIVE_LIST.LABEL
+                      help: THEME_EPS-THEME.CAROUSEL_SETTINGS.CAROUSEL_RESPONSIVE_LIST.HELP
                       fields:
                         .breakpoint:
                           type: select
                           required: true
-                          label: Breakpoint
+                          label: THEME_EPS-THEME.CAROUSEL_SETTINGS.BREAKPOINT_CAROUSEL_SETTINGS.LABEL
                           options:
                             0: "mobile xs"
                             768: "tablet"
@@ -80,7 +59,7 @@ form:
                           size: medium
                           required: true
                           default: 2
-                          label: Nombre de cartes
+                          label: THEME_EPS-THEME.CAROUSEL_SETTINGS.ITEMS_CAROUSEL_SETTINGS.LABEL
                           validate:
                             type: number
                         
@@ -88,14 +67,14 @@ form:
                           type: text
                           size: medium
                           required: true
-                          label: Espacement entre les cartes (margin)
+                          label: THEME_EPS-THEME.CAROUSEL_SETTINGS.MARGIN_CAROUSEL_SETTINGS.LABEL
                           default: 20
                           validate:
                             type: number
 
                         .loop:
                           type: toggle
-                          label: loop
+                          label: THEME_EPS-THEME.CAROUSEL_SETTINGS.LOOP_CAROUSEL_SETTINGS.LABEL
                           required: true
                           default: 0
                           options:
@@ -106,7 +85,7 @@ form:
                         
                         .nav:
                           type: toggle
-                          label: nav
+                          label: THEME_EPS-THEME.CAROUSEL_SETTINGS.NAV_CAROUSEL_SETTINGS.LABEL
                           required: true
                           default: 0
                           options:
@@ -117,7 +96,7 @@ form:
 
                         .dots:
                           type: toggle
-                          label: dots
+                          label: THEME_EPS-THEME.CAROUSEL_SETTINGS.DOTS_CAROUSEL_SETTINGS.LABEL
                           required: true
                           default: 0
                           options:
@@ -125,10 +104,4 @@ form:
                             0: "Non"
                           validate:
                             type: bool
-
-                        .stagePadding:
-                          type: number
-                          label: Débordement des cartes (padding)
-                          default: 0
-                          required: true
                                             

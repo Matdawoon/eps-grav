@@ -27,5 +27,6 @@ module_curvature:
     curvature_bottom: false
 shown_in_footer: true
 module_bg_color: '#ffffff'
+section_container_padding_class: py-5
 ---
 
