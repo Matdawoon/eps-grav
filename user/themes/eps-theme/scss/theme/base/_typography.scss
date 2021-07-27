@@ -14,19 +14,20 @@ h6 {
 
 h1,
 .h1 {
-    font-size: $h1-font-size;
-    @include media-breakpoint-down(sm) {
-        font-size: $font-size-xlg;
-    }
-    @include media-breakpoint-down(md) {
-        font-size: $font-size-xxlg;
-    }
+    --h1-font-size: #{$h1-font-size};
     @include media-breakpoint-down(lg) {
-        font-size: $font-size-xxxlg;
+        --h1-font-size: calc(#{$h1-font-size} * .9 );
+    }  
+     @include media-breakpoint-down(md) {
+        --h1-font-size: calc(#{$h1-font-size} * .8 );
     }
-    @include media-breakpoint-up(lg) {
-        font-size: $font-size-xxxxlg;
+    @include media-breakpoint-down(sm) {
+        --h1-font-size: calc(#{$h1-font-size} * .7 );
     }
+
+
+
+    font-size: var(--h1-font-size);
 }
 
 h2,

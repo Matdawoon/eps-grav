@@ -3,9 +3,9 @@
 .tableau_comparatif{
     --hr_size: #{$h3-font-size};
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: stretch;
-    background-color: $blue-dark-eps-color;
+    background-color: $blue-azul-eps-color;
     padding: $unit-7;
     justify-content: center;
     &::before {
@@ -29,7 +29,7 @@
     }
     .main_title{
         color: $blue-flat-eps-color;
-        margin: $unit-6 0;
+        margin: $unit-12 0;
     }
     p{
         color: $white-full-eps-color;
@@ -56,13 +56,16 @@
         text-align: end;
         padding-left: $unit-7;
         padding-right: $unit-7;
-        flex: 0 0 30%;
+        flex: 0 0 25%;
         background: $blue-dark-eps-color;
         background: linear-gradient(180deg, lighten($blue-dark-eps-color, 5%), lighten($blue-dark-eps-color,25%) 100%);
         border-radius: 1%;
     }
     & .tableau_comparatif_carousel{
-        flex: 0 0 70%;
+        flex: 0 0 75%;
+        @include media-breakpoint-down(xl){
+            flex: 0 0 75%;
+        }
         text-align: center;
         //le min width de reparer le resize du owl carousel ; https://github.com/OwlCarousel2/OwlCarousel2/issues/1401#issuecomment-277479059
         min-width: 0;
@@ -71,10 +74,56 @@
         }
 
     }
+    & .bouton_section{
+        
+        text-align: center;
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        overflow: auto hidden;
+        position: relative;
+        display: inline;
+        width: auto;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        margin: 1.3rem 0;
+        @include media-breakpoint-up(xl){
+            display: none;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            width: 100%;
+            border-bottom: 1px solid rgb(206, 213, 219);
+        }
+        a{
+            box-sizing: border-box;
+            display: inline-block;
+            text-decoration: none;
+            white-space: nowrap;
+            color: $blue-dark-eps-color;
+            padding: .5rem 0.35rem;
+            font-size: $core-font-size;
+            border: 1rem none transparent;
+            box-shadow: none;
+            &:focus, &.active, &:target{
+                font-weight: bold;
+                position: relative;
+                border-bottom: solid $blue-dark-eps-color;
+            }
+            &:hover{
+                position: relative;
+                border-bottom: solid $blue-dark-eps-color;
+            }
+        }
+    }
 }
 
 
 .hr {
+    margin-top: 0;
     /* centre verticalement les enfants entre eux */
     align-items: center;
 

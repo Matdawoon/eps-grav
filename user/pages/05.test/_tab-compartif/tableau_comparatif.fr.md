@@ -7,53 +7,145 @@ module_curvature:
     curvature_top: false
     curvature_bottom: false
 princing_section:
-    title: 'titre main'
+    title: Limits
     list:
         -
-            title: 'Titre 1'
+            title: Achats
             list:
                 -
-                    desc: 'Item A'
+                    desc: 'Achats uniques'
                 -
-                    desc: 'Item B'
+                    desc: 'Achats sur une journée'
         -
-            title: 'Titre 2'
+            title: 'Retraits en distributeur'
             list:
                 -
-                    desc: 'Item 1'
+                    desc: 'Retrait unique'
                 -
-                    desc: 'Item 2'
+                    desc: 'Retrait sur une journée'
+        -
+            title: Chargements
+            list:
+                -
+                    desc: 'Chargement unique'
+                -
+                    desc: 'Chargements sur une journée'
+                -
+                    desc: 'Chargements sur un mois'
+        -
+            title: 'Solde '
+            list:
+                -
+                    desc: 'Solde max'
 card_princing_list:
     -
-        title: 'Carte 1'
+        title: Standard
         list:
             -
                 list:
                     -
-                        desc: 'aze 1A1'
+                        desc: '3 000€'
                     -
-                        desc: 'aze 1A2'
+                        desc: '10 000€'
             -
                 list:
                     -
-                        desc: 'azeaze 1B1'
+                        desc: '1 000€'
                     -
-                        desc: 'azeaze 1B2'
+                        desc: '1 000€'
+            -
+                list:
+                    -
+                        desc: '10 000€'
+                    -
+                        desc: '10 000€'
+                    -
+                        desc: '60 000€'
+            -
+                list:
+                    -
+                        desc: '10 000€'
     -
-        title: 'Carte 2'
+        title: Medium
         list:
             -
                 list:
                     -
-                        desc: 'aze 2A1'
+                        desc: '20 000€'
                     -
-                        desc: 'aze 2A2'
+                        desc: '50 000€'
             -
                 list:
                     -
-                        desc: 'azeaze 2B1'
+                        desc: '1 000€'
                     -
-                        desc: 'azeaze 2B2'
+                        desc: '1 000€'
+            -
+                list:
+                    -
+                        desc: '50 000€'
+                    -
+                        desc: '75 000€'
+                    -
+                        desc: '100 000€'
+            -
+                list:
+                    -
+                        desc: '50 000€'
+    -
+        title: Hight
+        list:
+            -
+                list:
+                    -
+                        desc: '50 000€'
+                    -
+                        desc: '100 000€'
+            -
+                list:
+                    -
+                        desc: '1 000€'
+                    -
+                        desc: '3 000€'
+            -
+                list:
+                    -
+                        desc: '100 000€'
+                    -
+                        desc: '150 000€'
+                    -
+                        desc: '200 000€'
+            -
+                list:
+                    -
+                        desc: '100 000€'
+    -
+        title: VIP
+        list:
+            -
+                list:
+                    -
+                        desc: '100 000€'
+                    -
+                        desc: '200 000€'
+            -
+                list:
+                    -
+                        desc: '1 000€'
+                    -
+                        desc: '6 000€'
+            -
+                list:
+                    -
+                        desc: '200 000€'
+                    -
+                        desc: '200 000€'
+                    -
+                        desc: '500 000€'
+            -
+                list:
+                    -
+                        desc: '500 000€'
 carousel_nb_items: '2'
 carousel_item_loop: true
 carousel_item_margin: '30'
@@ -61,18 +153,43 @@ carousel_responsive_list:
     -
         breakpoint: '0'
         items: 1
-        margin: 5
-        loop: true
+        margin: 10
+        loop: false
         nav: true
         dots: true
-        stagePadding: 0
+        stagePadding: 10
     -
         breakpoint: '1200'
-        items: 2
-        margin: 10
+        items: 4
+        margin: 15
         loop: false
         nav: false
         dots: false
-        stagePadding: 0
+        stagePadding: 5
+nav_btn:
+    -
+        btn_list:
+            -
+                btn_tabs:
+                    tab_btn:
+                        title: 'offre 1'
+                        css: null
+                        href: '#carte-1'
+                    tab_modal:
+                        html_area: null
+                        id: null
+                        modalHeader: null
+                        modalFooter: null
+            -
+                btn_tabs:
+                    tab_btn:
+                        title: 'offre 2'
+                        css: null
+                        href: '#carte-2'
+                    tab_modal:
+                        html_area: null
+                        id: null
+                        modalHeader: null
+                        modalFooter: null
 ---
 

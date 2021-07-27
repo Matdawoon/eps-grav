@@ -17,9 +17,9 @@
 {% endmacro %}
 
 
-{% macro card_comparatif( card ) %}
+{% macro card_comparatif( card, index ) %}
 
-    <ul class="card-carousel">
+    <ul class="card-carousel" data-hash="carte-{{index}}">
         <li><h2 class="main_title">{{card.title}}</h2></li>
     {% for section_items in card.list %}
         <ul>

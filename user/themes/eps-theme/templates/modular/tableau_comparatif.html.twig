@@ -1,8 +1,14 @@
 
 {% import 'macros/cards.html.twig' as macro_card %}
 <div class="container tableau_comparatif">
-
-    {% include 'partials/button_block.html.twig' with {obj: page.header.nab_btn} %}
+  <div class="bouton_section">
+    {% for card in page.header.card_princing_list %}
+        <a href="#carte-{{loop.index}}">{{card.title}}</a>
+    {% endfor %}
+  {#    Si on veux utliser des boutons :
+    {% include 'partials/button_block.html.twig' with {obj: page.header.nav_btn.0} %}
+  #}
+  </div>
     <ul class="info_section">
         <li><h2 class="main_title">{{page.header.princing_section.title}}</h2></li>
     {% for section_items in page.header.princing_section.list %}
@@ -16,8 +22,8 @@
     </ul>
   <div class="tableau_comparatif_carousel owl-wrapper">
    <div class="owl-carousel owl-theme owl-loaded owl-drag " >
-   {% for cards in page.header.card_princing_list %}
-        {{macro_card.card_comparatif(cards)}}
+   {% for card in page.header.card_princing_list %}
+        {{macro_card.card_comparatif(card,loop.index)}}
     {% endfor %}
     </div>
  </div>
@@ -26,10 +32,14 @@
 
 
   <script>
+    let carousel_tableau_comparatif_carousel = $('.tableau_comparatif_carousel .owl-carousel');
+      
+    carousel_tableau_comparatif_carousel.on('initialized.owl.carousel', function (e) {
+         $(".tableau_comparatif .bouton_section a").eq(e.item.index).toggleClass("active");  
+      });
 
-
-    $('.tableau_comparatif_carousel .owl-carousel').owlCarousel({
-      loop: false,    
+    carousel_tableau_comparatif_carousel.owlCarousel({
+      loop: {{page.header.carousel_item_loop ? 'true':'false' }},    
       dots: true,
       nav: true,
       responsiveRefreshRate:10,
@@ -37,6 +47,8 @@
       margin: {{page.header.carousel_item_margin}},
       items: {{page.header.carousel_nb_items}}, 
       stagePadding: 10,
+      URLhashListener:true,
+      startPosition: 'carte-0',
       navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
       
       {% if page.header.carousel_responsive_list %}
@@ -58,6 +70,8 @@
       {% endif %}
       
     });
+
+
 
 </script>
 
