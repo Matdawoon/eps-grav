@@ -12,7 +12,7 @@ form:
                    fields:
                       header.body_classes:
                         markdown: true
-                        description: 'Class disponibles avec Quark Theme (space separated):<br />`header-fixed`, `header-animated`, `header-dark`, `header-transparent`, `sticky-footer`'
+                        description: THEME_EPS-THEME.ADMIN.CONTENT.HELP_DESCRIPTIONS.QUARK_THEME_HELPERS_CLASS
                       
                       section_curvature:
                         type: section

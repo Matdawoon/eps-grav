@@ -7,22 +7,22 @@ form:
           fields:
             header.module_bg_img:
               type: filepicker
-              label: Image
+              label: THEME_EPS-THEME.BACKGROUND_CURVATURE.MODULE_BG_IMG.LABEL
               preview_images: true
               toggleable: true
-              description: 'Importer votre image via l''onglet "<em>Contenu</em>" puis enregistrer votre importation puis sélectionner votre fichier ici'
+              description: THEME_EPS-THEME.BACKGROUND_CURVATURE.MODULE_BG_IMG.HELP
         column2:
           fields:
             header.module_bg_color:
               type: colorpicker
-              label: Couleur
+              label: THEME_EPS-THEME.BACKGROUND_CURVATURE.MODULE_BG_COLOR.LABEL
               toggleable: true
-              description: 'Sélectionner ou copier votre référence couleur'
+              description: THEME_EPS-THEME.BACKGROUND_CURVATURE.MODULE_BG_COLOR.HELP
 
 
     header.module_curvature:
       type: checkboxes
-      label: Courbure
+      label: THEME_EPS-THEME.BACKGROUND_CURVATURE.MODULE_CURVATURE.LABEL
       default:
           curvature_top: false
           curvature_bottom: false

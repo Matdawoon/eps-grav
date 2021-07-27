@@ -73,15 +73,17 @@ fr:
           TITLE: Titre par défaut
           DESC: Description par défaut
         CSS_CLASS:
-          LABEL: Class css
+          LABEL: Disposition du texte
           HELP : Appliquer vos classes adaptées au mode responsive
+          PLACEHOLDER_VALUE: text-xl-start text-lg-center text-md-left
         HELP_DESCRIPTIONS:
+          QUARK_THEME_HELPERS_CLASS: 'Sélecteurs de classes disponibles avec Quark Theme = `header-fixed`, `header-animated`, `header-dark`, `header-transparent`, `sticky-footer`'
           TITLE_COLOR_HELPERS_CLASS: 'Couleurs du thème =`eps__color--white`, `eps__color--gray-dark`, `eps__color--gray-pale`, `eps__color--blue-dark`, `eps__color--blue-green`,`eps__color--red`,`eps__color--red-corail`'
           DESC_COLOR_HELPERS_CLASS: 'Couleurs du thème =`eps__color--white`, `eps__color--gray-dark`, `eps__color--gray-pale`, `eps__color--blue-dark`, `eps__color--blue-green`,`eps__color--red`,`eps__color--red-corail`'
           POSITION_HELPERS_CLASS: 'Informations utiles : <a href="https://getbootstrap.com/docs/4.0/utilities/spacing/">Gestion des espaces avec Bootstrap</a>' 
           TEXT_HELPERS_CLASS: 'Informations utiles : <a href="https://getbootstrap.com/docs/4.0/utilities/text/">Gestion du texte avec Bootstrap</a>'
           BUTTON_HELPERS_CLASS: 'Selecteur de classe obligatoire = `btneps` <br /> Modificateurs (mode contour) = `btneps__color--blue-flat-outline`, `btneps__color--blue-green-outline`, `btneps__color--red-warmpink-outline`, `btneps__color--red-corail-outline`<br /> Modificateurs (mode plein) = `btneps__color--blue-flat`, `btneps__color--blue-green`, `btneps__color--red-warmpink`, `btneps__color--red-corail`'
-          IMAGE_HELPERS_CLASS: '- Formats recommandés : `.jpg`, `.png8` ou `.gif`<br />- Privilégier le PNG 8 au PNG 24<br />- Poids idéal : 200Ko à 1Mo'
+          IMAGE_HELPERS_CLASS: '- Extensions recommandées : `.jpg`, `.png8`, `png24` ou `.gif`<br />- Poids recommandé : `200Ko à 1Mo Max`'
         CONTAINER:
           LABEL: Changement de présentation
           HELP: 'Option pour réduire la largeur du conteneur principal'
@@ -106,6 +108,17 @@ fr:
           DEFAULT: text-start
         INVERSE_RESPONSIVE_ROWS:
           LABEL: Position de l'image en mobile
+
+    BACKGROUND_CURVATURE:
+        MODULE_BG_IMG:
+          LABEL: Image
+          HELP: 'Importer votre image via l''onglet "<em>Contenu</em>" puis enregistrer votre importation afin de sélectionner votre fichier ici'
+        MODULE_BG_COLOR:
+          LABEL: Couleur
+          HELP: 'Sélectionner ou copier votre référence couleur'
+        MODULE_CURVATURE:
+          LABEL: Courbure
+
       
     FOOTER_BLOCKS:
         LABEL: Blocs du footer
@@ -198,6 +211,60 @@ fr:
         TITLE : Les espacements du module
         HELP : Appliquer vos classes adaptées au mode responsive
         PLACEHOLDER_VALUE: py-5 my-5 px-5 mx-5
+
+    CAROUSEL_SETTINGS:
+      TAB_NAME:
+        TITLE: Carousel
+      CARDS_SETTINGS:
+        TITLE: Création des cartes
+      HEADER_CARD_LIST:
+        LABEL: Liste des cartes
+      TAB_CAROUSEL_SETTINGS:
+        TITLE: Affichage du carousel
+      CAROUSEL_RESPONSIVE_LIST:
+        LABEL: Mode responsive (breakpoints)
+        HELP: Paramètre d'affichage multi-device (ordinateur, tablette, mobile)
+      BREAKPOINT_CAROUSEL_SETTINGS:
+        LABEL: Breakpoint
+      ITEMS_CAROUSEL_SETTINGS:
+        LABEL: Nombre de cartes
+      MARGIN_CAROUSEL_SETTINGS:
+        LABEL: Espacement entre les cartes (margin)
+      LOOP_CAROUSEL_SETTINGS:
+        LABEL: Défilement en boucle
+      NAV_CAROUSEL_SETTINGS:
+        LABEL: Flèches de navigation
+      DOTS_CAROUSEL_SETTINGS:
+        LABEL: Points de guidage
+    
+    BASIC_ENUMERATION:
+      ENUMERATION:
+        TITLE: Enumération
+      HEADER_BASIC_ENUMERATION_COL_NUMBER:
+        LABEL: Affichage en colonne(s)
+      HEADER_BASIC_ENUMERATION_ISROWDISPLAY:
+        LABEL: Affichage en ligne 
+      SECTION_LIST_BASIC_ENUMERATION:
+        TITLE: Liste des items
+      HEADER_ITEM_LIST_BASIC_ENUMERATION:
+        LABEL: Items
+      TITLE:
+        LABEL: Titre
+      DESCRIPTION:
+        LABEL: Paragraphe
+      BASIC_ITEM_SPACER:
+        TITLE: Intégrer une image ou un chiffre
+        TEXT: Important - Choisir l'un ou l'autre !
+      LOGO:
+        LABEL: Image
+      NUMBER:
+        LABEL: Nombre =
+
+      
+      
+
+
+      
 
 
 

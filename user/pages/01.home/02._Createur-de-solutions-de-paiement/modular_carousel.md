@@ -1,13 +1,13 @@
 ---
-title: _creation-de-solutions-de-paiement
+title: 'Création de solutions de paiement'
 body_classes: modular
 class: small
 carousel_nb_items: '3'
-carousel_item_margin: '30'
-main_title: '<h1 class="pt-3 pb-0 my-3 "><strong class="eps__color--blue-flat">Créateur de solutions</strong> de paiement</h1>'
-main_description: '<p class="pt-0 pb-3 mt-0">Faites de l''innovation financière, le moteur de votre croissance</p>'
+carousel_item_margin: '60'
+main_title: '<h1 class="pt-2 pb-0 mt-0 mb-0"><strong class="eps__color--blue-flat">Créateur de solutions</strong> de paiement</h1>'
+main_description: '<p class="pt-0 pb-2 mt-0 mb-0">Faites de l''innovation financière, le moteur de votre croissance</p>'
 main_text_align: text-center
-carousel_item_loop: true
+carousel_item_loop: false
 showcase_curvature:
     curvature_bottom: true
     curvature_top: false
@@ -77,31 +77,27 @@ carousel_responsive_list:
         loop: false
         nav: true
         dots: false
-        stagePadding: 0
     -
         breakpoint: '768'
-        items: 1
+        items: 2
         margin: 20
         loop: false
         nav: true
         dots: false
-        stagePadding: 0
     -
         breakpoint: '1200'
-        items: 2
+        items: 3
         margin: 20
         loop: false
-        nav: true
+        nav: false
         dots: false
-        stagePadding: 0
     -
         breakpoint: '1440'
-        items: 2
+        items: 3
         margin: 35
         loop: false
         nav: false
         dots: false
-        stagePadding: 0
     -
         breakpoint: '1920'
         items: 3
@@ -109,7 +105,6 @@ carousel_responsive_list:
         loop: false
         nav: false
         dots: false
-        stagePadding: 0
 showcase_bg_color: '#f7f9fc'
 shown_in_footer: true
 media_order: 'cross-depenses-professionnelles.png,cross-solutions-sur-mesure.png,pattern-eps-01-2021-4.png,solution-3.png'
@@ -119,7 +114,6 @@ module_curvature:
     curvature_bottom: true
     curvature_top: false
 module_bg_img: pattern-eps-01-2021-4.png
-custom_container: container-sp
 module_bg_color: '#f7f7f7'
 ---
 

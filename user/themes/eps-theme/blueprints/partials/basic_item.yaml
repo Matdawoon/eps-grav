@@ -3,27 +3,34 @@ form:
   fields:
     .title:
       type: text
-      label: item list title
+      label: THEME_EPS-THEME.BASIC_ENUMERATION.TITLE.LABEL
+      description: THEME_EPS-THEME.ADMIN.CONTENT.HELP_DESCRIPTIONS.TITLE_COLOR_HELPERS_CLASS
+      placeholder: THEME_EPS-THEME.GENERAL_MAIN_TEXT.TITLE_MAIN_TEXT.PLACEHOLDER_VALUE
       toggleable: true
+      markdown: true
     .description:
       type: textarea
-      label: item list description
+      label: THEME_EPS-THEME.BASIC_ENUMERATION.DESCRIPTION.LABEL
+      description: THEME_EPS-THEME.ADMIN.CONTENT.HELP_DESCRIPTIONS.TITLE_COLOR_HELPERS_CLASS
+      placeholder: THEME_EPS-THEME.GENERAL_MAIN_TEXT.TITLE_MAIN_TEXT.PLACEHOLDER_VALUE
       toggleable: true
-    test:
+      markdown: true
+    spacer:
         type: spacer
-        title: Logos or numbers
-        text: ATTENTION DE CHOISIR SOIT L'UN SOIT L'AUTRE !
+        title: THEME_EPS-THEME.BASIC_ENUMERATION.BASIC_ITEM_SPACER.TITLE
+        text: THEME_EPS-THEME.BASIC_ENUMERATION.BASIC_ITEM_SPACER.TEXT
         underline: true
 
     .logo:
+      markdown: true
       type: filepicker
-      label: List img
+      label: THEME_EPS-THEME.BASIC_ENUMERATION.LOGO.LABEL
       preview_images: true
-      description: 'If not specified, this defaults to the first image found in the page''s folder'
+      description: THEME_EPS-THEME.ADMIN.CONTENT.HELP_DESCRIPTIONS.IMAGE_HELPERS_CLASS
       toggleable: true
 
     .number:
       type: text
-      label: Numbre item
+      label: THEME_EPS-THEME.BASIC_ENUMERATION.NUMBER.LABEL
       toggleable: true
 

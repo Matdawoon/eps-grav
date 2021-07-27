@@ -9,17 +9,17 @@ form:
       fields:
         enumeration:
           type: tab
-          title: Basic Enumeration        
+          title: THEME_EPS-THEME.BASIC_ENUMERATION.ENUMERATION.TITLE       
           fields: 
             header.basic_enumeration.col_num:
               type: number
-              label: Basic Enumeration col number
+              label: THEME_EPS-THEME.BASIC_ENUMERATION.HEADER_BASIC_ENUMERATION_COL_NUMBER.LABEL
               default: 1
               size: medium
 
             header.basic_enumeration.isRowDisplay:
               type: toggle
-              label: Affichage En lignes ?
+              label: THEME_EPS-THEME.BASIC_ENUMERATION.HEADER_BASIC_ENUMERATION_ISROWDISPLAY.LABEL 
               highlight: 1
               options:
                   1: PLUGIN_ADMIN.YES
@@ -30,6 +30,7 @@ form:
             header.basic_enumeration.text_align:
               type: text
               label: THEME_EPS-THEME.ADMIN.CONTENT.CSS_CLASS.LABEL
+              placeholder: THEME_EPS-THEME.ADMIN.CONTENT.CSS_CLASS.PLACEHOLDER_VALUE
               help: THEME_EPS-THEME.ADMIN.CONTENT.CSS_CLASS.HELP
               description: THEME_EPS-THEME.ADMIN.CONTENT.HELP_DESCRIPTIONS.TEXT_HELPERS_CLASS
               size: medium  
@@ -37,14 +38,14 @@ form:
 
             section_list:
                 type: section
-                title: Basic Enumeration List
+                title: THEME_EPS-THEME.BASIC_ENUMERATION.SECTION_LIST_BASIC_ENUMERATION.TITLE
                 underline: true
 
                 fields:                    
                   header.enum_item_list:
                     type: list
                     style: vertical
-                    label: Enumeration List
+                    label: THEME_EPS-THEME.BASIC_ENUMERATION.HEADER_ITEM_LIST_BASIC_ENUMERATION.LABEL
 
                     import@:
                       type: partials/basic_item

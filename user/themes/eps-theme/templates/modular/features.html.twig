@@ -13,7 +13,7 @@
         {{button.macro_button(row.btn_list)}}
       </div>
 
-      <div class="{% if row.image or row.video %}container-features__image{% endif %} feature-media">
+      <div class="pb-4 {% if row.image or row.video %}container-features__image{% endif %} feature-media">
         {% if row.image %}
           {{ page.media[row.image].html("","","img-responsive")|raw }}
         {% endif %}
