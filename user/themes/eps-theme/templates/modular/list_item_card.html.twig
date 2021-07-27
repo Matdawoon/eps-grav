@@ -1,27 +1,43 @@
 {% set item_style = page.header.basic_enumeration_style %}
 {% import 'macros/basic_item.html.twig' as macro_basic_item %}
 
-
-{% set moitieTab = (page.header.list_items|length /2)|round %}
 <section class="container item-list-cards">
-    <div class="row align-items-center" >
-        {#image au centre #}
-        <div class="col-12 col-md-4 order-2">
-            {{ page.media[page.header.main_image].html("","","img-responsive")|raw }}
-        </div>
-        <div class="col-12 col-md-4 order-1">
-            {% for i in range(0, moitieTab -1) %}
-                {# descriptions de droite #}
-                    {{macro_basic_item.basic_item_card(page,page.header.list_items[i], true)}}
-            {% endfor %}
-        </div>
+    {% if page.header.disposition %}
+        <div class="row align-items-center" >
+            {#image au centre #}
+            <div class="col-12 col-md-6 order-1 p-4">
+                {{ page.media[page.header.main_image].html("","","img-responsive float-end")|raw }}
+            </div>
+            <div class="col-12 col-md-6 order-2 p-4 align-self-start">
+                {% for item in page.header.list_items %}
+                    {# descriptions de droite #}
+                        {{macro_basic_item.basic_item_card(page,item, false)}}
+                {% endfor %}
+            </div>
 
-        <div class="col-12 col-md-4 order-3">
-            {% for i in range(moitieTab , page.header.list_items|length) %}
-                {#  descriptions de droite #}
-                    {{macro_basic_item.basic_item_card(page,page.header.list_items[i], false)}}
-            {% endfor %}
         </div>
+    {% else %}
 
-    </div>
+    {% set moitieTab = (page.header.list_items|length /2)|round %}
+        <div class="row align-items-center" >
+            {#image au centre #}
+            <div class="col-12 col-md-4 order-2">
+                {{ page.media[page.header.main_image].html("","","img-responsive")|raw }}
+            </div>
+            <div class="col-12 col-md-4 order-1">
+                {% for i in range(0, moitieTab -1) %}
+                    {# descriptions de droite #}
+                        {{macro_basic_item.basic_item_card(page,page.header.list_items[i], true)}}
+                {% endfor %}
+            </div>
+
+            <div class="col-12 col-md-4 order-3">
+                {% for i in range(moitieTab , page.header.list_items|length) %}
+                    {#  descriptions de droite #}
+                        {{macro_basic_item.basic_item_card(page,page.header.list_items[i], false)}}
+                {% endfor %}
+            </div>
+
+        </div>
+    {% endif %}
 </section>

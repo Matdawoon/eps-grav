@@ -259,6 +259,10 @@ fr:
         LABEL: Image
       NUMBER:
         LABEL: Nombre =
+    
+    ENUMERATION_CARDS:
+      DISPOSITION:
+        LABEL: Disposition 2 colonnes ?
 
       
       

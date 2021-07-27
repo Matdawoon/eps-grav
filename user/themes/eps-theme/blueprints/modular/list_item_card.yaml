@@ -17,7 +17,17 @@ form:
               preview_images: true
               description: 'If not specified, this defaults to the first image found in the page''s folder'
               toggleable: true   
-
+            header.disposition:
+              type: toggle
+              label: THEME_EPS-THEME.ENUMERATION_CARDS.DISPOSITION.LABEL
+              highlight: 1
+              help: PLUGIN_ADMIN.ENABLED_HELP
+              options:
+                  1: PLUGIN_ADMIN.YES
+                  0: PLUGIN_ADMIN.NO
+              validate:
+                  type: bool
+                                
             header.list_items:
               type: list
               style: vertical
