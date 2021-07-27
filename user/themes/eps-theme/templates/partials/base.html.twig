@@ -58,10 +58,11 @@
                         {% endblock %}
                         </nav>
 
+                    </section>
+                    <section class="navbar-section desktop-menu">
                         {% if config.plugins.langswitcher.enabled %}
                             {% include 'partials/langswitcher.html.twig' %}
                         {% endif %}
-
                     </section>
                     {% block mobile %}
                     <div class="i-mobile-menu" >

@@ -28,9 +28,7 @@ a {
     color: $link-color;
     outline: none;
     text-decoration: none;
-    &:focus {
-        @include control-shadow();
-    }
+
     &:focus,
     &:hover,
     &:active,
