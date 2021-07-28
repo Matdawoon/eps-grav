@@ -90,5 +90,8 @@ showcase_curvature:
     curvature_bottom: true
 showcase_curvature_height: 10rem
 showcase_bg_color: '#f7f7f7'
+module_curvature:
+    curvature_top: false
+    curvature_bottom: false
 ---
 

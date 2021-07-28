@@ -1,2 +1,2 @@
 <?php
-umask(0002);
+umask(002);

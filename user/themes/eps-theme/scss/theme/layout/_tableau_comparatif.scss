@@ -1,81 +1,105 @@
-
-
-.tableau_comparatif{
-    --hr_size: #{$h3-font-size};
+.tableau_comparatif {
+    --hr_size: #{$h2-font-size};
     display: flex;
     flex-flow: row wrap;
     justify-content: stretch;
-    background-color: $blue-azul-eps-color;
+    background-color: $white-full-eps-color;
     padding: $unit-7;
     justify-content: center;
     &::before {
         content: 'desktop';
         display: none;
     }
-
-        @include media-breakpoint-down(xl) {
-            &::before {
-                content: 'mobile';
-                display: none;
-            }
-            --hr_size: #{$font-size-xlg};
+    @include media-breakpoint-down(xl) {
+        &::before {
+            content: 'mobile';
+            display: none;
         }
-
-    .section_title{
+        --hr_size: #{$font-size-xlg};
+    }
+    .section_title {
         color: $blue-azul-eps-color;
         margin: 0;
-
         font-size: var(--hr_size);
     }
-    .main_title{
-        color: $blue-flat-eps-color;
+    .main_title {
+        font-size: var(--h2-font-size);
+        color: $blue-green-eps-color;
         margin: $unit-12 0;
     }
-    p{
+    p {
         color: $white-full-eps-color;
         margin-top: 1rem;
         margin-bottom: 0;
     }
-    ul li:last-child() p{
+    ul li:last-child() p {
         margin-bottom: 1rem;
-        color: red;
     }
-    hr{
-        margin-top: calc((var(--hr_size)/2 + 2px) ) ;
-        margin-bottom: calc((var(--hr_size)/2 + 2px) ) ;
-        color: gray; border-style: inset; border-width: 1px;
+    hr {
+        margin-top: calc((var(--hr_size)/2 + 2px));
+        margin-bottom: calc((var(--hr_size)/2 + 2px));
+        color: lighten($gray-eps-color, 65%);
+        border-style: inset;
+        border-width: 1px;
         width: 70%;
     }
-    &  ul{
+    & ul {
         display: flex;
         flex-flow: column nowrap;
         justify-content: flex-start;
         margin: 0;
     }
-    & .info_section{
+    & .info_section {
         text-align: end;
         padding-left: $unit-7;
         padding-right: $unit-7;
         flex: 0 0 25%;
-        background: $blue-dark-eps-color;
-        background: linear-gradient(180deg, lighten($blue-dark-eps-color, 5%), lighten($blue-dark-eps-color,25%) 100%);
+        background: $gray-light-eps-color;
+        //background: linear-gradient(180deg, lighten($blue-dark-eps-color, 5%), lighten($blue-dark-eps-color, 25%) 100%);
         border-radius: 1%;
+        & li:nth-child(1) h2 {
+            color: lighten($gray-dark-eps-color, 30%);
+        }
+        & ul h3 {
+            color: lighten($gray-dark-eps-color, 30%);
+            font-size: var(--h3-font-size);
+        }
+        & ul p {
+            color: lighten($gray-eps-color, 45%);
+        }
     }
-    & .tableau_comparatif_carousel{
+    & .tableau_comparatif_carousel {
         flex: 0 0 75%;
-        @include media-breakpoint-down(xl){
+        @include media-breakpoint-down(xl) {
             flex: 0 0 75%;
         }
         text-align: center;
         //le min width de reparer le resize du owl carousel ; https://github.com/OwlCarousel2/OwlCarousel2/issues/1401#issuecomment-277479059
         min-width: 0;
-        p{
-            color: $gray-extreme-eps-color;
+        & .owl-item:nth-child(4) ul li h2 {
+            color: $yellow-safron;
         }
-
+        h2 {
+            color: lighten($gray-dark-eps-color, 30%);
+        }
+        span {
+            color: lighten($gray-eps-color, 45%);
+        }
+        p {
+            color: $gray-dark-eps-color;
+            font-weight: $font-weight-medium;
+        }
+        .card-carousel ul li p {
+            color: lighten($gray-eps-color, 20%);
+            font-weight: $font-weight-light;
+            font-size: $font-size-lg;
+        }
+        .card-carousel ul:nth-child(5) li p {
+            color: $blue-green-eps-color;
+            font-weight: $font-weight-medium;
+        }
     }
-    & .bouton_section{
-        
+    & .bouton_section {
         text-align: center;
         box-sizing: border-box;
         margin: 0px;
@@ -87,10 +111,10 @@
         -webkit-box-pack: justify;
         justify-content: space-between;
         margin: 1.3rem 0;
-        @include media-breakpoint-up(xl){
+        @include media-breakpoint-up(xl) {
             display: none;
         }
-        &::before{
+        &::before {
             content: "";
             position: absolute;
             left: 0px;
@@ -98,38 +122,48 @@
             width: 100%;
             border-bottom: 1px solid rgb(206, 213, 219);
         }
-        a{
+        a {
             box-sizing: border-box;
             display: inline-block;
             text-decoration: none;
             white-space: nowrap;
-            color: $blue-dark-eps-color;
+            color: $blue-green-eps-color;
             padding: .5rem 0.35rem;
             font-size: $core-font-size;
             border: 1rem none transparent;
             box-shadow: none;
-            &:focus, &.active, &:target{
-                font-weight: bold;
+            &:focus,
+            &.active,
+            &:target {
+                font-weight: $font-weight-regular;
                 position: relative;
-                border-bottom: solid $blue-dark-eps-color;
+                border-bottom: solid $blue-green-eps-color;
             }
-            &:hover{
+            &:hover {
                 position: relative;
-                border-bottom: solid $blue-dark-eps-color;
+                border-bottom: solid $blue-green-eps-color;
+            }
+        }
+        a:nth-child(4) {
+            color: $yellow-safron;
+            &:focus,
+            &.active,
+            &:target {
+                border-bottom: solid $yellow-safron;
+            }
+            &:hover {
+                border-bottom: solid $yellow-safron;
             }
         }
     }
 }
 
-
 .hr {
     margin-top: 0;
     /* centre verticalement les enfants entre eux */
     align-items: center;
-
     /* active flexbox */
     display: flex;
-
     /* garde le texte centré s’il passe sur plusieurs lignes ou si flexbox n’est pas supporté */
     text-align: center;
 }
@@ -138,13 +172,10 @@
 .hr::after {
     /* la couleur est volontairement absente ; ainsi elle sera celle du texte */
     border-top: .0625em solid;
-
     /* nécessaire pour afficher les pseudo-éléments */
     content: "";
-
     /* partage le reste de la largeur disponible */
     flex: 1;
-
     /* espace les traits du texte */
     margin: 0 .5em;
 }
