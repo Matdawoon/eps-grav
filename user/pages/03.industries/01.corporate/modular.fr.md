@@ -32,6 +32,10 @@ twitterenable: true
 twittertitle: 'Solutions de paiement pour les entreprises | E-Pay Space'
 facebookenable: true
 facebooktitle: 'Solutions de paiement pour les entreprises | E-Pay Space'
+module_curvature:
+    curvature_top: false
+    curvature_bottom: false
+content:
+    items: '@self.modular'
 ---
 
-E-Pay Space conçoit des solutions de paiements intelligentes qui rationalisent les processus internes des entreprises privées. L'environnement interne des entreprises subit de nombreux ralentissements organisationnels et processuels principalement dus à des outils vieillissants ou pas assez intégrés ni souples. La gestion des incentives, des salaires ou des notes de frais devient plus simples avec nos solutions de paiements sur-mesure. 
