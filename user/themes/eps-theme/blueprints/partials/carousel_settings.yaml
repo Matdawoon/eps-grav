@@ -1,0 +1,97 @@
+
+form:
+  fields:
+    header.carousel_nb_items:
+      type: text
+      label: css class card conteneur
+      toggleable: true
+      default: 2
+
+    header.carousel_item_margin:
+      type: text
+      label: margin
+      default: 30
+      toggleable: true
+
+    header.carousel_item_loop:
+      type: toggle
+      label: loop
+      default: 1
+      options:
+        1: "Yes"
+        0: "Non"
+      validate:
+        type: bool
+
+    header.carousel_responsive_list:
+      type: list
+      label: THEME_EPS-THEME.CAROUSEL_SETTINGS.CAROUSEL_RESPONSIVE_LIST.LABEL
+      help: THEME_EPS-THEME.CAROUSEL_SETTINGS.CAROUSEL_RESPONSIVE_LIST.HELP
+      fields:
+        .breakpoint:
+          type: select
+          required: true
+          label: THEME_EPS-THEME.CAROUSEL_SETTINGS.BREAKPOINT_CAROUSEL_SETTINGS.LABEL
+          options:
+            0: "mobile xs"
+            768: "tablet"
+            1200: "desktop xs"
+            1440: "desktop ms"
+            1920: "desktop lg"
+        
+        .items:
+          type: text
+          size: medium
+          required: true
+          default: 2
+          label: THEME_EPS-THEME.CAROUSEL_SETTINGS.ITEMS_CAROUSEL_SETTINGS.LABEL
+          validate:
+            type: number
+        
+        .margin:
+          type: text
+          size: medium
+          required: true
+          label: THEME_EPS-THEME.CAROUSEL_SETTINGS.MARGIN_CAROUSEL_SETTINGS.LABEL
+          default: 20
+          validate:
+            type: number
+
+        .loop:
+          type: toggle
+          label: THEME_EPS-THEME.CAROUSEL_SETTINGS.LOOP_CAROUSEL_SETTINGS.LABEL
+          required: true
+          default: 0
+          options:
+            1: "Yes"
+            0: "Non"
+          validate:
+            type: bool
+        
+        .nav:
+          type: toggle
+          label: THEME_EPS-THEME.CAROUSEL_SETTINGS.NAV_CAROUSEL_SETTINGS.LABEL
+          required: true
+          default: 0
+          options:
+            1: "Yes"
+            0: "Non"
+          validate:
+            type: bool
+
+        .dots:
+          type: toggle
+          label: THEME_EPS-THEME.CAROUSEL_SETTINGS.DOTS_CAROUSEL_SETTINGS.LABEL
+          required: true
+          default: 0
+          options:
+            1: "Yes"
+            0: "Non"
+          validate:
+            type: bool
+
+        .stagePadding:
+          type: number
+          label: stagePadding
+          default: 0
+          required: true

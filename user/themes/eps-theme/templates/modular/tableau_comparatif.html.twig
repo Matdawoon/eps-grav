@@ -1,0 +1,78 @@
+
+{% import 'macros/cards.html.twig' as macro_card %}
+<div class="container tableau_comparatif">
+  <div class="bouton_section">
+    {% for card in page.header.card_princing_list %}
+        <a href="#carte-{{loop.index}}">{{card.title}}</a>
+    {% endfor %}
+  {#    Si on veux utliser des boutons :
+    {% include 'partials/button_block.html.twig' with {obj: page.header.nav_btn.0} %}
+  #}
+  </div>
+    <ul class="info_section">
+        <li><h2 class="main_title">{{page.header.princing_section.title}}</h2></li>
+    {% for section_items in page.header.princing_section.list %}
+        <ul>
+            <li><h3 class="section_title">{{section_items.title}}</h3></li>
+        {% for item in section_items.list %}
+            <li><p>{{item.desc}}</p></li>
+        {% endfor %}
+        </ul>
+    {% endfor %}
+    </ul>
+  <div class="tableau_comparatif_carousel owl-wrapper">
+   <div class="owl-carousel owl-theme owl-loaded owl-drag " >
+   {% for card in page.header.card_princing_list %}
+        {{macro_card.card_comparatif(card,loop.index)}}
+    {% endfor %}
+    </div>
+ </div>
+
+</div>
+
+
+  <script>
+    let carousel_tableau_comparatif_carousel = $('.tableau_comparatif_carousel .owl-carousel');
+      
+    carousel_tableau_comparatif_carousel.on('initialized.owl.carousel', function (e) {
+         $(".tableau_comparatif .bouton_section a").eq(e.item.index).toggleClass("active");  
+      });
+
+    carousel_tableau_comparatif_carousel.owlCarousel({
+      loop: {{page.header.carousel_item_loop ? 'true':'false' }},    
+      dots: true,
+      nav: true,
+      responsiveRefreshRate:10,
+      center: false,
+      margin: {{page.header.carousel_item_margin}},
+      items: {{page.header.carousel_nb_items}}, 
+      stagePadding: 10,
+      URLhashListener:true,
+      startPosition: 'carte-0',
+      navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+      
+      {% if page.header.carousel_responsive_list %}
+        responsive:{
+
+          {% for resp in page.header.carousel_responsive_list %}
+            {{resp.breakpoint}}:{
+              items: {{resp.items}},
+              margin: {{resp.margin}},
+              loop: {{resp.loop ? 'true':'false' }},
+              nav: {{resp.nav ? 'true':'false' }},
+              dots: {{resp.dots ? 'true':'false' }},
+              stagePadding: {{resp.stagePadding}},
+              
+            },
+
+          {% endfor %}
+        }
+      {% endif %}
+      
+    });
+
+
+
+</script>
+
+<script src="/user/themes/eps-theme/js/tableau_comparatif.js"></script>

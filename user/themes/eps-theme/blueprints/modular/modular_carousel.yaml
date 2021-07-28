@@ -12,7 +12,6 @@ form:
           title: THEME_EPS-THEME.CAROUSEL_SETTINGS.TAB_NAME.TITLE
 
           fields: 
-     
             tabs:
               type: tabs
               active: 1
@@ -36,72 +35,11 @@ form:
                 carousel_settings:
                   type: tab
                   title: THEME_EPS-THEME.CAROUSEL_SETTINGS.TAB_CAROUSEL_SETTINGS.TITLE
-
                   fields:
-                    header.carousel_responsive_list:
-                      type: list
-                      label: THEME_EPS-THEME.CAROUSEL_SETTINGS.CAROUSEL_RESPONSIVE_LIST.LABEL
-                      help: THEME_EPS-THEME.CAROUSEL_SETTINGS.CAROUSEL_RESPONSIVE_LIST.HELP
-                      fields:
-                        .breakpoint:
-                          type: select
-                          required: true
-                          label: THEME_EPS-THEME.CAROUSEL_SETTINGS.BREAKPOINT_CAROUSEL_SETTINGS.LABEL
-                          options:
-                            0: "mobile xs"
-                            768: "tablet"
-                            1200: "desktop xs"
-                            1440: "desktop ms"
-                            1920: "desktop lg"
-                        
-                        .items:
-                          type: text
-                          size: medium
-                          required: true
-                          default: 2
-                          label: THEME_EPS-THEME.CAROUSEL_SETTINGS.ITEMS_CAROUSEL_SETTINGS.LABEL
-                          validate:
-                            type: number
-                        
-                        .margin:
-                          type: text
-                          size: medium
-                          required: true
-                          label: THEME_EPS-THEME.CAROUSEL_SETTINGS.MARGIN_CAROUSEL_SETTINGS.LABEL
-                          default: 20
-                          validate:
-                            type: number
-
-                        .loop:
-                          type: toggle
-                          label: THEME_EPS-THEME.CAROUSEL_SETTINGS.LOOP_CAROUSEL_SETTINGS.LABEL
-                          required: true
-                          default: 0
-                          options:
-                            1: "Yes"
-                            0: "Non"
-                          validate:
-                            type: bool
-                        
-                        .nav:
-                          type: toggle
-                          label: THEME_EPS-THEME.CAROUSEL_SETTINGS.NAV_CAROUSEL_SETTINGS.LABEL
-                          required: true
-                          default: 0
-                          options:
-                            1: "Yes"
-                            0: "Non"
-                          validate:
-                            type: bool
-
-                        .dots:
-                          type: toggle
-                          label: THEME_EPS-THEME.CAROUSEL_SETTINGS.DOTS_CAROUSEL_SETTINGS.LABEL
-                          required: true
-                          default: 0
-                          options:
-                            1: "Yes"
-                            0: "Non"
-                          validate:
-                            type: bool
-                                            
+                    section_configuration_carousel:
+                      type: section
+                      title: configuration carousel
+                      underline: true
+                      import@:
+                        type: partials/carousel_settings   
+                        context: theme://blueprints
