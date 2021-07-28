@@ -1,0 +1,26 @@
+username: Mathieu
+state: enabled
+email: mathieul@mextor.com
+fullname: 'Mathieu Lebreton (Perhentia)'
+language: fr
+content_editor: default
+twofa_enabled: false
+twofa_secret: ACG2UGSQ47R2QA623ECRBCW7V6HCHYKM
+avatar: {  }
+hashed_password: $2y$10$2eJDRN5hdeC4OKVzmeG8DO5Oks0UkplJaoiB1u5iVbgCQ5XBRDHRi
+access:
+  site:
+    login: true
+  admin:
+    login: true
+    super: true
+    cache: true
+    configuration: true
+    pages: true
+    maintenance: true
+    statistics: true
+    plugins: true
+    themes: true
+    tools: true
+    users: true
+    flex-objects: true

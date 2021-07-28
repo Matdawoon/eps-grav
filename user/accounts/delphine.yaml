@@ -1,0 +1,26 @@
+username: Delphine
+state: enabled
+email: dmille@mextor.com
+fullname: 'Delphine Millet (Mextor)'
+language: fr
+content_editor: default
+twofa_enabled: false
+twofa_secret: DHRAAWLFUNGOXC6LVQRFAVJQC3CMCRA4
+avatar: {  }
+hashed_password: $2y$10$q.iIPkz/zndMB0y/QvqSSONyyuMTdhCbQ7mawcYWyW/65wyKbce7u
+access:
+  site:
+    login: true
+  admin:
+    login: true
+    super: true
+    cache: true
+    configuration: true
+    pages: true
+    maintenance: true
+    statistics: true
+    plugins: true
+    themes: true
+    tools: true
+    users: true
+    flex-objects: true

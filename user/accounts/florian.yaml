@@ -1,0 +1,26 @@
+username: Florian
+state: enabled
+email: florian.servant@mextor.com
+fullname: 'Florian Servant (Mextor)'
+language: fr
+content_editor: default
+twofa_enabled: false
+twofa_secret: JF235VPOAQ3EYJ4NEXYF42H4BK6OMLMT
+avatar: {  }
+hashed_password: $2y$10$c57TPBsq9IUtEhMMfdhPsuwLOqqRF5Pj5KLWPbhrA7AMPSBrhfwIW
+access:
+  site:
+    login: true
+  admin:
+    login: true
+    super: false
+    cache: true
+    configuration: true
+    pages: true
+    maintenance: true
+    statistics: true
+    plugins: true
+    themes: true
+    tools: true
+    users: true
+    flex-objects: true
