@@ -38,6 +38,29 @@ princing_section:
                     desc: 'Solde max'
 card_princing_list:
     -
+        btn_list:
+            -
+                btn_tabs:
+                    tab_btn:
+                        title: 'En savoir plus'
+                        css: btneps
+                        href: '#'
+                    tab_modal:
+                        html_area: null
+                        id: null
+                        modalHeader: null
+                        modalFooter: null
+            -
+                btn_tabs:
+                    tab_btn:
+                        title: 'En savoir plus 2'
+                        css: btneps
+                        href: '#'
+                    tab_modal:
+                        html_area: null
+                        id: null
+                        modalHeader: null
+                        modalFooter: null
         title: Standard
         list:
             -
@@ -65,6 +88,15 @@ card_princing_list:
                     -
                         desc: '10 000€'
     -
+        btn_list:
+            -
+                btn_tabs:
+                    tab_btn:
+                        title: 'En savoir plus'
+                        css: btneps
+                        href: '#'
+                    tab_modal:
+                        id: null
         title: Medium
         list:
             -
@@ -92,6 +124,15 @@ card_princing_list:
                     -
                         desc: '50 000€'
     -
+        btn_list:
+            -
+                btn_tabs:
+                    tab_btn:
+                        title: 'En savoir plus'
+                        css: btneps
+                        href: '#'
+                    tab_modal:
+                        id: null
         title: Hight
         list:
             -
@@ -119,6 +160,15 @@ card_princing_list:
                     -
                         desc: '100 000€'
     -
+        btn_list:
+            -
+                btn_tabs:
+                    tab_btn:
+                        title: 'En savoir plus'
+                        css: btneps
+                        href: '#'
+                    tab_modal:
+                        id: null
         title: VIP
         list:
             -
@@ -165,31 +215,6 @@ carousel_responsive_list:
         nav: false
         dots: false
         stagePadding: 5
-nav_btn:
-    -
-        btn_list:
-            -
-                btn_tabs:
-                    tab_btn:
-                        title: 'offre 1'
-                        css: null
-                        href: '#carte-1'
-                    tab_modal:
-                        html_area: null
-                        id: null
-                        modalHeader: null
-                        modalFooter: null
-            -
-                btn_tabs:
-                    tab_btn:
-                        title: 'offre 2'
-                        css: null
-                        href: '#carte-2'
-                    tab_modal:
-                        html_area: null
-                        id: null
-                        modalHeader: null
-                        modalFooter: null
 main_text_align: text-center
 custom_container: container-sp
 section_container_padding_class: py-5
