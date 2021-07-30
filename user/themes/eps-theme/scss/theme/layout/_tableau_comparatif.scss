@@ -98,6 +98,10 @@
             color: $blue-green-eps-color;
             font-weight: $font-weight-medium;
         }
+        .owl-item:last-child() ul:nth-last-child(2) li p {
+            color: $yellow-safron;
+            font-weight: $font-weight-medium;
+        }
     }
     & .bouton_section {
         text-align: center;
