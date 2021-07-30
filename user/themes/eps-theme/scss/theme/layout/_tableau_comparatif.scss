@@ -76,7 +76,7 @@
         text-align: center;
         //le min width de reparer le resize du owl carousel ; https://github.com/OwlCarousel2/OwlCarousel2/issues/1401#issuecomment-277479059
         min-width: 0;
-        & .owl-item:nth-child(4) ul li h2 {
+        & .owl-item:last-child() ul li h2 {
             color: $yellow-safron;
         }
         h2 {
@@ -94,7 +94,7 @@
             font-weight: $font-weight-light;
             font-size: $font-size-lg;
         }
-        .card-carousel ul:nth-child(5) li p {
+        .card-carousel ul:nth-last-child(2) li p {
             color: $blue-green-eps-color;
             font-weight: $font-weight-medium;
         }
@@ -144,7 +144,7 @@
                 border-bottom: solid $blue-green-eps-color;
             }
         }
-        a:nth-child(4) {
+        a:last-child() {
             color: $yellow-safron;
             &:focus,
             &.active,
