@@ -18,7 +18,7 @@ html {
 body {
     background: $body-bg;
     color: $body-font-color;
-    font-family: $base-font-family;
+    font-family: var(--font-secondary);
     font-size: $font-size;
     overflow-x: hidden;
     text-rendering: optimizeLegibility;
