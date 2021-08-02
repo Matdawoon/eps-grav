@@ -10,6 +10,7 @@ h6 {
     font-weight: $font-weight-light;
     line-height: $heading-line-height;
     letter-spacing: $letter-spacing;
+    font-family: $base-font-family;
 }
 
 h1,
@@ -44,16 +45,8 @@ h6,
 
 // Paragraphs
 p {
-    margin: $line-height 0 $line-height;
-    font-family: $paragraph-font-family;
-    --html-font-size: #{$html-font-size};
-    @include media-breakpoint-down(md) {
-        --html-font-size: calc(#{$html-font-size} * .9);
-    }
-    @include media-breakpoint-down(sm) {
-        --html-font-size: calc(#{$html-font-size} * .9);
-    }
-    font-size: var(--html-font-size);
+    font-size: var(--paragraph-font-size);
+    font-family: $mono-font-family;
 }
 
 // Semantic text elements
