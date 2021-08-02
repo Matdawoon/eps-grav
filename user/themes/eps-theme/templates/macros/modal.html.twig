@@ -7,14 +7,12 @@
         <!-- Modal content -->
         <div class="modal-container">
         <!-- mise en place du header s'il existe, sinon ajout du close -->
-            {% if modalHeader %}
                 <div class="modal-header">
-                    <h2>{{modalHeader|raw}}</h2>
-                    <span class="close display-topright ">&times;</span>
+                {% if modalHeader %}
+                    <h3>{{modalHeader|raw}}</h3>
+                {% endif %}
+                    <span class="close">&times;</span>
                 </div>
-            {% else %}
-                <span class="close display-topright close--dark-color">&times;</span>
-            {% endif %}
         <!-- Contenu du back office -->
             <div class="modal-body">
                 {{content|raw}}
