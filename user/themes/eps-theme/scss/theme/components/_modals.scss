@@ -1,14 +1,15 @@
 // Modals
 .modal {
-  align-items: center;
-  bottom: 0;
   display: none;
+
+  align-items: center;
   justify-content: center;
-  left: 0;
   opacity: 0;
-  overflow: hidden;
   padding: $layout-spacing;
+  background-color: rgba($primary-color, .75);
   position: fixed;
+  left: 0;
+  bottom: 0;
   right: 0;
   top: 0;
 
@@ -17,98 +18,69 @@
     display: flex;
     opacity: 1;
     z-index: $zindex-4;
+    animation: 0.4s animatetop;
 
-    .modal-overlay {
-      background: rgba($bg-color, .75);
-      bottom: 0;
-      cursor: default;
-      display: block;
-      left: 0;
-      position: absolute;
-      right: 0;
-      top: 0;
+  }
+
+  .modal-background{
+    max-width: 600px;
+    width: 70%;
+    
+  }
+  .modal-container {
+    @include shadow-variant(.2rem);
+    background: $bg-color-light;
+    border-radius: $modal-border-radius;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 70vh;
+    max-width: $control-width-md;
+    //padding: $unit-2 $unit-4;
+    width: 100%;
+    overflow: hidden;
+
+
+    h3{
+      margin: $unit-2;
+      color: $gray-pale-eps-color;
+    }
+    .modal-header {
+      background-color: $blue-dark-eps-color;
+      color: $white-full-eps-color;
+      padding: $unit-6;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
     }
 
-    .modal-container {
-      animation: slide-down .2s ease 1;
-      z-index: $zindex-4;
-    }
-  }
-
-  &.modal-sm {
-    .modal-container {
-      max-width: $control-width-sm;
-      padding: 0 $unit-2;
-    }
-  }
-
-  &.modal-lg {
-    .modal-overlay {
-      background: $bg-color-light;
+    .modal-body {
+      overflow-y: auto;
+      padding: $unit-6;
+      position: relative;
     }
 
-    .modal-container {
-      box-shadow: none;
-      max-width: $control-width-lg;
+    .modal-footer {
+      background-color: $blue-dark-eps-color;
+      color: $white-full-eps-color;
+      padding: $unit-6;
+      text-align: left;
     }
-  }
-}
-
-.modal-container {
-  @include shadow-variant(.2rem);
-  animation-name: animatetop;
-  animation-duration: 0.4s;
-  background: $bg-color-light;
-  border-radius: $modal-border-radius;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  max-height: 75vh;
-  max-width: $control-width-md;
-  //padding: $unit-2 $unit-4;
-  width: 100%;
-  overflow: hidden;
-
-  &.modal-fullheight {
-    max-height: 100vh;
-  }
-
-  .modal-header {
-    background-color: $blue-dark-eps-color;
-    color: $white-full-eps-color;
-    padding: $unit-4;
-  }
-
-  .modal-body {
-    overflow-y: auto;
-    padding: $unit-4;
-    position: relative;
-  }
-
-  .modal-footer {
-    background-color: $blue-dark-eps-color;
-    color: $white-full-eps-color;
-    padding: $unit-4;
-    text-align: left;
   }
 }
 
 /* The Close Button */
 .close {
   color: $gray-pale-eps-color;
-  float: right;
+  margin-left: auto;
+  align-self: center;
   font-size: $unit-7;
   font-weight: bold;
   &:hover, &:focus{
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }
-  &.display-topright{
-    float: right;
-  }
-  &.display-topleft{
-    float: left;
   }
   &--dark-color{
     color: $blue-dark-eps-color;
@@ -121,3 +93,4 @@
   from {top: -300px; opacity: 0}
   to {top: 0; opacity: 1}
 }
+
