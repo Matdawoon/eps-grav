@@ -44,7 +44,7 @@ card_princing_list:
                     tab_btn:
                         title: 'En savoir plus'
                         css: btneps
-                        href: '#'
+                        href: null
                     tab_modal:
                         html_area: null
                         id: null
@@ -96,7 +96,10 @@ card_princing_list:
                         css: btneps
                         href: '#'
                     tab_modal:
+                        html_area: null
                         id: null
+                        modalHeader: null
+                        modalFooter: null
         title: Medium
         list:
             -
@@ -132,7 +135,10 @@ card_princing_list:
                         css: btneps
                         href: '#'
                     tab_modal:
+                        html_area: null
                         id: null
+                        modalHeader: null
+                        modalFooter: null
         title: Hight
         list:
             -
@@ -168,7 +174,10 @@ card_princing_list:
                         css: btneps
                         href: '#'
                     tab_modal:
+                        html_area: null
                         id: null
+                        modalHeader: null
+                        modalFooter: null
         title: VIP
         list:
             -

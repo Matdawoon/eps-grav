@@ -22,11 +22,14 @@ rows:
             -
                 btn_tabs:
                     tab_btn:
-                        title: 'Voir les tarifs'
+                        title: 'Voir les tarifsa azeaze'
                         css: 'btneps btneps__color--blue-green-outline'
                         href: '#'
                     tab_modal:
-                        id: null
+                        html_area: "<h1>test azeaz azea aze</h1>\n<p>aze aze aze aze aze aze aze ae ae aeaz aee aeaz</p>"
+                        id: faq-12
+                        modalHeader: 'azeae e'
+                        modalFooter: azeaze
             -
                 btn_tabs:
                     tab_btn:
@@ -34,7 +37,10 @@ rows:
                         css: 'btneps btneps__color--blue-green-outline'
                         href: '#'
                     tab_modal:
+                        html_area: null
                         id: null
+                        modalHeader: null
+                        modalFooter: null
         image: null
         title: null
         description: null

@@ -2,29 +2,31 @@
 {% macro macro_modal(id,content,modalHeader,modalFooter) %}
 
 <!-- The Modal -->
-<div id="modal-{{id}}" class="modal modal-lg">
-    <!-- Modal content -->
-    <div class="modal-container">
-    <!-- mise en place du header s'il existe, sinon ajout du close -->
-        {% if modalHeader %}
-            <div class="modal-header">
-                <h2>{{modalHeader|raw}}</h2>
-                <span class="close display-topright ">&times;</span>
+<div id="modal-{{id}}" class="modal">
+    <div class="modal-background">
+        <!-- Modal content -->
+        <div class="modal-container">
+        <!-- mise en place du header s'il existe, sinon ajout du close -->
+            {% if modalHeader %}
+                <div class="modal-header">
+                    <h2>{{modalHeader|raw}}</h2>
+                    <span class="close display-topright ">&times;</span>
+                </div>
+            {% else %}
+                <span class="close display-topright close--dark-color">&times;</span>
+            {% endif %}
+        <!-- Contenu du back office -->
+            <div class="modal-body">
+                {{content|raw}}
             </div>
-        {% else %}
-            <span class="close display-topright close--dark-color">&times;</span>
-        {% endif %}
-    <!-- Contenu du back office -->
-        <div class="modal-body">
-            {{content|raw}}
+        <!-- Footer s'il existe -->
+        {% if modalFooter %}
+            <div class="modal-footer">
+                <h3>{{modalFooter|raw}}</h3>
+            </div>
+        {% endif %}       
+                
         </div>
-    <!-- Footer s'il existe -->
-    {% if modalFooter %}
-        <div class="modal-footer">
-            <h3>{{modalFooter|raw}}</h3>
-        </div>
-    {% endif %}       
-            
     </div>
 </div>
 
