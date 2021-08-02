@@ -1,8 +1,8 @@
 
-{% macro macro_modal(id,content,modalHeader,modalFooter) %}
+{% macro macro_modal(id,content,modalHeader,modalFooter,alignment) %}
 
 <!-- The Modal -->
-<div id="modal-{{id}}" class="modal">
+<div id="modal-{{id}}" class="modal {{alignment}}">
     <div class="modal-background">
         <!-- Modal content -->
         <div class="modal-container">

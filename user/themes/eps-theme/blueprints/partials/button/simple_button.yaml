@@ -41,6 +41,7 @@ form:
               type: text
               label: THEME_EPS-THEME.BUTTONS_EPS.ID_MODAL.LABEL
               description: THEME_EPS-THEME.BUTTONS_EPS.ID_MODAL.HELP
+              toggleable: true
             .modalHeader:
               markdown: true
               type: text
@@ -50,4 +51,11 @@ form:
               markdown: true
               type: text
               label: THEME_EPS-THEME.BUTTONS_EPS.MODALFOOTER.LABEL
+              toggleable: true
+            .textAlignment:
+              markdown: true
+              type: text
+              label: THEME_EPS-THEME.ADMIN.CONTENT.CSS_CLASS.LABEL
+              help: THEME_EPS-THEME.ADMIN.CONTENT.CSS_CLASS.HELP
+              placeholder: THEME_EPS-THEME.ADMIN.CONTENT.CSS_CLASS.PLACEHOLDER_VALUE
               toggleable: true
