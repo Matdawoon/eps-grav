@@ -31,7 +31,10 @@
         color: $white-full-eps-color;
         margin-top: 1rem;
         margin-bottom: 0;
+        font-size: calc(var(--paragraph-font-size)*0.98);
     }
+
+
     ul li:last-child() p {
         margin-bottom: 1rem;
     }
@@ -62,10 +65,11 @@
         }
         & ul h3 {
             color: lighten($gray-dark-eps-color, 30%);
-            font-size: var(--h3-font-size);
+            font-size: calc(var(--h3-font-size)*0.7);
         }
         & ul p {
             color: lighten($gray-eps-color, 45%);
+            
         }
     }
     & .tableau_comparatif_carousel {
@@ -76,7 +80,7 @@
         text-align: center;
         //le min width de reparer le resize du owl carousel ; https://github.com/OwlCarousel2/OwlCarousel2/issues/1401#issuecomment-277479059
         min-width: 0;
-        & .owl-item:nth-child(4) ul li h2 {
+        & .owl-item:last-child() ul li h2 {
             color: $yellow-safron;
         }
         h2 {
@@ -92,10 +96,14 @@
         .card-carousel ul li p {
             color: lighten($gray-eps-color, 20%);
             font-weight: $font-weight-light;
-            font-size: $font-size-lg;
+            //font-size: $font-size-lg;
         }
-        .card-carousel ul:nth-child(5) li p {
+        .card-carousel ul:nth-last-child(2) li p {
             color: $blue-green-eps-color;
+            font-weight: $font-weight-medium;
+        }
+        .owl-item:last-child() ul:nth-last-child(2) li p {
+            color: $yellow-safron;
             font-weight: $font-weight-medium;
         }
     }
@@ -144,7 +152,7 @@
                 border-bottom: solid $blue-green-eps-color;
             }
         }
-        a:nth-child(4) {
+        a:last-child() {
             color: $yellow-safron;
             &:focus,
             &.active,

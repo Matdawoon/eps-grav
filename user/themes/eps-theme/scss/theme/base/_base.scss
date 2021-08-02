@@ -18,8 +18,8 @@ html {
 body {
     background: $body-bg;
     color: $body-font-color;
-    font-family: $base-font-family;
     font-size: $font-size;
+    font-family: $mono-font-family;
     overflow-x: hidden;
     text-rendering: optimizeLegibility;
 }

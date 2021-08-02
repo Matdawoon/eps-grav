@@ -4,6 +4,7 @@
     /*border-bottom: 1px solid rgba($gray-color, 10);*/
     /*@include default-animation(0.5s);*/
     font-size: $header-font-size;
+    font-family: $base-font-family;
     font-weight: 700;
     background-color: $primary-color;
     color: $light-color;
@@ -17,7 +18,7 @@
         font-size: .9rem;
         font-weight: $font-weight-light;
     }
-    .mobile-container a{
+    .mobile-container a {
         color: #434343;
     }
     .logo svg path {

@@ -17,7 +17,7 @@
 {% endmacro %}
 
 
-{% macro card_comparatif( card, index ) %}
+{% macro card_comparatif( card, index, cta_offres ) %}
 
     <ul class="card-carousel" data-hash="carte-{{index}}">
         <li><h2 class="main_title">{{card.title}}</h2></li>
@@ -31,6 +31,10 @@
         </ul>
         
     {% endfor %}
+    <ul>
+      <hr>
+      {% include 'partials/button_block.html.twig' with {obj: card} %}
+    </ul>
     </ul>
 
 {% endmacro %}

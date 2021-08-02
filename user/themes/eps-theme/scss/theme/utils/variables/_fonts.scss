@@ -116,3 +116,29 @@ $h5-font-size: $core-font-size+0.15 !default;
 $h6-font-size: $core-font-size+0.10 !default;
 // Spacing
 $leading-margin: $core-line-height * 1rem !default;
+:root {
+    --base-font-size: 1.7rem;
+    --scale-font-size: 1.02;
+    --h6-font-size: calc(var(--base-font-size) * var(--scale-font-size));
+    --h5-font-size: calc(var(--h6-font-size) * var(--scale-font-size));
+    --h4-font-size: calc(var(--h5-font-size) * var(--scale-font-size));
+    --h3-font-size: calc(var(--h4-font-size) * var(--scale-font-size));
+    --h2-font-size: calc(var(--h3-font-size) * var(--scale-font-size));
+    --h1-font-size: calc(var(--h2-font-size) * var(--scale-font-size));
+    --paragraph-font-size: 1.2rem;
+    --title-cards-font-size: 1.8rem;
+    @include media-breakpoint-up(xs) {
+        --scale-font-size: 1.02;
+        --paragraph-font-size: 0.96rem;
+    }
+    @include media-breakpoint-up(md) {
+        --scale-font-size: 1.02;
+        --paragraph-font-size: .9rem;
+        --h3-font-size-cards: 1.4rem;
+    }
+    @include media-breakpoint-up(lg) {
+        --scale-font-size: 1.04;
+        --paragraph-font-size: 1.1rem;
+        --h3-font-size-cards: 1.8rem;
+    }
+}

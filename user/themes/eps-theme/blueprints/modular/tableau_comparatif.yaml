@@ -58,7 +58,7 @@ form:
                                   label: item 
                 tab_cards_section:
                   type: tab
-                  title: Section titres
+                  title: Section Cartes
                   fields:                                
                     cards_section:
                       type: section
@@ -68,11 +68,11 @@ form:
                         header.card_princing_list:
                           type: list
                           style: vertical
-                          label: Section List
+                          label: Liste de cartes
                           fields:
                             .title:
                               type: text
-                              label: section Title
+                              label: Titre Cart
                             .list:
                               type: list
                               style: vertical
@@ -87,20 +87,6 @@ form:
                                       type: text
                                       label: section Title
 
-                tab_btn_nav_section:
-                  type: tab
-                  title: Boutons navigation
-                  fields:                                
-                    button_section:
-                      type: section
-                      title: Section Boutons navigation
-                      underline: true
-                      fields:
-                        header.nav_btn:
-                          type: list
-                          style: vertical
-                          label: Section List
-                          fields:
                             import@2:
                                 type: partials/button/simple_button_list
                                 context: theme://blueprints
