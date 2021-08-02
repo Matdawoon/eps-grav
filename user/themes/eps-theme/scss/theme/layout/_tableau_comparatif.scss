@@ -31,7 +31,10 @@
         color: $white-full-eps-color;
         margin-top: 1rem;
         margin-bottom: 0;
+        font-size: calc(var(--paragraph-font-size)*0.98);
     }
+
+
     ul li:last-child() p {
         margin-bottom: 1rem;
     }
@@ -62,10 +65,11 @@
         }
         & ul h3 {
             color: lighten($gray-dark-eps-color, 30%);
-            font-size: var(--h3-font-size);
+            font-size: calc(var(--h3-font-size)*0.7);
         }
         & ul p {
             color: lighten($gray-eps-color, 45%);
+            
         }
     }
     & .tableau_comparatif_carousel {
@@ -92,7 +96,7 @@
         .card-carousel ul li p {
             color: lighten($gray-eps-color, 20%);
             font-weight: $font-weight-light;
-            font-size: $font-size-lg;
+            //font-size: $font-size-lg;
         }
         .card-carousel ul:nth-last-child(2) li p {
             color: $blue-green-eps-color;
