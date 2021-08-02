@@ -23,7 +23,7 @@
   }
 
   .modal-background{
-    max-width: 600px;
+    max-width: 750px;
     width: 70%;
     
   }
@@ -35,8 +35,6 @@
     flex-direction: column;
     justify-content: space-between;
     max-height: 70vh;
-    max-width: $control-width-md;
-    //padding: $unit-2 $unit-4;
     width: 100%;
     overflow: hidden;
 
