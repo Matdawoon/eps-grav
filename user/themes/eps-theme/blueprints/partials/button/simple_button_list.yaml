@@ -1,5 +1,19 @@
 form:
-  .btn_list:
+  .btn_list.title:
+    type: text
+    label: THEME_EPS-THEME.BUTTONS_EPS.TAB_BTN.LABEL
+    placeholder: THEME_EPS-THEME.BUTTONS_EPS.TAB_BTN.PLACEHOLDER_VALUE
+  .btn_list.css:
+    markdown: true
+    type: text
+    placeholder: THEME_EPS-THEME.BUTTONS_EPS.CSS_CLASS_TAB_BTN.PLACEHOLDER_VALUE
+    label: THEME_EPS-THEME.BUTTONS_EPS.CSS_CLASS_TAB_BTN.LABEL
+    description: THEME_EPS-THEME.ADMIN.CONTENT.HELP_DESCRIPTIONS.BUTTON_HELPERS_CLASS
+  .btn_list.spacing:
+    type: text
+    label: espacements conteneur boutons
+    toggleable: true
+  .btn_list.list:
     type: list
     label: THEME_EPS-THEME.BUTTONS_EPS.LIST_SIMPLE_BTN.LABEL
     import@:

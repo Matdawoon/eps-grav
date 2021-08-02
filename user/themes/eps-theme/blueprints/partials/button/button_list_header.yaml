@@ -1,10 +1,33 @@
 
 
 form:
-  header.btn_list:
-    type: list
-    label: THEME_EPS-THEME.BUTTONS_EPS.LIST_BTN.LABEL
-
-    import@:
-      type: partials/button/simple_button
-      context: theme://blueprints
+  header.btn_fieldset:
+    type: fieldset
+    title: Boutons
+    help: Aide boutons
+    info: Info boutons
+    text: Text inside fieldset and before other fields
+    icon: comments       # Fork Awesome icons system (see : forkaweso.me).
+    collapsed: true      # Initial state of fieldset (see collapsible option)
+    collapsible: true    # Whether one can expand the fieldset or not
+    fields:
+      header.btn_list.css:
+        markdown: true
+        type: text
+        placeholder: THEME_EPS-THEME.BUTTONS_EPS.CSS_CLASS_TAB_BTN.PLACEHOLDER_VALUE
+        label: THEME_EPS-THEME.BUTTONS_EPS.CSS_CLASS_TAB_BTN.LABEL
+        description: THEME_EPS-THEME.ADMIN.CONTENT.HELP_DESCRIPTIONS.BUTTON_HELPERS_CLASS
+      header.btn_list.title:
+        type: text
+        label: THEME_EPS-THEME.BUTTONS_EPS.TAB_BTN.LABEL
+        placeholder: THEME_EPS-THEME.BUTTONS_EPS.TAB_BTN.PLACEHOLDER_VALUE        
+      header.btn_list.spacing:
+        type: text
+        label: espacements conteneur boutons
+        toggleable: true
+      header.btn_list.list:
+        type: list
+        label: THEME_EPS-THEME.BUTTONS_EPS.LIST_BTN.LABEL
+        import@:
+          type: partials/button/simple_button
+          context: theme://blueprints
