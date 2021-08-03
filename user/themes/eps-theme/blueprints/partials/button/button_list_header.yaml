@@ -2,10 +2,12 @@
 
 form:
   header.btn_list.css_class:
+    size: long
     type: text
     label: Class css pour le conteneur boutons
     toggleable: true 
   header.btn_list.list:
+    size: long
     type: list
     label: THEME_EPS-THEME.BUTTONS_EPS.LIST_BTN.LABEL
     fields:

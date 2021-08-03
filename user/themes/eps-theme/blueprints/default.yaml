@@ -50,49 +50,14 @@ form:
               title: THEME_EPS-THEME.GENERAL_MAIN_TEXT.SECTION.TITLE
               help: Aide Titre Desc
               info: Info Titre Desc
-              text: Text inside fieldset and before other fields
+              text: THEME_EPS-THEME.GENERAL_MAIN_TEXT.SECTION.TITLE
               icon: comments       # Fork Awesome icons system (see : forkaweso.me).
               collapsed: true      # Initial state of fieldset (see collapsible option)
               collapsible: true    # Whether one can expand the fieldset or not
-              fields:
-                section_general_text_information:
-                  type: section
-                  title: THEME_EPS-THEME.GENERAL_MAIN_TEXT.SECTION.TITLE
-                  underline: true
-                  fields:
-                    header.main_title:
-                      markdown: true
-                      type: text
-                      label: THEME_EPS-THEME.ADMIN.CONTENT.TITLE.LABEL
-                      help: THEME_EPS-THEME.ADMIN.CONTENT.TITLE.HELP
-                      description: THEME_EPS-THEME.ADMIN.CONTENT.HELP_DESCRIPTIONS.TITLE_COLOR_HELPERS_CLASS
-                      placeholder: THEME_EPS-THEME.GENERAL_MAIN_TEXT.TITLE_MAIN_TEXT.PLACEHOLDER_VALUE
-                      size: medium
-                      toggleable: true 
-                    header.main_description:
-                      markdown: true
-                      type: textarea
-                      label: THEME_EPS-THEME.ADMIN.CONTENT.DESC.LABEL
-                      help: THEME_EPS-THEME.ADMIN.CONTENT.DESC.HELP
-                      description: THEME_EPS-THEME.ADMIN.CONTENT.HELP_DESCRIPTIONS.DESC_COLOR_HELPERS_CLASS
-                      placeholder: THEME_EPS-THEME.GENERAL_MAIN_TEXT.DESCRIPTION_MAIN_TEXT.PLACEHOLDER_VALUE
-                      size: medium  
-                      toggleable: true 
-                    header.main_text_align:
-                      type: text
-                      label: THEME_EPS-THEME.GENERAL_MAIN_TEXT.CSS_CLASS_MAIN_TEXT.LABEL
-                      placeholder: THEME_EPS-THEME.GENERAL_MAIN_TEXT.CSS_CLASS_MAIN_TEXT.PLACEHOLDER_VALUE
-                      help: THEME_EPS-THEME.ADMIN.CONTENT.CSS_CLASS.HELP
-                      description: THEME_EPS-THEME.ADMIN.CONTENT.HELP_DESCRIPTIONS.TEXT_HELPERS_CLASS
-                      size: medium  
-                      toggleable: true                           
-                    header.custom_container:
-                      type: text
-                      label: THEME_EPS-THEME.ADMIN.CONTENT.CONTAINER.LABEL
-                      placeholder: THEME_EPS-THEME.ADMIN.CONTENT.CONTAINER.PLACEHOLDER_VALUE
-                      help: THEME_EPS-THEME.ADMIN.CONTENT.CONTAINER.HELP
-                      size: medium  
-                      toggleable: true  
+              fields:           
+                import@3:
+                  type: partials/partial_title_desc
+                  context: theme://blueprints
             
             header.btn_fieldset:
               ordering@: -6
@@ -104,6 +69,7 @@ form:
               icon: comments       # Fork Awesome icons system (see : forkaweso.me).
               collapsed: true      # Initial state of fieldset (see collapsible option)
               collapsible: true    # Whether one can expand the fieldset or not
+              size: small
               fields:            
                 import@2:
                   type: partials/button/button_list_header

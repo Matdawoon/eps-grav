@@ -85,6 +85,9 @@ fr:
           BUTTON_HELPERS_CLASS: 'Selecteur de classe obligatoire = `btneps` <br /> Modificateurs (mode contour) = `btneps__color--blue-flat-outline`, `btneps__color--blue-green-outline`, `btneps__color--red-warmpink-outline`, `btneps__color--red-corail-outline`<br /> Modificateurs (mode plein) = `btneps__color--blue-flat`, `btneps__color--blue-green`, `btneps__color--red-warmpink`, `btneps__color--red-corail`'
           IMAGE_HELPERS_CLASS: '- Extensions recommandées : `.jpg`, `.png8`, `png24` ou `.gif`<br />- Poids recommandé : `200Ko à 1Mo Max`'
         CONTAINER:
+          CSS_CLASS:
+            LABEL: 'Classes de Style css pour le conteneur'
+            HELP: 'Tout les class de style disponibles pour les conteneurs <br> Disposition du texte : `text-center` ... <br> Margin et Padding `p-3`ou `m-3` ...'
           LABEL: Changement de présentation
           HELP: 'Option pour réduire la largeur du conteneur principal'
           PLACEHOLDER_VALUE: container-sp
