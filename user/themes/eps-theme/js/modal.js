@@ -2,24 +2,20 @@
 
 
 function modalCreation(id){
-    console.log("id " + id);
         
     // Get the modal
     //var modal = document.getElementById("modal-"+id);
     var modal=$("#modal-"+id);
-    var modal_bg=$("#modal-"+id+" .modal-background");
+
     // Get the button that opens the modal
     var btn = document.getElementById(id);
 
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
-    console.log("modal" + modal);
-    console.log("btn" + btn);
 
     // When the user clicks on the button, open the modal
     btn.onclick = function() {
         modal.addClass('active');        
-        console.log("active" );
     }
 
     // When the user clicks on <span> (x), close the modal
