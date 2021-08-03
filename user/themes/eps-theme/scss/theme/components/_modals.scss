@@ -6,7 +6,7 @@
   justify-content: center;
   opacity: 0;
   padding: $layout-spacing;
-  background-color: rgba($primary-color, .75);
+  background-color: rgba($gray-pale-eps-color, .87);
   position: fixed;
   left: 0;
   bottom: 0;
@@ -24,7 +24,7 @@
 
   .modal-background{
     max-width: 750px;
-    width: 70%;
+    width: 90%;
     
   }
   .modal-container {
@@ -41,12 +41,16 @@
 
     h3{
       margin: $unit-2;
-      color: $gray-pale-eps-color;
+      color: $blue-dark-eps-color;
+      font-size: var(--h3-font-size);
     }
     .modal-header {
-      background-color: $blue-dark-eps-color;
+      background-color: $gray-light-eps-color;
       color: $white-full-eps-color;
-      padding: $unit-6;
+      padding-left: $unit-8l;
+      padding-right: $unit-10;
+      padding-top: $unit-5;
+      padding-bottom: $unit-5;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -60,7 +64,7 @@
     }
 
     .modal-footer {
-      background-color: $blue-dark-eps-color;
+      background-color: $gray-light-eps-color;
       color: $white-full-eps-color;
       padding: $unit-6;
       text-align: left;
@@ -70,11 +74,11 @@
 
 /* The Close Button */
 .close {
-  color: $gray-pale-eps-color;
+  color: lighten($gray-eps-color, 25);
   margin-left: auto;
   align-self: center;
-  font-size: $unit-7;
-  font-weight: bold;
+  font-size: $unit-9;
+  font-weight: lighter;
   &:hover, &:focus{
     color: black;
     text-decoration: none;
