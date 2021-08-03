@@ -1,7 +1,9 @@
 
 form:
   fields:
-    
+    spacer_cards:
+      type: spacer
+      title: Cartes
     .image.img:
       markdown: true
       type: filepicker
@@ -33,8 +35,6 @@ form:
       description: THEME_EPS-THEME.ADMIN.CONTENT.HELP_DESCRIPTIONS.TEXT_HELPERS_CLASS
       toggleable: true
 
-
-
     import@:
-        type: partials/button/simple_button_list
-        context: theme://blueprints
+      type: partials/button/simple_button_list
+      context: theme://blueprints

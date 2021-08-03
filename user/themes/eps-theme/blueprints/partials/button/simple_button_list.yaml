@@ -1,4 +1,7 @@
 form:
+  .spacer_cards:
+    type: spacer
+    title: Boutons
   .btn_list.title:
     type: text
     label: THEME_EPS-THEME.BUTTONS_EPS.TAB_BTN.LABEL
