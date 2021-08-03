@@ -1,33 +1,32 @@
 form:
-  fields:
-    columns:
-      type: columns
-      fields:
-        column1:
-          fields:
-            header.module_bg_img:
-              type: filepicker
-              label: THEME_EPS-THEME.BACKGROUND_CURVATURE.MODULE_BG_IMG.LABEL
-              preview_images: true
-              toggleable: true
-              description: THEME_EPS-THEME.BACKGROUND_CURVATURE.MODULE_BG_IMG.HELP
-        column2:
-          fields:
-            header.module_bg_color:
-              type: colorpicker
-              label: THEME_EPS-THEME.BACKGROUND_CURVATURE.MODULE_BG_COLOR.LABEL
-              toggleable: true
-              description: THEME_EPS-THEME.BACKGROUND_CURVATURE.MODULE_BG_COLOR.HELP
+  module_columns:
+    type: columns
+    fields:
+      column1:
+        fields:
+          header.module_bg_img:
+            type: filepicker
+            label: THEME_EPS-THEME.BACKGROUND_CURVATURE.MODULE_BG_IMG.LABEL
+            preview_images: true
+            toggleable: true
+            description: THEME_EPS-THEME.BACKGROUND_CURVATURE.MODULE_BG_IMG.HELP
+      column2:
+        fields:
+          header.module_bg_color:
+            type: colorpicker
+            label: THEME_EPS-THEME.BACKGROUND_CURVATURE.MODULE_BG_COLOR.LABEL
+            toggleable: true
+            description: THEME_EPS-THEME.BACKGROUND_CURVATURE.MODULE_BG_COLOR.HELP
 
 
-    header.module_curvature:
-      type: checkboxes
-      label: THEME_EPS-THEME.BACKGROUND_CURVATURE.MODULE_CURVATURE.LABEL
-      default:
-          curvature_top: false
-          curvature_bottom: false
-      options:
-          curvature_top: Courbure vers le haut
-          curvature_bottom: Courbure vers le bas
-      use: keys
+  header.module_curvature:
+    type: checkboxes
+    label: THEME_EPS-THEME.BACKGROUND_CURVATURE.MODULE_CURVATURE.LABEL
+    default:
+      curvature_top: false
+      curvature_bottom: false
+    options:
+      curvature_top: Courbure vers le haut
+      curvature_bottom: Courbure vers le bas
+    use: keys
 

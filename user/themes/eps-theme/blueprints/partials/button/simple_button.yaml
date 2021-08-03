@@ -1,51 +1,69 @@
 
 
 form:
-  fields:
-    .btn_tabs:
-      type: tabs
-      active: 2
-      fields:
-        .tab_btn:
-          type: tab
-          title: THEME_EPS-THEME.BUTTONS_EPS.TAB_BTN.TITLE
-          fields:
-            .href:
-              markdown: true
-              type: Contenu du bouton
-              placeholder: THEME_EPS-THEME.BUTTONS_EPS.HREF_TAB_BTN.PLACEHOLDER_VALUE
-              label: THEME_EPS-THEME.BUTTONS_EPS.HREF_TAB_BTN.LABEL
-              description: THEME_EPS-THEME.BUTTONS_EPS.HREF_TAB_BTN.HELP
-        .tab_modal:
-          type: tab
-          title: THEME_EPS-THEME.BUTTONS_EPS.TAB_MODAL.TITLE
-          fields:
-            .html_area:
-              markdown: true
-              type: textarea
-              label: THEME_EPS-THEME.BUTTONS_EPS.TAB_MODAL.LABEL
-              description: THEME_EPS-THEME.BUTTONS_EPS.TAB_MODAL.HELP
-              toggleable: true
-            .id:
-              markdown: true
-              type: text
-              label: THEME_EPS-THEME.BUTTONS_EPS.ID_MODAL.LABEL
-              description: THEME_EPS-THEME.BUTTONS_EPS.ID_MODAL.HELP
-              toggleable: true
-            .modalHeader:
-              markdown: true
-              type: text
-              label: THEME_EPS-THEME.BUTTONS_EPS.MODALHEADER.LABEL
-              toggleable: true
-            .modalFooter:
-              markdown: true
-              type: text
-              label: THEME_EPS-THEME.BUTTONS_EPS.MODALFOOTER.LABEL
-              toggleable: true
-            .textAlignment:
-              markdown: true
-              type: text
-              label: THEME_EPS-THEME.ADMIN.CONTENT.CSS_CLASS.LABEL
-              help: THEME_EPS-THEME.ADMIN.CONTENT.CSS_CLASS.HELP
-              placeholder: THEME_EPS-THEME.ADMIN.CONTENT.CSS_CLASS.PLACEHOLDER_VALUE
-              toggleable: true
+  .spacer_cards:
+    type: spacer
+    title: Boutons
+  .title:
+    type: text
+    label: THEME_EPS-THEME.BUTTONS_EPS.TAB_BTN.LABEL
+    placeholder: THEME_EPS-THEME.BUTTONS_EPS.TAB_BTN.PLACEHOLDER_VALUE
+  .css:
+    markdown: true
+    type: text
+    placeholder: THEME_EPS-THEME.BUTTONS_EPS.CSS_CLASS_TAB_BTN.PLACEHOLDER_VALUE
+    label: THEME_EPS-THEME.BUTTONS_EPS.CSS_CLASS_TAB_BTN.LABEL
+    description: THEME_EPS-THEME.ADMIN.CONTENT.HELP_DESCRIPTIONS.BUTTON_HELPERS_CLASS
+  .spacing:
+    type: text
+    label: espacements conteneur boutons
+    toggleable: true
+
+  .btn_tabs:
+    type: tabs
+    active: 2
+    fields:
+      .tab_btn:
+        type: tab
+        title: THEME_EPS-THEME.BUTTONS_EPS.TAB_BTN.TITLE
+        fields:
+          .href:
+            markdown: true
+            type: Contenu du bouton
+            placeholder: THEME_EPS-THEME.BUTTONS_EPS.HREF_TAB_BTN.PLACEHOLDER_VALUE
+            label: THEME_EPS-THEME.BUTTONS_EPS.HREF_TAB_BTN.LABEL
+            description: THEME_EPS-THEME.BUTTONS_EPS.HREF_TAB_BTN.HELP
+            toggleable: true
+      .tab_modal:
+        type: tab
+        title: THEME_EPS-THEME.BUTTONS_EPS.TAB_MODAL.TITLE
+        fields:
+          .html_area:
+            markdown: true
+            type: textarea
+            label: THEME_EPS-THEME.BUTTONS_EPS.TAB_MODAL.LABEL
+            description: THEME_EPS-THEME.BUTTONS_EPS.TAB_MODAL.HELP
+            toggleable: true
+          .id:
+            markdown: true
+            type: text
+            label: THEME_EPS-THEME.BUTTONS_EPS.ID_MODAL.LABEL
+            description: THEME_EPS-THEME.BUTTONS_EPS.ID_MODAL.HELP
+            toggleable: true
+          .modalHeader:
+            markdown: true
+            type: text
+            label: THEME_EPS-THEME.BUTTONS_EPS.MODALHEADER.LABEL
+            toggleable: true
+          .modalFooter:
+            markdown: true
+            type: text
+            label: THEME_EPS-THEME.BUTTONS_EPS.MODALFOOTER.LABEL
+            toggleable: true
+          .textAlignment:
+            markdown: true
+            type: text
+            label: THEME_EPS-THEME.ADMIN.CONTENT.CSS_CLASS.LABEL
+            help: THEME_EPS-THEME.ADMIN.CONTENT.CSS_CLASS.HELP
+            placeholder: THEME_EPS-THEME.ADMIN.CONTENT.CSS_CLASS.PLACEHOLDER_VALUE
+            toggleable: true
