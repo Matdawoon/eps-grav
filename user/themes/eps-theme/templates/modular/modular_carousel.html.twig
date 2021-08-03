@@ -3,7 +3,7 @@
 
    <div class="owl-carousel owl-theme owl-loaded owl-drag " >
       {% for card in page.header.card_list %}
-        {{macro_card.card(page,card.image, card.title, card.description, card.btn_list,  card.css_text_class)}}
+        {{macro_card.card(page,card)}}
   
       {% endfor %}
     </div>

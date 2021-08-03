@@ -1,17 +1,17 @@
 
 
-{% macro card(page, img, titre, description, btn_list,css_text_class ) %}
+{% macro card(page, card ) %}
 
-{% import 'macros/button.html.twig' as button %}
+
 <div class="card-carousel" >
 
   <div class="card-image">
-    <a href="">{{ page.media[img.img].attribute('style', 'height: '~ img.height ~'vh;').html("","","img-responsive " ~ img.fit ? img.fit : '' ~ "")|raw }}</a>
+    <a href="">{{ page.media[card.image.img].attribute('style', 'height: '~ card.image.height ~'vh;').html("","","img-responsive " ~ card.image.fit ? card.image.fit : '' ~ "")|raw }}</a>
   </div>
-  <div class="card-carousel__desc card-body {{css_text_class}}">
-    <h3>{{titre|raw}}</h3>
-    <p>{{description|raw}}</p>
-    {{button.macro_button(btn_list)}}
+  <div class="card-carousel__desc card-body {{card.css_text_class}}">
+    <h3>{{card.title|raw}}</h3>
+    <p>{{card.description|raw}}</p>
+    {% include 'partials/button_block.html.twig' with {obj: card} %}
   </div>
 </div>
 {% endmacro %}
