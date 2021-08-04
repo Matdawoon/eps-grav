@@ -39,37 +39,36 @@
       });
 
     carousel_tableau_comparatif_carousel.owlCarousel({
-      loop: {{page.header.carousel_item_loop ? 'true':'false' }},    
-      dots: true,
-      nav: true,
-      responsiveRefreshRate:10,
-      center: false,
-      mouseDrag: false,
-      margin: {{page.header.carousel_item_margin}},
-      items: {{page.header.carousel_nb_items}}, 
-      stagePadding: 10,
-      URLhashListener:true,
-      startPosition: 'carte-0',
-      navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
-      
-      {% if page.header.carousel_responsive_list %}
-        responsive:{
+              loop: {{carousel_item_loop ? 'true':'false' }},  
+              dots: true,
+              nav: true,
+              center: false,
+              margin: {{page.header.carousel_item_margin}},
+              items: {{page.header.carousel_nb_items}},
+              margin: 10,
 
-          {% for resp in page.header.carousel_responsive_list %}
-            {{resp.breakpoint}}:{
-              items: {{resp.items}},
-              margin: {{resp.margin}},
-              loop: {{resp.loop ? 'true':'false' }},
-              nav: {{resp.nav ? 'true':'false' }},
-              dots: {{resp.dots ? 'true':'false' }},
-              stagePadding: {{resp.stagePadding}},
-              
-            },
+navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+              {% if page.header.carousel_responsive_list %}
+                responsive:{
 
-          {% endfor %}
-        }
-      {% endif %}
-      
+                  {% for resp in page.header.carousel_responsive_list %}
+                    {{resp.breakpoint}}:{
+                      items: {{resp.items}},
+                      margin: {{resp.margin}},
+                      loop: {{resp.loop ? 'true':'false' }},
+                      nav: {{resp.nav ? 'true':'false' }},
+                      dots: {{resp.dots ? 'true':'false' }},
+                      mouseDrag: {{resp.mouseDrag ? 'true':'false' }},
+                      {% if resp.autoplay %}
+                        autoplay:true,
+                        autoplayTimeout:3500,
+                        autoplayHoverPause:true,
+                      {% endif %}
+                    },
+
+                  {% endfor %}
+                }
+              {% endif %}
     });
 
 
