@@ -1,13 +1,13 @@
-title: Grav
+title: 'E-pay Space'
 default_lang: fr
 author:
-  name: 'Joe Bloggs'
-  email: joe@example.com
+  name: 'Helder Lisboa Brites'
+  email: helder@mextor.com
 taxonomies:
   - category
   - tag
 metadata:
-  description: 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+  description: 'E-Pay Space est Programme Manager, Fintech française spécialisée dans la conception et le développement de technologies financières sur-mesure. Nous concevons et délivrons des solutions de paiement en marque blanche et clé-en-main. Nos programmes de paiement pour les entreprises intègrent notamment des cartes rechargeables (cartes prépayées) en marque blanche, des e-wallets (portefeuilles électroniques) ou encore des sites web et applications mobiles.'
 summary:
   enabled: true
   format: short
@@ -17,22 +17,27 @@ redirects: null
 routes: null
 blog:
   route: /blog
-
-footer: 
-  text: "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris."
+footer:
+  text: 'This is Photoshop''s version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.'
   address:
-    title: COME VISIT
+    title: 'COME VISIT'
     lines:
-      - line: 1600 Amphitheatre Parkway
-      - line: Mountain View, CA
-      - line: 94043 US 
+      -
+        line: '1600 Amphitheatre Parkway'
+      -
+        line: 'Mountain View, CA'
+      -
+        line: '94043 US'
   social_title: Socialize
   contact:
-    title: CONTACT US
+    title: 'CONTACT US'
     lines:
-      - text: 647.343.8234
-        url: "#"
-      - text: 123.456.7890
-        url: "#" 
-      - text: someone@woosite.com
-        url: "mailto:someone@woosite.com"    
+      -
+        text: 647.343.8234
+        url: '#'
+      -
+        text: 123.456.7890
+        url: '#'
+      -
+        text: someone@woosite.com
+        url: 'mailto:someone@woosite.com'

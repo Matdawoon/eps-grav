@@ -133,7 +133,7 @@ twig:
   undefined_filters: true
   safe_functions: {  }
   safe_filters: {  }
-  umask_fix: false
+  umask_fix: true
 assets:
   css_pipeline: false
   css_pipeline_include_externals: true
@@ -181,7 +181,7 @@ media:
   unsupported_inline_types: null
   allowed_fallback_types: null
   auto_metadata_exif: false
-  upload_limit: 134217728
+  upload_limit: 104857600
 session:
   enabled: true
   initialize: true
