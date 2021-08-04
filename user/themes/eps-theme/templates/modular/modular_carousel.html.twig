@@ -16,15 +16,18 @@
   <script>
 
             $('.owl-carousel').owlCarousel({
-              loop: false,    
+              loop: {{carousel_item_loop ? 'true':'false' }},  
               dots: true,
               nav: true,
               center: false,
               margin: {{page.header.carousel_item_margin}},
               items: {{page.header.carousel_nb_items}},
-              items: 1,
-              stagePadding: 10,
               margin: 10,
+              {% if animate %}
+                animateOut: 'fadeOut',
+                animateIn: 'fadeOut',
+                smartSpeed:450,
+              {% endif %}
 navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
               {% if page.header.carousel_responsive_list %}
                 responsive:{
@@ -36,7 +39,7 @@ navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa f
                       loop: {{resp.loop ? 'true':'false' }},
                       nav: {{resp.nav ? 'true':'false' }},
                       dots: {{resp.dots ? 'true':'false' }},
-                      
+                      mouseDrag: {{resp.mouseDrag ? 'true':'false' }},
                     },
 
                   {% endfor %}

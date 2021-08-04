@@ -4,18 +4,19 @@ form:
     header.carousel_nb_items:
       type: text
       label: css class card conteneur
-      toggleable: true
+      required: true
       default: 2
 
     header.carousel_item_margin:
       type: text
       label: margin
+      required: true
       default: 30
-      toggleable: true
 
     header.carousel_item_loop:
       type: toggle
       label: loop
+      required: true
       default: 1
       options:
         1: "Yes"
@@ -90,8 +91,24 @@ form:
           validate:
             type: bool
 
-        .stagePadding:
-          type: number
-          label: stagePadding
-          default: 0
+        .mouseDrag:
+          type: toggle
+          label: THEME_EPS-THEME.CAROUSEL_SETTINGS.NAV_CAROUSEL_SETTINGS.LABEL
+          default: 1
+          options:
+            1: "Yes"
+            0: "Non"
+          validate:
+            type: bool
           required: true
+        .animate:
+          type: toggle
+          label: Animation !
+          description: ne fonctionne que avec 1 item !!
+          default: 0
+          options:
+            1: "Yes"
+            0: "Non"
+          validate:
+            type: bool
+          required: true          
