@@ -118,8 +118,11 @@
     flex-flow: row nowrap;
     justify-content: center;
     p{
-       margin: .5rem;
-       flex: 0 0 40%;
+      margin: .5rem;
+      flex: 1 0 40%;
+      @include media-breakpoint-down(sm){
+        flex: 0 0 40%;
+      }
     }
     img{
       object-fit: contain;
