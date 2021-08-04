@@ -10,6 +10,9 @@
     }
     &__image {
         flex: 0 0 49%;
+        iframe{
+            border-radius:15px;
+        }
     }
     &__desc {
         flex: 0 0 49%;
