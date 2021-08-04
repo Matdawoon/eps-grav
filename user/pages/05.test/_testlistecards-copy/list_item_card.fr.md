@@ -25,7 +25,8 @@ list_items:
     -
         description: 'Interfaces de gestion web et mobile clé-en-main'
         img: tick-eps-business.png
-main_title: 'Votre carte Mastercard® EPS Business'
+main_title:
+    title: 'Votre carte Mastercard® EPS Business'
 main_text_align: text-center
 module_bg_color: '#f7f7f7'
 btn_list:

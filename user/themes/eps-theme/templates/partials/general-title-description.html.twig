@@ -1,7 +1,7 @@
   
   {% if ( obj.main_title or obj.main_description )%}
-  <div  class="{{ obj.custom_container ? obj.custom_container : 'container'}} {{ obj.css_class }}">
-    <h1 class="mt-0 {{obj.main_title.spacing}}">{{ obj.main_title.title|raw }}</h1>
-    <p class="mt-0 {{obj.main_description.spacing}}">{{ obj.main_description.description|raw }}</p>
+  <div style="overflow:auto" class="{{ obj.custom_container ? obj.custom_container : 'container'}} {{ obj.css_class }}">
+    <h1 class="{{obj.main_title.spacing}}">{{ obj.main_title.title|raw }}</h1>
+    <p class="{{obj.main_description.spacing}}">{{ obj.main_description.description|raw }}</p>
   </div>
   {% endif %}

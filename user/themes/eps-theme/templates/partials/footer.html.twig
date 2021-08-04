@@ -42,7 +42,7 @@
             <span class="copytext">
                 <p>{{ footer_copyright|raw }}</p>
             </span>
-
+            {#
             <ul class="list-inline pull-right">
             {% for page in pages.children.visible %}
                 {% if page.header.shown_in_footer %}
@@ -51,6 +51,7 @@
                 {% endif %}
             {% endfor %}
             </ul>
+            #}
         </div>
     </div>
 </footer>
