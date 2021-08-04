@@ -11,17 +11,22 @@
         <p>{{ row.description|raw }}</p>
         {% include 'partials/button_block.html.twig' with {obj: row} %}
       </div>
-
-      <div class="pb-4 {% if row.image or row.video %}container-features__image{% endif %} feature-media">
-        {% if row.image %}
-          {{ page.media[row.image].html("","","img-responsive")|raw }}
-        {% endif %}
-        {% if row.video %}
-          <div class="fluid-video-wrapper">
-            <iframe src="{{ row.video }}?title=0&amp;byline=0&amp;portrait=0&amp;color=F64B39" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          </div>
-        {% endif %}
-      </div>
+      {% if row.media.image or row.media.iframe %}
+        <div class="container-features__image {{ row.media.iframe ? "align-self-stretch" : "" }}">
+          
+          {% include 'partials/image_block.html.twig' with {obj: row.media} %}
+          {#
+          {% if row.image %}
+            {{ page.media[row.image].html("","","img-responsive")|raw }}
+          {% endif %}
+          {% if row.video %}
+            <div class="fluid-video-wrapper">
+              <iframe src="{{ row.video }}?title=0&amp;byline=0&amp;portrait=0&amp;color=F64B39" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+          {% endif %}
+          #}
+        </div>
+      {% endif %}
     </div>
   {% endfor %}
   <div class="row feature">

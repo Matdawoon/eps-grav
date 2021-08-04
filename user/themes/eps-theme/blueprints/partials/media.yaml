@@ -1,0 +1,28 @@
+form:
+  .spacerMedia:
+    type: spacer
+    title: Media
+
+  .media.title:
+    type: text
+    label: titre
+  .media.alt:
+    type: text
+    label: alt
+  .media.css_class:
+    type: text
+    label: classes css
+  .media.iframe:
+    type: text
+    label: youtube iframe
+    toggleable: true
+  .media.image:
+    type: filepicker
+    label: THEME_EPS-THEME.ROWS.IMAGE.LABEL
+    preview_image: true
+    toggleable: true
+    accept:
+      - .png
+      - .jpg
+      - .svg
+      - .gif    

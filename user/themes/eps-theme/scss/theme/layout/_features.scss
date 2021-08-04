@@ -5,6 +5,9 @@
     align-items: center;
     display: flex;
     flex-wrap: wrap;
+    @include media-breakpoint-down(lg) {
+        flex-wrap: nowrap;
+    }
     &__image {
         flex: 0 0 49%;
     }

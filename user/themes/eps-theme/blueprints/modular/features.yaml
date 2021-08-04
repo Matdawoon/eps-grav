@@ -16,16 +16,12 @@ form:
 
               fields:
 
-                .image:
-                  type: filepicker
-                  label: THEME_EPS-THEME.ROWS.IMAGE.LABEL
-                  preview_image: true
-                  accept:
-                    - .png
-                    - .jpg
-                    - .svg
-                    - .gif
-
+                import@:
+                    type: partials/media
+                    context: theme://blueprints
+                .spacerInfos:
+                  type: spacer
+                  title: THEME_EPS-THEME.ROWS.HEADER_ROWS.LABEL
                 .title:
                   type: text
                   label: THEME_EPS-THEME.ROWS.TITLE_ROWS.LABEL
@@ -50,7 +46,7 @@ form:
                     text-center: text-center
                     text-end: text-end
 
-                import@:
+                import@2:
                     type: partials/button/simple_button_list
                     context: theme://blueprints
                 .inverse_responsive:

@@ -1,0 +1,8 @@
+
+{% if obj.image %}
+    {{ page.media[obj.image].html(obj.title,obj.alt,obj.css_class ~ " img-responsive")|raw }}
+{% elseif obj.iframe %}
+<div class="video-responsive">
+    {{obj.iframe|raw}}
+</div>
+{% endif %}
