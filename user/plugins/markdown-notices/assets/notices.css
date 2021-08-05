@@ -4,7 +4,8 @@
 }
 
 .notices p {
-
+    margin-top: .5rem !important;
+    margin-bottom: .5rem !important;
 }
 
 .notices.yellow {

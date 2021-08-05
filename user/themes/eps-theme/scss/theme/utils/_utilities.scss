@@ -1,3 +1,15 @@
+
+/*
+@include text-color-variant(".text-gray-pale-eps-color", $gray-pale-eps-color);
+@include text-color-variant(".text-gray-light-eps-color", $gray-light-eps-color);
+@include text-color-variant(".text-blue-dark-eps-color", $blue-dark-eps-color);
+@include text-color-variant(".text-blue-azul-eps-color", $blue-azul-eps-color);
+@include text-color-variant(".text-blue-flat-eps-color", $blue-flat-eps-color);
+@include text-color-variant(".text-red-corail-eps-color", $red-corail-eps-color);
+@include text-color-variant(".text-red-warmpink-eps-color", $red-warmpink-eps-color);
+*/
+@include text-color-variant(".text-light", $gray-light-eps-color);
+@include text-color-variant(".text-dark", $blue-dark-eps-color);
 // stylelint-disable indentation
 
 // Utilities

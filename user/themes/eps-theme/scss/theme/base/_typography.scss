@@ -49,6 +49,33 @@ p {
     font-family: $mono-font-family;
 }
 
+
+
+.title-h1h2 {
+    h1  {
+      font-weight: 100;
+      margin-bottom: 0;
+      line-height: 1.1;
+  
+      strong, bold {
+        font-weight: 400;
+      }
+    }
+    h1 + h2 {
+      line-height: 1.1;
+      margin-top: 0;
+    }
+  
+  }
+  
+  // Typography Hints
+  .title-h1h2, .title-center {
+    h1 + h2 {
+      margin-bottom: 50px;
+      font-weight: 700;
+    }
+  }
+
 // Semantic text elements
 a,
 ins,

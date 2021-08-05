@@ -1,14 +1,19 @@
 ---
-title: London at Night
-date: 13:34 06/07/2017 
-
-hero_classes: text-light title-h1h2 overlay-dark hero-large parallax
+title: 'London at Night'
+date: '13:34 06/07/2017'
+hero_classes: 'text-light title-h1h2 overlay-dark hero-large parallax'
 hero_image: unsplash-london-night.jpg
 show_sidebar: true
-
 taxonomy:
-    category: blog
-    tag: [city, night, photography]
+    category:
+        - blog
+    tag:
+        - city
+        - night
+        - photography
+module_curvature:
+    curvature_top: false
+    curvature_bottom: false
 ---
 
 Lorem markdownum freta ducentem ut flagrat undas fratrem celeres colloque; in

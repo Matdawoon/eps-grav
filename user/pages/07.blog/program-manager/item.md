@@ -2,7 +2,7 @@
 title: 'Qu''est-ce qu''un Programme Manager dans le langage Fintech ?'
 date: '17:34 02/02/2019'
 hero_classes: 'text-light title-h1h2 overlay-dark-gradient hero-large parallax'
-hero_image: unsplash-sidney-perry.jpg
+hero_image: interview.jpg
 show_sidebar: true
 taxonomy:
     category:
@@ -13,8 +13,8 @@ media_order: 'e-pay-space-program-manager.jpg,e-pay-space-fonctionnement-white.p
 module_curvature:
     curvature_top: false
     curvature_bottom: false
-module_bg_img: interview.jpg
 shown_in_footer: true
+blog_url: /blog
 ---
 
 Qu’est-ce qu’une entreprise qui fait du Programme Management dans le secteur financier ? C’est il y a plus de 10 ans avec l’instauration du nouveau statut d’établissement de monnaie électronique (EME) en Europe que le concept est apparu avec l’émergence de tout nouveaux acteurs à l’instar des institutions bancaires. La nouvelle directive européenne renforcée par la réforme du marché unique des paiements en euros autorise alors l’émission de monnaie électronique sans besoin de l’appui d’une banque. Fournir des services de paiements devient alors accessible pour des entreprises qui ne sont pas des banques. Dès lors, des établissements obtiennent des statuts réglementés et peuvent émettre des moyens de paiement, comme les cartes prépayées, selon certaines conditions. S’ouvre alors un océan de possibilités.

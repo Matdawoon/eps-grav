@@ -18,7 +18,9 @@ show_breadcrumbs: true
 show_pagination: true
 hero_image: mountain.jpg
 hero_classes: 'text-light title-h1h2 overlay-dark-gradient hero-large parallax '
-section_container_padding_class: py-5
+module_curvature:
+    curvature_top: false
+    curvature_bottom: false
 ---
 
 # **EPS** Blog
