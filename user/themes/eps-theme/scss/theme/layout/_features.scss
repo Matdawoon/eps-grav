@@ -9,13 +9,16 @@
         flex-wrap: nowrap;
     }
     &__image {
-        flex: 0 0 49%;
+        flex: 1 0 49%;
+        img, iframe{
+            margin: 0 auto;
+        }
         iframe{
             border-radius:15px;
         }
     }
     &__desc {
-        flex: 0 0 49%;
+        flex: 1 0 49%;
     }
 }
     

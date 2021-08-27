@@ -50,6 +50,7 @@
                     width: auto;
                     max-width: 395px;
                     max-height: 130px;
+                    margin-bottom: 1rem;
                 }
             }
         }
@@ -60,7 +61,7 @@
     }
     @include media-breakpoint-up(lg) {
         & .primary-image img {
-            width: 87%;
+            width: 100%;
         }
     }
 }
