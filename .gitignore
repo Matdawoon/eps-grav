@@ -9,7 +9,6 @@ user/data/*
 
 user/themes/eps-theme/node_modules/
 user/themes/eps-theme/package-lock.json
-user/pages/
 stats/
 
 # OS Generated
