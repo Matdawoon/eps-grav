@@ -7,14 +7,18 @@
             {% if page.header.main_img %}
             <div class="container-showcase__row__desc ">
                 {% if page.header.secondary_img %}
+                <div class="container">
                     {{ page.media[page.header.secondary_img].html("","","secondary-image")|raw }}
+                </div>
                 {% endif %}
                 {% include 'partials/general-title-description.html.twig' with {obj: page.header} %}
                 {% include 'partials/button_block.html.twig' with {obj: page.header} %}
             </div>
             <div class="primary-image">
-                <img src="{{ page.media[page.header.main_img].cropResize(897, 680).url }}" class="img-responsive showcase_desktop_view">
-                <img src="{{ page.media[page.header.mobile_img ? page.header.mobile_img : page.header.main_img].cropResize(897, 680).url }}" class="img-responsive showcase_mobile_view">
+                <div class="container">
+                    <img src="{{ page.media[page.header.main_img].cropResize(897, 680).url }}" class="img-responsive showcase_desktop_view">
+                    <img src="{{ page.media[page.header.mobile_img ? page.header.mobile_img : page.header.main_img].cropResize(897, 680).url }}" class="img-responsive showcase_mobile_view">
+                </div>
             </div>
             {% else %}
             <div class="text-center">
