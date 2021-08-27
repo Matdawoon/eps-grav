@@ -3,8 +3,8 @@ title: 'Qu''est-ce qu''une carte prépayée ?'
 body_classes: modular
 disposition: flex_row_reverse
 module_curvature:
+    curvature_bottom: true
     curvature_top: false
-    curvature_bottom: false
 main_title:
     title: 'Qu''est-ce qu''une <strong class="eps__color--blue-flat">carte prépayée ?</strong> pour les TPE, PME et grands groupes'
 main_description:
@@ -27,5 +27,6 @@ btn_list:
     css_class: 'text-center text-md-start'
 media_order: carte-prepayee.png
 main_img: carte-prepayee.png
+module_bg_color: '#f7f7f7'
 ---
 

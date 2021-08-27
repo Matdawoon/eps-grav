@@ -5,8 +5,8 @@ basic_enumeration:
     col_num: 2
     isRowDisplay: true
 module_curvature:
-    curvature_top: false
-    curvature_bottom: false
+    curvature_top: true
+    curvature_bottom: true
 section_container_padding_class: my-5
 main_title:
     title: '<strong class="eps__color--blue-flat">Avantages</strong> d''une carte prépayée'
@@ -45,5 +45,6 @@ enum_item_list:
     -
         description: 'Déclinaisons infinies : quelque soit l''usage visé, la carte prépayée s''adapte parfaitement à tous les usages (professionnels, privés, tout secteur d''activité).'
         number: '8'
+module_bg_color: '#f7f7f7'
 ---
 
