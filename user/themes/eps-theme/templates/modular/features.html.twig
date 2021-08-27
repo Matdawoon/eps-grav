@@ -7,14 +7,22 @@
     {% for row in page.header.rows %}
     <div class="container-features py-3 {% if row.inverse_responsive == 'image-start' %}flex-column-reverse{% else %}flex-column{% endif %} {% if row.global_position == 'right' %}flex-lg-row-reverse{% else %}flex-lg-row{% endif %} ">
       {% if row.title or row.description%}
+<<<<<<< HEAD
       <div class="py-3 px-3 px-lg-5 container-features__desc {{ row.description_position }}">
+=======
+      <div class="py-3 px-3 container-features__desc {{ row.description_position }}">
+>>>>>>> main
         <h3>{{ row.title|raw }}</h3>
         <p>{{ row.description|raw }}</p>
         {% include 'partials/button_block.html.twig' with {obj: row} %}
       {% endif %}
       </div>
       {% if row.media.image or row.media.iframe %}
+<<<<<<< HEAD
         <div class="py-3 px-3 px-lg-5 container-features__image {{ row.media.iframe ? "align-self-stretch" : "" }}">
+=======
+        <div class="py-3 px-4 container-features__image {{ row.media.iframe ? "align-self-stretch" : "" }}">
+>>>>>>> main
           
           {% include 'partials/image_block.html.twig' with {obj: row.media} %}
           {#
