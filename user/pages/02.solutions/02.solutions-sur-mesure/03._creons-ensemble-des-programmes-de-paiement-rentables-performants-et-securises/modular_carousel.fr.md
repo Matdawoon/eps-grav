@@ -18,7 +18,7 @@ card_list:
                     css: 'btneps btneps__color--red-warmpink-outline'
         image:
             img: programme-grand-public.png
-            height: '20'
+            height: '15'
             fit: contain
         title: 'Programme <strong class="eps__color--red">grand public</strong>'
         description: 'Vous avez une idée de service financier innovant pour vos clients ? E-Pay Space accompagne les entreprises qui souhaitent diversifier leur offre pour le Grand Public.'
@@ -32,7 +32,7 @@ card_list:
                     css: 'btneps btneps__color--red-warmpink-outline'
         image:
             img: programme-fidelite.png
-            height: '20'
+            height: '13'
             fit: contain
         title: 'Programme <strong class="eps__color--red">fidélité</strong>'
         description: 'Et si fidélisation rimait avec innovation ? Les grandes enseignes retail investissent dans la digitalisation de leur expérience de paiement. E-Pay Space peut vous accompagner dans cette transformation.'

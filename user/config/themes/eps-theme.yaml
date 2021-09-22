@@ -40,12 +40,12 @@ footer_blocks:
     icons: false
   -
     title: 'Aide en ligne'
-    content: "<ul>\n<li><a href=\"tel:+33186555555\">Service client</a></li>\n<li><a href=\"mailto:hello@epayspace.com\">Demande d'informations</a></li>\n</ul>"
+    content: "<ul>\n<li><a href=\"tel:+33186555555\">Service client</a></li>\n<li><a href=\"https://dev.epayspace.com/fr/faq\">FAQ</a></li>\n<li><a href=\"mailto:hello@epayspace.com\">Demande d'informations</a></li>\n</ul>"
     logo: false
     icons: false
   -
     title: 'Social média'
-    content: "<ul>\n<li><a href=\"https://www.epayspace.com/fr/ressources/blog\">Blog E-Pay Space</a></li>\n</ul>"
+    content: "<ul>\n<li><a href=\"https://dev.epayspace.com/fr/blog\">Blog E-Pay Space</a></li>\n</ul>"
     logo: false
     icons: true
 copyright: '© E-Pay Space 2021. Tous droits réservés'

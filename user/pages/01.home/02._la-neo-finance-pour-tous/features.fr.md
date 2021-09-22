@@ -22,6 +22,16 @@ rows:
         global_position: right
         description_position: text-start
         inverse_responsive: image-start
+    -
+        media:
+            title: null
+            alt: null
+            css_class: null
+        title: null
+        description: null
+        global_position: left
+        description_position: text-start
+        inverse_responsive: image-start
 section_container_padding_class: mt-5
 ---
 

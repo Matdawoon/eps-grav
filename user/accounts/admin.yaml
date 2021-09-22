@@ -1,0 +1,15 @@
+email: s.sanseverino@infinity-telecom.com
+fullname: 'Sanseverino Steeve'
+title: WebMaster
+state: enabled
+access:
+  admin:
+    super: 'true'
+    login: 'true'
+  site:
+    login: 'true'
+hashed_password: $2y$10$85fDYJoeoVKcVb.nhuN40uoxwkG.RrmUXm8GhaAalqOSAdaF3CNXa
+language: en
+login_attempts: {  }
+twofa_secret: RANONWIT2AS3ZJT5TNMPLFJV44R7WCUZ
+twofa_enabled: false

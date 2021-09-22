@@ -3823,7 +3823,7 @@ ul.pagination { -ms-flex-pack: center; justify-content: center; }
 
 #sidebar ul.archives .label { vertical-align: text-top; }
 
-.basic-item-list h3 { margin-top: 0; margin-bottom: 0; font-size: 1rem; font-family: 'Roboto', Arial, sans-serif; font-weight: 500; letter-spacing: 0; color: #3f83b6; }
+.basic-item-list h3 { margin-top: 0; margin-bottom: 0; font-size: 1.3rem; font-family: 'Roboto', Arial, sans-serif; font-weight: 500; letter-spacing: 0; color: #3f83b6; }
 
 .basic-item-list p { margin: 0; }
 

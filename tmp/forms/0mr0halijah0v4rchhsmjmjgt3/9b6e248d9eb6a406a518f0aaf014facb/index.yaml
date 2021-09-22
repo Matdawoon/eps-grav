@@ -1,0 +1,33 @@
+form: flex-pages
+unique_id: 9b6e248d9eb6a406a518f0aaf014facb
+url: '/pages/contact/_contact/:add'
+user:
+  username: Delphine
+  email: dmille@mextor.com
+timestamps:
+  created: 1632315761
+  updated: 1632315761
+data: null
+files: {  }
+object:
+  type: pages
+  key: contact/_contact
+  storage_key: ''
+  timestamp: 0
+  serialized:
+    __META:
+      clone: true
+    storage_key: ''
+    parent_key: 08.contact
+    order: false
+    folder: _contact
+    template: features
+    lang: fr
+    root: false
+    route: /contact
+    name: modular/features
+    modular: '1'
+    header:
+      title: contact
+      body_classes: modular
+    frontmatter: "title: contact\nbody_classes: modular\n"

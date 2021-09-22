@@ -17,5 +17,6 @@ module_curvature:
     curvature_top: false
     curvature_bottom: false
 main_img: KYC-KYB-eps.png
+section_container_padding_class: py-5
 ---
 

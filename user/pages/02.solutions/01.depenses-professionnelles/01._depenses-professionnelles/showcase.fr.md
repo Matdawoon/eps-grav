@@ -1,7 +1,7 @@
 ---
 title: 'Dépenses Professionnelles'
 body_classes: modular
-disposition: flex_row
+disposition: flex_row_reverse
 module_curvature:
     curvature_bottom: true
     curvature_top: false

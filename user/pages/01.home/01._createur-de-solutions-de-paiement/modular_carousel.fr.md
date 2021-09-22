@@ -5,13 +5,8 @@ carousel_item_loop: false
 module_curvature:
     curvature_bottom: true
     curvature_top: false
-module_bg_color: '#f7f7f7'
-main_title:
-    title: '<strong class="eps__color--blue-flat">Créateur de solutions</strong> de paiement'
-    spacing: mb-0
-main_description:
-    description: 'Faites de l''innovation financière, le moteur de votre croissance'
-    spacing: mt-2
+main_title: {  }
+main_description: {  }
 css_class: text-center
 card_list:
     -
@@ -32,8 +27,8 @@ card_list:
         image:
             img: cross-solutions-sur-mesure.png
             height: '40'
-        title: 'Solution <strong class="eps__color--red">sur-mesure</strong>'
-        description: '<strong class="eps__color--red">EPS Factory</strong> : votre solution personnalisée et à votre image'
+        title: 'Programme <strong class="eps__color--red">sur-mesure</strong>'
+        description: '<strong class="eps__color--red">EPS Factory</strong> : votre programme de paiement personnalisé (cartes, e-wallets, mobile...)'
         css_text_class: text-center
     -
         btn_list:
@@ -53,8 +48,8 @@ card_list:
         image:
             img: cross-depenses-professionnelles.png
             height: '40'
-        title: 'Dépenses <strong class="eps__color--blue-green">professionnelles</strong>'
-        description: '<strong class="eps__color--blue-green">EPS Business :</strong> solution clé-en-main de cartes pour les entreprises'
+        title: 'Dépenses <strong class="eps__color--blue-green">pros</strong>'
+        description: '<strong class="eps__color--blue-green">EPS Business :</strong> des cartes professionnelles pour vous et vos collaborateurs'
         css_text_class: text-center
     -
         btn_list:
@@ -72,10 +67,10 @@ card_list:
                             modalFooter: null
                             textAlignment: null
         image:
-            img: solution-3.png
+            img: EPS-plus.png
             height: '40'
-        title: 'Lorem ipsum <strong class="eps__color--red-corail">dolor consectetur</strong>'
-        description: '<strong class="eps__color--red-corail">EPS Beyond :</strong> Lorem ipsum dolor sit amet labore et dolore magna'
+        title: 'Innovation <strong class="eps__color--red-corail">financière</strong>'
+        description: '<strong class="eps__color--red-corail">EPS+++:</strong> un développement holistique de votre infrastructure bancaire, de A à Z (Core Banking, BaaS)'
         css_text_class: text-center
 carousel_nb_items: '2'
 carousel_item_margin: '60'
@@ -108,5 +103,6 @@ carousel_responsive_list:
         mouseDrag: false
         autoplay: false
 custom_container: mb-3
+media_order: 'cross-depenses-professionnelles.png,cross-solutions-sur-mesure.png,EPS-plus.png'
 ---
 

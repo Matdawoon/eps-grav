@@ -2,7 +2,7 @@
 title: contact
 body_classes: modular
 module_curvature:
-    curvature_top: false
+    curvature_top: true
     curvature_bottom: false
 rows:
     -
@@ -43,5 +43,6 @@ rows:
         description_position: text-start
         inverse_responsive: image-start
 disposition: flex_row_reverse
+module_bg_color: '#f7f9fc'
 ---
 
